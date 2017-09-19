@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # README
 
 This README would normally document whatever steps are necessary to get the
@@ -22,3 +23,8 @@ Things you may want to cover:
 * Deployment instructions
 
 * ...
+=======
+# Basechamp
+
+[Basechamp Wiki](https://github.com/ckane30691/Basechamp/wiki)
+>>>>>>> a8eebaf7063e50715222a4cf5b1564183ae42ef6
