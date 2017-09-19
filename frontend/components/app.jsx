@@ -11,3 +11,5 @@ import {
 const App = () => (
   <h1>Basechamp</h1>
 );
+
+export default App;
