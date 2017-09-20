@@ -1,3 +1,17 @@
+# == Schema Information
+#
+# Table name: users
+#
+#  id              :integer          not null, primary key
+#  username        :string           not null
+#  fname           :string           not null
+#  lname           :string           not null
+#  password_digest :string           not null
+#  session_token   :string           not null
+#  created_at      :datetime         not null
+#  updated_at      :datetime         not null
+#
+
 class User < ApplicationRecord
 
   attr_reader :password
@@ -8,6 +22,11 @@ class User < ApplicationRecord
   :password_digest, :session_token, presence: true
 
   after_initialize :ensure_session_token
+
+  has_many :projects,
+    primary_key: :id,
+    foreign_key: :author_id,
+    class_name: :Project
 
   def self.find_by_credentials(username, password)
     user = User.find_by(username: username)
