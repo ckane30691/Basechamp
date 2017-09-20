@@ -3,6 +3,7 @@ import { Provider } from 'react-redux';
 import SessionFormContainer from './session_form/session_form_container';
 import { AuthRoute, ProtectedRoute } from '../util/route_util';
 import GreetingContainer from './greeting/greeting_container';
+import ProjectIndexContainer from './projects/project_index_container';
 
 import {
   Route,
@@ -19,8 +20,9 @@ const App = () => (
       <GreetingContainer />
     </header>
     <Switch>
-      <AuthRoute path="/login" component={SessionFormContainer} />
-      <AuthRoute path="/signup" component={SessionFormContainer} />
+      <AuthRoute exact path="/login" component={SessionFormContainer} />
+      <AuthRoute exact path="/signup" component={SessionFormContainer} />
+      <ProtectedRoute path="/projects" component={ProjectIndexContainer} />
     </Switch>
   </div>
 );
