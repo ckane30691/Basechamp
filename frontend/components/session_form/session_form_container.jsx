@@ -8,7 +8,10 @@ const mapStateToProps = state => ({
 });
 
 const mapDispatchToProps = (dispatch, ownProps) => {
-  const formType = ownProps.location.pathname.slice(1);
+
+  // NOTE need to chage this so I can keep form on homepage
+  
+  const formType = ownProps.location.pathname.slice(1) === 'login' ? 'login' : 'signup';
   const processForm = (formType === 'login') ? login : signup;
 
   return {

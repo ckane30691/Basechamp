@@ -22,9 +22,21 @@
     "test": "test"
   },
   "scripts": {
+    "webpack": "webpack --watch",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "eslint": "^4.7.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ckane30691/Basechamp.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ckane30691/Basechamp/issues"
+  },
+  "homepage": "https://github.com/ckane30691/Basechamp#readme"
 }
