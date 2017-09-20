@@ -7,8 +7,12 @@ class Api::ProjectsController < ApplicationController
 	end
 
 	def show
-		@project = current_user.projects.find(params[:id])
-		render :show
+		@project = current_user.projects.find_by(id: params[:id])
+		if @project
+			render :show
+		else
+			render json: ["This project does not exist"], status: 404
+		end
 	end
 
 	def create
@@ -23,7 +27,7 @@ class Api::ProjectsController < ApplicationController
 	end
 
 	def destroy
-		@project = current_user.projects.find(params[:id])
+		@project = current_user.projects.find_by(id: params[:id])
 		if @project.destroy
 			render :show
 		else
