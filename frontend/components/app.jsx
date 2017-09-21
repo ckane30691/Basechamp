@@ -4,6 +4,7 @@ import SessionFormContainer from './session_form/session_form_container';
 import { AuthRoute, ProtectedRoute } from '../util/route_util';
 import GreetingContainer from './greeting/greeting_container';
 import ProjectIndexContainer from './projects/project_index_container';
+import Splash from './greeting/splash.jsx'
 
 import {
   Route,
@@ -23,27 +24,13 @@ const App = () => (
       <GreetingContainer />
     </header>
 
-    <div className='app-body-container'>
-      <div className="hero-img-container">
-        <img className="hero-img" alt="hero image" src="https://s3-us-west-1.amazonaws.com/basechamp/basecamp_hero.jpg"/>
-      </div>
-
-      <div className="intro-container">
-        <h1 className="intro-title">We've been expecting you.</h1>
-
-        <p className="intro-body">
-          All growing businesses run into the same fundamental problems.
-          Hair on fire, buried under email, stuff everywhere.
-          The good news? Basechamp solves them.
-        </p>
-      </div>
-
     <Switch>
+      <AuthRoute exact path="/" component={Splash} />
       <AuthRoute exact path="/login" component={SessionFormContainer} />
+      // NOTE change the signup route after splash page is working
       <AuthRoute exact path="/signup" component={SessionFormContainer} />
       <ProtectedRoute path="/projects" component={ProjectIndexContainer} />
     </Switch>
-  </div>
 </div>
 );
 

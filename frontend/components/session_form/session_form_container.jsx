@@ -1,6 +1,7 @@
 import { connect } from 'react-redux';
 import SessionForm from './session_form';
 import { login, logout, signup } from '../../actions/session_actions';
+import { withRouter } from 'react-router-dom';
 
 const mapStateToProps = state => ({
   loggedIn: Boolean(state.session.currentUser),
@@ -8,9 +9,6 @@ const mapStateToProps = state => ({
 });
 
 const mapDispatchToProps = (dispatch, ownProps) => {
-
-  // NOTE need to chage this so I can keep form on homepage
-  
   const formType = ownProps.location.pathname.slice(1) === 'login' ? 'login' : 'signup';
   const processForm = (formType === 'login') ? login : signup;
 
@@ -20,7 +18,7 @@ const mapDispatchToProps = (dispatch, ownProps) => {
   };
 };
 
-export default connect(
+export default withRouter(connect(
   mapStateToProps,
   mapDispatchToProps
-)(SessionForm);
+)(SessionForm));
