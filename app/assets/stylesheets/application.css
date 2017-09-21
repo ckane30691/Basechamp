@@ -237,6 +237,12 @@
   position: relative;
 }
 
+.project-desc {
+  font-size: 0.8em;
+  margin-top: 5px;
+  font-weight: 500;
+}
+
 .delete-project-btn {
   position: absolute;
   font-weight: bold;

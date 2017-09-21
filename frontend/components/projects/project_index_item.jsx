@@ -7,6 +7,8 @@ const ProjectIndexItem = ({ project, router, deleteProject, history}) => {
 			<Link to={`/projects/${project.id}`}>
 				{project.title}
 			</Link>
+			<hr/>
+			<p className="project-desc">{project.description}</p>
 
 			<button
 				className="delete-project-btn"
