@@ -13,3 +13,177 @@
  *= require_tree .
  *= require_self
  */
+
+
+/*css reset*/
+ html, body, header, nav, h1, a,
+ ul, li, strong, main, button, i,
+ section, img, div, h2, p, form,
+ fieldset, label, input, textarea,
+ span, article, footer, time, small {
+   margin: 0;
+   padding: 0;
+   border: 0;
+   outline: 0;
+   font: inherit;
+   color: inherit;
+   text-align: inherit;
+   text-decoration: inherit;
+   vertical-align: inherit;
+   box-sizing: inherit;
+   background: transparent;
+ }
+
+ ul {
+   list-style: none;
+ }
+
+ img {
+   display: block;
+   width: 100%;
+   height: auto;
+ }
+
+ input[type="password"],
+ input[type="email"],
+ input[type="text"],
+ input[type="submit"],
+ textarea,
+ button {
+   /*
+   Get rid of native styling. Read more here:
+   http://css-tricks.com/almanac/properties/a/appearance/
+   */
+   -webkit-appearance: none;
+   -moz-appearance: none;
+   appearance: none;
+ }
+
+ button,
+ input[type="submit"] {
+   cursor: pointer;
+ }
+
+ /* Clearfix */
+
+ .group:after {
+   content: "";
+   display: block;
+   clear: both;
+ }
+
+ /*////*/
+
+ /*body {
+	 background-color: #f5efe6;
+ }*/
+
+ header {
+	 font-family: "HCo Ideal Sans SSm", "Helvetica";
+	 letter-spacing: -0.05rem;
+	 display: flex;
+	 justify-content: space-between;
+	 font-size: 1.6rem;
+	 font-weight: bold;
+	 background-color: rgba(255,255,255,0.95);
+	 position: relative;
+	 top: 0;
+	 height: 75px;
+	 align-items: center;
+	 padding-left: 20px;
+	 padding-right: 20px;
+ }
+
+ .login-signup {
+	 color: #007bb6;
+	 text-decoration: underline;
+ }
+
+ .login-signup a {
+	 margin-left: 20px;
+ }
+
+ .home-container {
+	 display: flex;
+	 align-items: center;
+ }
+
+ .icon {
+	 width: 50px;
+	 height: 50px;
+ }
+
+ .hero-img-container {
+	 max-width: 940px;
+	 margin: auto;
+ }
+
+ .hero-img {
+	 max-width: 100%;
+ }
+
+ .intro-container {
+	 font-family: 'Merriweather', serif;
+	 color: #283c46;
+	 text-align: center;
+ }
+
+ .intro-title {
+	 font-weight: bold;
+	 font-size: 3.4rem;
+ }
+
+ .intro-body {
+	 font-size: 1.9rem;
+ }
+
+ .app-body-container {
+	 padding-left: 200px;
+	 padding-right: 200px;
+ }
+
+ .session-signup-container {
+	 font-size: 1.6rem;
+	 color: #283c46;
+	 width: 50%;
+	 box-shadow: 0 2px 10px 0 rgba(0,0,0,0.1);
+	 max-width: 40rem;
+	 border-radius: 0.5em;
+	 padding: 0.25em;
+	 margin: 1.5em auto 1em auto;
+	 background-color: rgba(216,198,166,0.5);
+ }
+
+ .session-input {
+	 transition: all 0.2s ease;
+	 display: block;
+	 margin-bottom: 0.75em;
+	 padding: 0.75em 0.6em;
+	 width: 75%;
+	 background-color: #fff;
+	 border: 2px solid #bfbfbf;
+	 font-size: 1.6rem;
+	 font-family: monospace;
+ }
+
+ .password-input {
+	transition: all 0.2s ease;
+	display: block;
+	margin-bottom: 0.75em;
+	padding: 0.75em 0.6em;
+	width: 75%;
+	background-color: #fff;
+	border: 2px solid #bfbfbf;
+	font-size: 1.6rem;
+	font-family: monospace;
+ }
+
+ .signup-submit {
+	 background-color: #007bb6;
+   color: #fff;
+	 font-size: 1em;
+	 font-weight: bold;
+	 border: 2px solid #007bb6;
+   padding: 1em 1em 0.75em 1em;
+	 border-radius: 3em;
+ }
