@@ -8,10 +8,12 @@ import {
 	deleteProject
 } from '../../actions/project_actions'
 
-const mapStateToProps = state => ({
-	projects: Object.keys(state.entities.projects)
-		.map(id => state.entities.projects[id])
-});
+const mapStateToProps = (state, ownProps) => {
+	return {
+		projects: Object.keys(state.entities.projects)
+		.map(id => state.entities.projects[id]),
+	}
+};
 
 const mapDispatchToProps = dispatch => ({
 	fetchProjects: () => dispatch(fetchProjects()),

@@ -1,5 +1,7 @@
 import React from 'react';
 import ProjectIndexItem from './project_index_item'
+import ProjectFormContainer from './project_form_container'
+import { Link } from 'react-router-dom';
 
 class ProjectIndex extends React.Component {
 
@@ -10,6 +12,7 @@ class ProjectIndex extends React.Component {
 	render() {
 		return (
 			<div>
+				<Link to="/projects/new">New</Link>
 				<ul>
 					{
 						this.props.projects.map(project => (
