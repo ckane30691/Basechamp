@@ -138,9 +138,20 @@
 	 font-size: 1.9rem;
  }
 
- .splash-body-container {
+ .splash {
 	 padding-left: 200px;
 	 padding-right: 200px;
+ }
+
+ .splash-signup {
+   display: flex;
+   align-items: center;
+   justify-content: space-around;
+ }
+
+ .call-to-action h3 {
+   font-family: 'Merriweather', serif;
+   width: 50%;
  }
 
  .session-signup-container {
@@ -189,12 +200,22 @@
 	bottom: 95px;
  }
 
+/*NOTE :hover code below was taken from 
+http://www.ultrawebsites.com/2013/11/just-one-css-class-for-darker-button-hover-states/*/
+
+ .signup-submit:hover {
+   background-color:rgba(2, 15, 35, 1);
+   -webkit-transition: all 0.2s ease;
+   -moz-transition: all 0.2s ease;
+   -ms-transition: all 0.2s ease;
+ }
+
  .signup-submit {
 	 background-color: #007bb6;
    color: #fff;
 	 font-size: 1em;
 	 font-weight: bold;
-	 border: 1px solid #007bb6;
+	 /*border: 1px solid #007bb6;*/
    padding: 0.75em 0.75em 0.75em 0.75em;
 	 border-radius: 3em;
 	 transition: all 0.2s ease;
