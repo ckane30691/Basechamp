@@ -21,3 +21,16 @@ export const signup = user => (
     data: user
   })
 );
+
+export const dummyLogin = () => (
+  $.ajax({
+    method: 'POST',
+    url: 'api/session',
+    data: {
+      user: {
+      username: "Astronaut_Bill",
+      password: "password"
+      }
+    }
+  })
+)

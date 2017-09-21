@@ -36,3 +36,9 @@ export const logout = () => dispatch => (
     dispatch(receiveSessionErrors(err.responseJSON))
   ))
 );
+
+export const dummyLogin = () => dispatch => (
+  APIUtil.dummyLogin().then(user => (
+    dispatch(receiveCurrentUser(user))
+  ))
+);
