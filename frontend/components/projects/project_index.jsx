@@ -11,9 +11,11 @@ class ProjectIndex extends React.Component {
 
 	render() {
 		return (
-			<div>
-				<Link to="/projects/new">New</Link>
-				<ul>
+			<div className="project-idx-container">
+				<Link className="project-new-button" to="/projects/new">New</Link>
+				<h2>Projects</h2>
+
+				<ul className='project-list'>
 					{
 						this.props.projects.map(project => (
 							<ProjectIndexItem

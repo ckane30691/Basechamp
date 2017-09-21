@@ -143,6 +143,58 @@
 	 padding-right: 200px;
  }
 
+ .project-idx-container {
+   text-align: center;
+   padding-left: 200px;
+   padding-right: 200px;
+   padding-top: 100px;
+   position: relative;
+ }
+
+ .project-idx-container:before {
+   content: '';
+   position: absolute;
+   top: 75%;
+   left: 200px;
+   right: 200px;
+   border-bottom: 1px solid rgba(0,0,0,0.1);
+   z-index: -1;
+ }
+
+ .project-idx-container h2 {
+   color:  #877457;
+   font-size: 1.17em;
+   font-family: "helvetica";
+   background: white;
+   display: inline-flex;
+}
+
+.project-list {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.project-new-button {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  border-radius: 0.4rem;
+  position: absolute;
+  left: 190px;
+  border-color: rgba(0,0,0,0.15);
+  border-bottom-width: 2px;
+  text-decoration: none;
+  text-align: center;
+  font-weight: bold;
+  color: #283c46;
+  display: inline-block;
+  line-height: 1.5;
+  white-space: normal;
+  vertical-align: middle;
+  background-color: #fff;
+  border: 1px solid #bfbfbf;
+}
+
  .splash-signup {
    display: flex;
    align-items: center;
@@ -200,7 +252,7 @@
 	bottom: 95px;
  }
 
-/*NOTE :hover code below was taken from 
+/*NOTE :hover code below was taken from
 http://www.ultrawebsites.com/2013/11/just-one-css-class-for-darker-button-hover-states/*/
 
  .signup-submit:hover {
