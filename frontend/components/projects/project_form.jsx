@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link, withRouter } from 'react-router-dom';
 
 class ProjectForm extends React.Component {
 	constructor(props) {
@@ -25,7 +26,7 @@ class ProjectForm extends React.Component {
 					<input type="text"
 						value={this.state.title}
 						onChange={this.update('title')}
-						className="project-input"
+						className="project-input pti"
 						placeholder="Name this project" />
 
 					<br/>
@@ -33,18 +34,22 @@ class ProjectForm extends React.Component {
 					<input type="text"
 						value={this.state.description}
 						onChange={this.update('description')}
-						className="project-input"
-						placeholder="Give this project a tagline" />
+						className="project-input pdi"
+						placeholder="Project Description" />
 
 					<input
 						className="project-submit"
 						type="submit"
-						value="Submit" />
+						value="Save" />
 
 				</form>
+				<Link to="/projects"
+					className="delete-project-btn">
+					X
+				</Link>
 			</div>
 		)
 	}
 }
 
-export default ProjectForm;
+export default withRouter(ProjectForm);

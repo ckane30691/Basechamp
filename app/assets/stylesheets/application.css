@@ -143,6 +143,10 @@
 	 padding-right: 200px;
  }
 
+ .entire-project-body {
+   position: relative;
+ }
+
  .project-idx-container {
    text-align: center;
    padding-left: 200px;
@@ -194,6 +198,7 @@
 
 .delete-project-btn {
   position: absolute;
+  font-weight: bold;
   color: red;
   right: 12px;
   top: 10px;
@@ -220,6 +225,51 @@
   vertical-align: middle;
   background-color: #fff;
   border: 1px solid #bfbfbf;
+}
+
+.new-project-container {
+  background-color: rgba(216,198,166, 1);
+  border-radius: 0.4rem;
+  padding: 20px;
+  width: 270px;
+  height: 180px;
+  position: absolute;
+  left: 200px;
+  top: 145px;
+}
+
+.project-input {
+  transition: all 0.2s ease;
+  display: block;
+  width: 250px;
+  margin-bottom: 5px;
+  padding: 0.75em 0.6em;
+  background-color: #fff;
+  border: 2px solid #bfbfbf;
+  font-size: 1rem;
+  font-family: monospace;
+  position: absolute;
+}
+
+.pti {
+  left: 20px;
+  top: 40px;
+}
+
+.pdi {
+  left: 20px;
+  bottom: 70px;
+}
+
+.project-submit {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  background-color: #3cb371;
+  border-radius: 0.4rem;
+  font-weight: bold;
+  color: white;
+  padding: 10px;
 }
 
  span {
