@@ -1,6 +1,8 @@
 import React from 'react';
 import { Link, hashHistory } from 'react-router';
 
+// NOTE still need to implement render errors
+
 class SessionForm extends React.Component {
   constructor(props) {
     super(props);
