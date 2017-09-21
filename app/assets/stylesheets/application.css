@@ -154,7 +154,7 @@
  .project-idx-container:before {
    content: '';
    position: absolute;
-   top: 75%;
+   top: 115px;
    left: 200px;
    right: 200px;
    border-bottom: 1px solid rgba(0,0,0,0.1);
@@ -163,24 +163,51 @@
 
  .project-idx-container h2 {
    color:  #877457;
-   font-size: 1.17em;
+   font-size: 1.3em;
    font-family: "helvetica";
    background: white;
    display: inline-flex;
+   margin-bottom: 30px;
 }
 
 .project-list {
   display: flex;
   justify-content: space-around;
+  align-content: center;
   flex-wrap: wrap;
 }
 
+.project-list li {
+  background-color: rgba(216,198,166,0.5);
+  height: 200px;
+  width: 300px;
+  font-weight: bold;
+  text-align: left;
+  border-radius: 0.4rem;
+  margin-bottom: 20px;
+  padding-top: 30px;
+  padding-left: 20px;
+  padding-right: 30px;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.delete-project-btn {
+  position: absolute;
+  color: red;
+  right: 12px;
+  top: 10px;
+}
+
 .project-new-button {
-  padding-left: 1.5rem;
-  padding-right: 1.5rem;
+  padding-left: 5px;
+  padding-right: 8px;
+  padding-top: 0;
+  padding-bottom: 0;
   border-radius: 0.4rem;
   position: absolute;
-  left: 190px;
+  left: 160px;
+  top: 95px;
   border-color: rgba(0,0,0,0.15);
   border-bottom-width: 2px;
   text-decoration: none;
@@ -194,6 +221,12 @@
   background-color: #fff;
   border: 1px solid #bfbfbf;
 }
+
+ span {
+   font-size: 25px;
+   margin-right: 5px;
+   color: #37d100;
+ }
 
  .splash-signup {
    display: flex;

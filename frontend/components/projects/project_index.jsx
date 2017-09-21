@@ -12,7 +12,7 @@ class ProjectIndex extends React.Component {
 	render() {
 		return (
 			<div className="project-idx-container">
-				<Link className="project-new-button" to="/projects/new">New</Link>
+				<Link className="project-new-button" to="/projects/new"><span>+</span>New</Link>
 				<h2>Projects</h2>
 
 				<ul className='project-list'>
