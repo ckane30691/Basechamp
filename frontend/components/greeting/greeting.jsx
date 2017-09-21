@@ -5,7 +5,7 @@ const sessionLinks = (dummyLogin) => (
 	<nav className="login-signup">
 		<Link to="/login">Sign In</Link>
 		<Link to="/signup">Sign up!</Link>
-		<button onClick={dummyLogin}>Demo</button>
+		<button className="demo-button" onClick={dummyLogin}>Demo</button>
 	</nav>
 )
 

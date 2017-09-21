@@ -83,7 +83,7 @@
 	 letter-spacing: -0.05rem;
 	 display: flex;
 	 justify-content: space-between;
-	 font-size: 1.6rem;
+	 font-size: 1.25rem;
 	 font-weight: bold;
 	 background-color: rgba(255,255,255,0.95);
 	 position: relative;
@@ -92,6 +92,46 @@
 	 align-items: center;
 	 padding-left: 20px;
 	 padding-right: 20px;
+ }
+
+ .demo-button {
+   background-color: #007bb6;
+    color: #fff;
+    margin-left: 15px;
+   font-size: 0.9em;
+   font-weight: bold;
+   text-decoration: none;
+   /*border: 1px solid #007bb6;*/
+    padding: 0.50em 0.75em 0.50em 0.75em;
+   border-radius: 3em;
+   transition: all 0.2s ease;
+ }
+
+ .header-group {
+   font-family: helvetica;
+   color: #007bb6;
+   position: relative;
+ }
+
+ .header-name {
+   margin-right: 70px;
+   margin-bottom: 10px;
+ }
+
+ .header-button {
+   background-color: #3cb371;
+   color: #fff;
+   width: 80px;
+   font-size: .8em;
+   font-weight: bold;
+  /*border: 1px solid #007bb6;*/
+   padding: 0.50em 1.0em 0.50em 1.0em;
+   border-radius: 0.5em;
+   border-color: #3cb371;
+   border-bottom-color: rgba(0,0,0,0.15);
+   transition: all 0.2s ease;
+   position: absolute;
+   right: 70px
  }
 
  .login-signup {
@@ -276,7 +316,7 @@
  span {
    font-size: 25px;
    margin-right: 5px;
-   color: #37d100;
+   color: #3cb371;
  }
 
  .splash-signup {
