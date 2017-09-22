@@ -18,7 +18,7 @@ export const receiveProjects = projects => ({
 export const removeProject = project => ({
 	type: REMOVE_PROJECT,
 	project
-})
+});
 
 export const receiveProjectErrors = errors => ({
 	type: RECEIVE_PROJECT_ERRORS,
