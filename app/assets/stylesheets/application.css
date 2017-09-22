@@ -235,6 +235,7 @@
   padding-right: 30px;
   box-sizing: border-box;
   position: relative;
+  color: #283c46;
 }
 
 .project-desc {
@@ -344,10 +345,20 @@
 
 .project-show-body {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-around;
   padding-left: 200px;
   padding-right: 200px;
   padding-top: 100px;
+}
+
+.project-title {
+  font-size: 1.5em;
+  color: #283c46;
+  font-weight: bold;
+  flex: 0 0 100%;
+  text-align: center;
+  margin-bottom: 30px;
 }
 
 .generic-show-container {
@@ -363,7 +374,7 @@
 }
 
 .generic-show-title {
-  font-size: 1.1em;
+  font-size: 1.17em;
   font-weight: bold;
 }
 
@@ -379,6 +390,21 @@
   position: absolute;
   bottom: 30px;
   left: 10px;
+}
+
+.show-footer {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-left: 340px;
+  padding-right: 340px;
+  color: #283c46;
+  text-align: center;
+}
+
+.footer-desc {
+  font-size: .8em;
 }
 
  span {
