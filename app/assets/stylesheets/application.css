@@ -342,6 +342,45 @@
   padding: 10px;
 }
 
+.project-show-body {
+  display: flex;
+  justify-content: space-around;
+  padding-left: 200px;
+  padding-right: 200px;
+  padding-top: 100px;
+}
+
+.generic-show-container {
+  width: 260px;
+  height: 260px;
+  text-align: center;
+  color: #283c46;
+  background-color: rgba(216,198,166,0.5);
+  padding: 25px;
+  box-sizing: border-box;
+  border-radius: 0.5em;
+  position: relative;
+}
+
+.generic-show-title {
+  font-size: 1.1em;
+  font-weight: bold;
+}
+
+.generic-show-img {
+  height: 95px;
+  width: 95px;
+  position: absolute;
+  left: 85px;
+}
+
+.generic-show-desc {
+  font-size: .8em;
+  position: absolute;
+  bottom: 30px;
+  left: 10px;
+}
+
  span {
    font-size: 25px;
    margin-right: 5px;
