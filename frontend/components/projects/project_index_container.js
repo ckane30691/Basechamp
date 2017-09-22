@@ -5,7 +5,8 @@ import {
 	fetchProjects,
 	fetchProject,
 	createProject,
-	deleteProject
+	deleteProject,
+	updateProject
 } from '../../actions/project_actions'
 
 const mapStateToProps = (state, ownProps) => {
@@ -19,7 +20,8 @@ const mapDispatchToProps = dispatch => ({
 	fetchProjects: () => dispatch(fetchProjects()),
 	fetchProject: id => dispatch(fetchProject(id)),
 	createProject: project => dispatch(createProject(project)),
-	deleteProject: id => dispatch(deleteProject(id))
+	deleteProject: id => dispatch(deleteProject(id)),
+	updateProject: project => dispatch(updateProject(project))
 });
 
 export default connect(

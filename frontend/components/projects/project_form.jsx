@@ -8,13 +8,23 @@ class ProjectForm extends React.Component {
 		this.handleSubmit = this.handleSubmit.bind(this);
 	}
 
+	componentDidMount() {
+		if (this.props.match.params.projectId) {
+			this.props.fetchProject(this.props.match.params.projectId)
+		}
+	}
+
+	componentWillReceiveProps(newProps) {
+		this.setState(newProps.project)
+	}
+
 	update(field) {
 		return e => this.setState({[field]: e.target.value});
 	}
 
 	handleSubmit(e) {
 		e.preventDefault();
-		this.props.createProject(this.state)
+		this.props.processForm(this.state)
 		.then(() => this.props.history.push('/projects'));;
 	}
 

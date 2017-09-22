@@ -34,6 +34,7 @@ const App = () => (
       // More on passing functions to route component prop here:
       // https://stackoverflow.com/questions/33062830/using-react-router-with-a-layout-page-or-multiple-components-per-page
       <Route exact path="/projects/new" component={() =><div className="entire-project-body"><ProjectIndexContainer/><ProjectFormContainer/></div>} />
+      <Route exact path="/projects/:projectId/edit" component={() =><div className="entire-project-body"><ProjectIndexContainer/><ProjectFormContainer/></div>} />
     </Switch>
 </div>
 );

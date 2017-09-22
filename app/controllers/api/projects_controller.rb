@@ -26,6 +26,15 @@ class Api::ProjectsController < ApplicationController
 		end
 	end
 
+	def update
+		@project = current_user.projects.find_by(id: params[:id])
+		if @project.update_attributes(project_params)
+			render :show
+		else
+			render json: @project.errors.full_messages, status: 422
+		end
+	end
+
 	def destroy
 		@project = current_user.projects.find_by(id: params[:id])
 		if @project.destroy

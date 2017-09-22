@@ -21,6 +21,7 @@ class ProjectIndex extends React.Component {
 							<ProjectIndexItem
 								key={project.id}
 								deleteProject={this.props.deleteProject}
+								updateProject={this.props.updateProject}
 								project={project} />
 						))
 				  }
