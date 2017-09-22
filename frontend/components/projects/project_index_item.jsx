@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link, withRouter } from 'react-router-dom';
 
-const ProjectIndexItem = ({ project, router, deleteProject, updateProject, history}) => {
+const ProjectIndexItem = ({ project, deleteProject, updateProject, history}) => {
 	return (
 		<li>
 			<Link to={`/projects/${project.id}`}>

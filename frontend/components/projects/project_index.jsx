@@ -1,6 +1,5 @@
 import React from 'react';
 import ProjectIndexItem from './project_index_item'
-import ProjectFormContainer from './project_form_container'
 import { Link } from 'react-router-dom';
 
 class ProjectIndex extends React.Component {

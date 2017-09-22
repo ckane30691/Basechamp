@@ -32,6 +32,6 @@ export const udpateTodo = todo => (
 export const deleteTodo = id => (
 	$.ajax({
 		method: 'DELETE',
-		url: `api/todos/${todo.id}`
+		url: `api/todos/${id}`
 	})
 )

@@ -22,3 +22,5 @@ const TodosReducer = (state = {}, action) => {
 				return state;
 	}
 }
+
+export default TodosReducer

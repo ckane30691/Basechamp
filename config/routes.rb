@@ -6,7 +6,7 @@ Rails.application.routes.draw do
     resources :projects, except: %i(edit new) do
       resources :todos, only: %i(index create)
     end
-    resources :todos, only: %i(show update delete)
+    resources :todos, only: %i(show update destroy)
   end
 
   root 'static_pages#root'

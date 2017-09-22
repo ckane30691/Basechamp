@@ -35,7 +35,7 @@ class Api::TodosController < ApplicationController
 		end
 	end
 
-	def delete
+	def destroy
 		@todo = Todo.find_by(id: params[:id])
 		if @todo.destroy
 			render :show

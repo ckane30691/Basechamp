@@ -9,10 +9,10 @@ import {
 	updateProject
 } from '../../actions/project_actions'
 
-const mapStateToProps = (state, ownProps) => {
+const mapStateToProps = state => {
 	return {
 		projects: Object.keys(state.entities.projects)
-		.map(id => state.entities.projects[id]),
+		.map(id => state.entities.projects[id])
 	}
 };
 
