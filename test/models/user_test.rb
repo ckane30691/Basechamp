@@ -4,8 +4,8 @@
 #
 #  id              :integer          not null, primary key
 #  username        :string           not null
-#  fname           :string           not null
-#  lname           :string           not null
+#  fname           :string
+#  lname           :string
 #  password_digest :string           not null
 #  session_token   :string           not null
 #  created_at      :datetime         not null

@@ -4,8 +4,8 @@
 #
 #  id              :integer          not null, primary key
 #  username        :string           not null
-#  fname           :string           not null
-#  lname           :string           not null
+#  fname           :string
+#  lname           :string
 #  password_digest :string           not null
 #  session_token   :string           not null
 #  created_at      :datetime         not null
@@ -26,6 +26,11 @@ class User < ApplicationRecord
     primary_key: :id,
     foreign_key: :author_id,
     class_name: :Project
+
+  has_many :todos,
+    primary_key: :id,
+    foreign_key: :author_id,
+    class_name: :Todo
 
   def self.find_by_credentials(username, password)
     user = User.find_by(username: username)
