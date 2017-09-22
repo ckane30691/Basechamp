@@ -19,5 +19,5 @@ class Project < ApplicationRecord
 		foreign_key: :author_id,
 		class_name: :User
 
-	has_many :todos
+	has_many :todos, dependent: :destroy
 end

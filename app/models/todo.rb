@@ -12,7 +12,7 @@
 #
 
 class Todo < ApplicationRecord
-	validates :title, :author_id, presence: true
+	validates :title, :project_id, :author_id, presence: true
 
 	belongs_to :project
 
