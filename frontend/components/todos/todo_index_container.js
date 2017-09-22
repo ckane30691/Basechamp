@@ -1,5 +1,6 @@
 import { connect } from 'react-redux';
 import TodoIndex from './todo_index';
+import {fetchProject} from '../../actions/project_actions';
 
 import {
 	fetchTodos,
@@ -10,16 +11,17 @@ import {
 } from '../../actions/todo_actions'
 
 const mapStateToProps = (state, ownProps) => {
-	const projectId = ownProps.match.params.projectId
+	const project = state.entities.projects[ownProps.match.params.projectId]
 	return {
 		todos: Object.keys(state.entities.todos)
 		.map(id => state.entities.todos[id]),
-		projectId
+		project
 	}
 };
 
 const mapDispatchToProps = dispatch => ({
 	fetchTodos: projectId => dispatch(fetchTodos(projectId)),
+	fetchProject: projectId => dispatch(fetchProject(projectId)),
 	fetchTodo: id => dispatch(fetchTodo(id)),
 	createTodo: todo => dispatch(createTodo(todo)),
 	deleteTodo: id => dispatch(deleteTodo(id)),

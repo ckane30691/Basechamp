@@ -5,14 +5,18 @@ import { Link } from 'react-router-dom';
 class TodoIndex extends React.Component {
 
 	componentDidMount() {
-		this.props.fetchTodos(this.props.projectId)
+		this.props.fetchProject(this.props.match.params.projectId)
+		this.props.fetchTodos(this.props.match.params.projectId)
 	}
 
 	render() {
 
+		const title = this.props.project ? this.props.project.title : "";
+
 		return (
 			<div>
-				<Link to={`/projects/${this.props.projectId}/todos/new`}>
+				<Link to={`/projects/${this.props.match.params.projectId}`}>{title}</Link>
+				<Link to={`/projects/${this.props.match.params.projectId}/todos/new`}>
 					New
 				</Link>
 				<h2>To-dos</h2>
@@ -24,7 +28,7 @@ class TodoIndex extends React.Component {
 						key={todo.id}
 						deleteTodo={this.props.deleteTodo}
 						updateTodo={this.props.updateTodo}
-						projectId={this.props.projectId}
+						project={this.props.project}
 						todo={todo}	/>
 					))
 				}
