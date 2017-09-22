@@ -15,7 +15,7 @@ const ProjectIndexItem = ({ project, router, deleteProject, updateProject, histo
 				onClick={() => deleteProject(project.id)}>
 				X
 			</button>
-			<Link to={`/projects/${project.id}/edit`}>
+			<Link className="edit-project-btn" to={`/projects/${project.id}/edit`}>
 				Edit
 			</Link>
 		</li>
