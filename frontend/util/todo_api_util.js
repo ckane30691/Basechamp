@@ -21,7 +21,7 @@ export const createTodo = todo => (
 	})
 )
 
-export const udpateTodo = todo => (
+export const updateTodo = todo => (
 	$.ajax({
 		method: 'PATCH',
 		url: `api/todos/${todo.id}`,
