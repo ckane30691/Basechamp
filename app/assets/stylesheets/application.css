@@ -101,9 +101,11 @@
    font-size: 0.9em;
    font-weight: bold;
    text-decoration: none;
-   /*border: 1px solid #007bb6;*/
     padding: 0.50em 0.75em 0.50em 0.75em;
    border-radius: 3em;
+   border: 1px solid #bfbfbf;
+   border-bottom-width: 2px;
+   border-color: rgba(0,0,0,0.15);
    transition: all 0.2s ease;
  }
 
@@ -124,11 +126,13 @@
    width: 80px;
    font-size: .8em;
    font-weight: bold;
+   text-align: center;
   /*border: 1px solid #007bb6;*/
    padding: 0.50em 1.0em 0.50em 1.0em;
    border-radius: 0.5em;
-   border-color: #3cb371;
-   border-bottom-color: rgba(0,0,0,0.15);
+   border: 1px solid #bfbfbf;
+   border-bottom-width: 2px;
+   border-color: rgba(0,0,0,0.15);
    transition: all 0.2s ease;
    position: absolute;
    right: 70px
@@ -236,6 +240,9 @@
   box-sizing: border-box;
   position: relative;
   color: #283c46;
+  border: 1px solid #bfbfbf;
+  border-bottom-width: 2px;
+  border-color: rgba(0,0,0,0.15);
 }
 
 .project-desc {
@@ -261,8 +268,6 @@
   position: absolute;
   left: 160px;
   top: 95px;
-  border-color: rgba(0,0,0,0.15);
-  border-bottom-width: 2px;
   text-decoration: none;
   text-align: center;
   font-weight: bold;
@@ -273,6 +278,8 @@
   vertical-align: middle;
   background-color: #fff;
   border: 1px solid #bfbfbf;
+  border-color: rgba(0,0,0,0.15);
+  border-bottom-width: 2px;
 }
 
 .new-project-container {
@@ -308,8 +315,6 @@
   position: absolute;
   right: 10px;
   bottom: 10px;
-  border-color: rgba(0,0,0,0.15);
-  border-bottom-width: 2px;
   text-decoration: none;
   text-align: center;
   font-weight: bold;
@@ -320,6 +325,8 @@
   vertical-align: middle;
   background-color: #fff;
   border: 1px solid #bfbfbf;
+  border-color: rgba(0,0,0,0.15);
+  border-bottom-width: 2px;
 }
 
 .pti {
@@ -341,6 +348,9 @@
   font-weight: bold;
   color: white;
   padding: 10px;
+  border: 1px solid #bfbfbf;
+  border-bottom-width: 2px;
+  border-color: rgba(0,0,0,0.15);
 }
 
 .project-show-body {
@@ -371,6 +381,9 @@
   box-sizing: border-box;
   border-radius: 0.5em;
   position: relative;
+  border: 1px solid #bfbfbf;
+  border-bottom-width: 2px;
+  border-color: rgba(0,0,0,0.15);
 }
 
 .generic-show-title {
@@ -412,6 +425,43 @@
    margin-right: 5px;
    color: #3cb371;
  }
+
+ .new-todo-button {
+     background-color: #3cb371;
+     color: #fff;
+     width: 150px;
+     font-size: .8em;
+     font-weight: bold;
+     text-align: center;
+    /*border: 1px solid #007bb6;*/
+     padding: .9em .9em .9em .9em;
+     border-radius: 0.5em;
+     border: 1px solid #bfbfbf;
+     border-bottom-width: 2px;
+     border-color: rgba(0,0,0,0.15);
+     transition: all 0.2s ease;
+     position: absolute;
+     top: 20px;
+     left: 160px;
+ }
+
+ .todo-index-body {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+ }
+
+ .todo-index-container {
+    border-radius: 1.05em;
+    background-color: rgba(216,198,166,0.5);
+    width: 780px;
+    min-height: 500px;
+    position: relative;
+    text-align: center;
+    padding-top: 90px;
+ }
+
+
 
  .splash-signup {
    display: flex;
@@ -485,9 +535,11 @@ http://www.ultrawebsites.com/2013/11/just-one-css-class-for-darker-button-hover-
    color: #fff;
 	 font-size: 1em;
 	 font-weight: bold;
-	 /*border: 1px solid #007bb6;*/
    padding: 0.75em 0.75em 0.75em 0.75em;
 	 border-radius: 3em;
+   border: 1px solid #bfbfbf;
+   border-bottom-width: 2px;
+   border-color: rgba(0,0,0,0.15);
 	 transition: all 0.2s ease;
 	 position: absolute;
 	 bottom: 25px;
@@ -532,11 +584,11 @@ http://www.ultrawebsites.com/2013/11/just-one-css-class-for-darker-button-hover-
    width: 75%;
 	 font-size: 1em;
 	 font-weight: bold;
-	 /*border: 1px solid #007bb6;*/
    padding: 0.75em 0.75em 0.75em 0.75em;
 	 border-radius: 0.5em;
-   border-color: #3cb371;
-   border-bottom-color: rgba(0,0,0,0.15);
+   border: 1px solid #bfbfbf;
+   border-bottom-width: 2px;
+   border-color: rgba(0,0,0,0.15);
 	 transition: all 0.2s ease;
 	 position: absolute;
 	 bottom: 25px;

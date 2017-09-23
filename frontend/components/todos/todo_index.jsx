@@ -14,25 +14,28 @@ class TodoIndex extends React.Component {
 		const title = this.props.project ? this.props.project.title : "";
 
 		return (
-			<div>
-				<Link to={`/projects/${this.props.match.params.projectId}`}>{title}</Link>
-				<Link to={`/projects/${this.props.match.params.projectId}/todos/new`}>
-					New
-				</Link>
-				<h2>To-dos</h2>
+			<div className="todo-index-body">
+				<Link className="project-title" to={`/projects/${this.props.match.params.projectId}`}>{title}</Link>
+				<div className="todo-index-container">
+					<Link className="delete-project-btn" to={`/projects/${this.props.match.params.projectId}`}>X</Link>
+					<Link className='new-todo-button' to={`/projects/${this.props.match.params.projectId}/todos/new`}>
+						Make another Todo
+					</Link>
+					<h2>To-dos</h2>
 
-			<ul className='todo-list'>
-				{
-					this.props.todos.map(todo => (
-					<TodoIndexItem
-						key={todo.id}
-						deleteTodo={this.props.deleteTodo}
-						updateTodo={this.props.updateTodo}
-						project={this.props.project}
-						todo={todo}	/>
-					))
-				}
-			</ul>
+					<ul className='todo-list'>
+						{
+							this.props.todos.map(todo => (
+							<TodoIndexItem
+								key={todo.id}
+								deleteTodo={this.props.deleteTodo}
+								updateTodo={this.props.updateTodo}
+								project={this.props.project}
+								todo={todo}	/>
+							))
+						}
+					</ul>
+				</div>
 			</div>
 		)
 	}
