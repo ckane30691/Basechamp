@@ -4,8 +4,8 @@ import { Link } from 'react-router-dom';
 class TodoShow extends React.Component {
 
 	componentDidMount() {
-		this.props.fetchTodo(this.props.match.params.projectId);
-		this.props.fetchProject(this.props.match.params.todoId);
+		this.props.fetchTodo(this.props.match.params.todoId);
+		this.props.fetchProject(this.props.match.params.projectId);
 	}
 
 	render() {
