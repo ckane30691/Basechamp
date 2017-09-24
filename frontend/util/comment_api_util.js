@@ -8,7 +8,7 @@ export const fetchComments = messageId => (
 export const createComment = comment => (
 	$.ajax({
 		method: 'POST',
-		url: `api/messages/${comment.message_id}/comments`
+		url: `api/messages/${comment.message_id}/comments`,
 		data: {comment}
 	})
 );
