@@ -12,19 +12,29 @@ class TodoShow extends React.Component {
 		const title = this.props.project ? this.props.project.title : "";
 		const todo = this.props.todo ? this.props.todo : {title: "", body: ""};
 		return (
-			<div>
-				<div>
-					<Link
-						to={`/projects/${this.props.match.params.projectId}`}>
-						{title}
-					</Link>
-					<div>
-						<Link to={`/projects/${this.props.match.params.projectId}/todos`}>
-							To-dos
+			<div className="todo-index-body">
+				<Link
+					className="project-title"
+					to={`/projects/${this.props.match.params.projectId}`}>
+					{title}
+				</Link>
+				<div className="todo-index-container">
+						<Link
+							className="delete-project-btn"
+							to={`/projects/${this.props.match.params.projectId}/todos`}>
+							X
+						</Link>
+						<Link
+							className="feature-header"
+							to={`/projects/${this.props.match.params.projectId}/todos`}>
+							To-do
+						</Link>
+						<Link
+							to={`/projects/${this.props.match.params.projectId}/todos/${this.props.match.params.todoId}/edit`}>
+							Edit
 						</Link>
 						<h3>{todo.title}</h3>
 						<p>{todo.body}</p>
-					</div>
 				</div>
 			</div>
 		)
