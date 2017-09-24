@@ -1,6 +1,4 @@
 import * as APIUtil from '../util/todo_api_util';
-import { fetchProject } from '../util/project_api_util';
-import { receiveProject, receiveProjectErrors } from './project_actions'
 
 export const RECEIVE_TODOS = "RECEIVE_TODOS";
 export const RECEIVE_TODO = "RECEIVE_TODO";
