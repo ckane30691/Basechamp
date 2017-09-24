@@ -4,7 +4,7 @@ import { Link, withRouter } from 'react-router-dom';
 const TodoIndexItem = ({todo, deleteTodo, updateTodo, project}) => {
 	return (
 		<li>
-			<Link className='todo-title' to={`/todos/${todo.id}`}>
+			<Link className='todo-title' to={`/projects/${todo.project_id}/todos/${todo.id}`}>
 				{todo.title}
 			</Link>
 			<h2 className='todo-body'>{todo.body}</h2>

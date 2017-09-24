@@ -9,6 +9,7 @@ import Splash from './greeting/splash.jsx';
 import ProjectShowContainer from './projects/project_show_container';
 import TodoIndexContainer from './todos/todo_index_container';
 import TodoFormContainer from './todos/todo_form_container';
+import TodoShowContainer from './todos/todo_show_container';
 
 import {
   Route,
@@ -44,6 +45,7 @@ const App = () => (
       <ProtectedRoute exact path="/projects/:projectId/edit" component={() => <div className="entire-project-body"><ProjectIndexContainer/><ProjectFormContainer/></div>} />
       <ProtectedRoute exact path="/projects/:projectId/todos" component={TodoIndexContainer} />
       <ProtectedRoute exact path="/projects/:projectId/todos/new" component={TodoFormContainer} />
+      <ProtectedRoute exact path="/projects/:projectId/todos/:todoId" component={TodoShowContainer} />
       <ProtectedRoute exact path="/projects/:projectId/todos/:todoId/edit" component={TodoFormContainer} />
     </Switch>
 </div>
