@@ -35,11 +35,13 @@ class TodoForm extends React.Component {
 		let todoTitle = this.props.todo ? this.state.title : "";
 		let projectTitle = this.props.project ? this.props.project.title : "";
 		let body = this.props.todo ? this.state.body : "";
-		let path = this.props.todo ? `/projects/${this.props.todo.project_id}/todos` : "";
+		let indexPath = this.props.todo ? `/projects/${this.props.todo.project_id}/todos` : "";
+		let projectPath = this.props.todo ? `/projects/${this.props.todo.project_id}` : "";
 		return(
 			<div className="todo-index-body">
-				<h2 className="project-title">{projectTitle}</h2>
+				<Link to={projectPath} className="project-title">{projectTitle}</Link>
 				<form className="todo-index-container" onSubmit={this.handleSubmit}>
+					<Link to={indexPath} className="feature-header">To-dos</Link>
 					<input className="todo-title-input" type="text"
 						value={todoTitle}
 						onChange={this.update('title')}
@@ -47,16 +49,16 @@ class TodoForm extends React.Component {
 
 					<br/>
 
-					<input className="todo-body-input" type="text"
+					<textarea className="todo-body-input" type="text"
 						value={body}
 						onChange={this.update('body')}
 						placeholder="Enter a description"/>
 
 					<input className="todo-submit" type="submit" value="Add to todo" />
+					<Link className="delete-project-btn" to={indexPath}>
+						X
+					</Link>
 				</form>
-				<Link to={path}>
-					X
-				</Link>
 		</div>
 		)
 	}
