@@ -8,10 +8,10 @@ import {
 	createTodo,
 	deleteTodo,
 	updateTodo
-} from '../../actions/todo_actions'
+} from '../../actions/todo_actions';
 
 const mapStateToProps = (state, ownProps) => {
-	const project = state.entities.projects[ownProps.match.params.projectId]
+	const project = state.entities.projects[ownProps.match.params.projectId];
 	return {
 		todos: Object.keys(state.entities.todos)
 		.map(id => state.entities.todos[id]),

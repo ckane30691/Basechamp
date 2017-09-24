@@ -24,13 +24,16 @@ class ProjectShow extends React.Component {
 					</div>
 
 					<div className="generic-show-container">
-						<h1 className="generic-show-title">Comming Soon</h1>
+						<Link to={`/projects/${this.props.match.params.projectId}/messages`} className="generic-show-title">
+							Message Board
+						</Link>
 						<hr />
 						<img className="generic-show-img" src="https://s3-us-west-1.amazonaws.com/basechamp/todos_icon.png" />
+						<p className="generic-show-desc">Post announcements, pitch ideas, & keep feedback on topic</p>
 					</div>
 
 					<div className="generic-show-container">
-						<h1 className="generic-show-title">Comming Soon</h1>
+						<h1 className="generic-show-title">Coming Soon</h1>
 						<hr />
 						<img className="generic-show-img" src="https://s3-us-west-1.amazonaws.com/basechamp/calendar_icon.png" />
 					</div>
