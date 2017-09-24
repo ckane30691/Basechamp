@@ -44,7 +44,7 @@ const App = () => (
       <ProtectedRoute exact path="/projects/:projectId/edit" component={() => <div className="entire-project-body"><ProjectIndexContainer/><ProjectFormContainer/></div>} />
       <ProtectedRoute exact path="/projects/:projectId/todos" component={TodoIndexContainer} />
       <ProtectedRoute exact path="/projects/:projectId/todos/new" component={TodoFormContainer} />
-      <ProtectedRoute exact path="/todos/:todoId/edit" component={TodoFormContainer} />
+      <ProtectedRoute exact path="/projects/:projectId/todos/:todoId/edit" component={TodoFormContainer} />
     </Switch>
 </div>
 );

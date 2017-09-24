@@ -4,20 +4,17 @@ import { Link, withRouter } from 'react-router-dom';
 class TodoForm extends React.Component {
 	constructor(props) {
 		super(props);
-		this.state = this.props.todo;
+		this.state = this.props.todo
 		this.handleSubmit = this.handleSubmit.bind(this);
 	}
 
 	componentWillMount() {
 		if (this.props.match.params.todoId) {
 			this.props.fetchTodo(this.props.match.params.todoId)
+			this.props.fetchProject(this.props.match.params.projectId)
 		} else {
 			this.props.fetchProject(this.props.match.params.projectId)
 		}
-	}
-
-	componentWillReceiveProps(nextProps) {
-		this.props.fetchProject(nextProps.todo.project_id)
 	}
 
 	componentWillReceiveProps(newProps) {
@@ -35,25 +32,27 @@ class TodoForm extends React.Component {
 	}
 
 	render() {
-		let title = this.props.todo ? this.state.title : "";
+		let todoTitle = this.props.todo ? this.state.title : "";
+		let projectTitle = this.props.project ? this.props.project.title : "";
 		let body = this.props.todo ? this.state.body : "";
 		let path = this.props.todo ? `/projects/${this.props.todo.project_id}/todos` : "";
 		return(
-			<div>
-				<form onSubmit={this.handleSubmit}>
-					<input type="text"
-						value={title}
+			<div className="todo-index-body">
+				<h2 className="project-title">{projectTitle}</h2>
+				<form className="todo-index-container" onSubmit={this.handleSubmit}>
+					<input className="todo-title-input" type="text"
+						value={todoTitle}
 						onChange={this.update('title')}
 						placeholder="Name this to-do" />
 
 					<br/>
 
-					<input type="text"
+					<input className="todo-body-input" type="text"
 						value={body}
 						onChange={this.update('body')}
 						placeholder="Enter a description"/>
 
-					<input type="submit" value="Save" />
+					<input className="todo-submit" type="submit" value="Add to todo" />
 				</form>
 				<Link to={path}>
 					X

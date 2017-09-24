@@ -529,6 +529,50 @@
   margin-top: 10px;
 }
 
+.todo-title-input {
+  transition: all 0.2s ease;
+  display: block;
+  margin-bottom: 0.75em;
+  padding: 0.75em 0.6em;
+  width: 75%;
+  background-color: #fff;
+  border: 2px solid #bfbfbf;
+  font-size: 1.0rem;
+  font-family: monospace;
+  position: absolute;
+  left: 45px;
+  top: 60px;
+}
+
+.todo-body-input {
+  transition: all 0.2s ease;
+  display: block;
+  margin-bottom: 0.75em;
+  padding: 0.75em 0.6em;
+  width: 75%;
+  background-color: #fff;
+  border: 2px solid #bfbfbf;
+  font-size: 1.0rem;
+  font-family: monospace;
+}
+
+.todo-submit {
+  background-color: #3cb371;
+  color: #fff;
+  width: 120px;
+  font-size: .8em;
+  font-weight: bold;
+  text-align: center;
+  padding: .9em .9em .9em .9em;
+  border-radius: 0.5em;
+  border: 1px solid #bfbfbf;
+  border-bottom-width: 2px;
+  border-color: rgba(0,0,0,0.15);
+  transition: all 0.2s ease;
+  position: absolute;
+  box-sizing: border-box;
+}
+
  .splash-signup {
    display: flex;
    align-items: center;
