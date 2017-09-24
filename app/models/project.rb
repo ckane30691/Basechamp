@@ -20,4 +20,5 @@ class Project < ApplicationRecord
 		class_name: :User
 
 	has_many :todos, dependent: :destroy
+	has_many :messages, dependent: :destroy
 end
