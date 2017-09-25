@@ -29,12 +29,14 @@ class TodoShow extends React.Component {
 							to={`/projects/${this.props.match.params.projectId}/todos`}>
 							To-do
 						</Link>
-						<Link
+						<div className="todo-show">
+						<Link className="todo-edit-btn"
 							to={`/projects/${this.props.match.params.projectId}/todos/${this.props.match.params.todoId}/edit`}>
 							Edit
 						</Link>
 						<h3>{todo.title}</h3>
 						<p>{todo.body}</p>
+					</div>
 				</div>
 			</div>
 		)

@@ -579,6 +579,38 @@
   box-sizing: border-box;
 }
 
+.todo-show {
+  background-color: #fff;
+  border: 1px solid #bfbfbf;
+  border-bottom-width: 2px;
+  border-color: rgba(0,0,0,0.15);
+  position: relative;
+  width: 450px;
+  align-self: center;
+  border-radius: 1.1em;
+  padding: 25px;
+  padding-bottom: 50px;
+}
+
+.message-show {
+  background-color: #fff;
+  border: 1px solid #bfbfbf;
+  border-bottom-width: 2px;
+  border-color: rgba(0,0,0,0.15);
+  position: relative;
+  width: 600px;
+  align-self: center;
+  border-radius: 1.1em;
+  padding: 25px;
+  padding-bottom: 50px;
+
+}
+
+.message-author {
+  color: #877457;
+  font-size: .8em;
+}
+
  .splash-signup {
    display: flex;
    align-items: center;

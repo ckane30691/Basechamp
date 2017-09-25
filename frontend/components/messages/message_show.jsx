@@ -33,13 +33,15 @@ class MessageShow extends React.Component {
 							to={`/projects/${this.props.match.params.projectId}/messages`}>
 							Message
 						</Link>
-						<Link
-							to={`/projects/${this.props.match.params.projectId}/messages/${this.props.match.params.messageId}/edit`}>
-							Edit
-						</Link>
-						<h3>Posted By: {message.author} • {(date.getMonth() + 1) + "/" + date.getDate() + "/" + date.getFullYear()}</h3>
-						<h3>{message.title}</h3>
-						<p>{message.body}</p>
+						<div className="message-show">
+							<Link className="todo-edit-btn"
+								to={`/projects/${this.props.match.params.projectId}/messages/${this.props.match.params.messageId}/edit`}>
+								Edit
+							</Link>
+							<h3 className="message-author">{message.author} • {(date.getMonth() + 1) + "/" + date.getDate() + "/" + date.getFullYear()}</h3>
+							<h3>{message.title}</h3>
+							<p>{message.body}</p>
+					</div>
 				</div>
 			</div>
 		)
