@@ -4,7 +4,7 @@ import { Link, withRouter } from 'react-router-dom';
 class TodoForm extends React.Component {
 	constructor(props) {
 		super(props);
-		this.state = this.props.todo
+		this.state = this.props.todo;
 		this.handleSubmit = this.handleSubmit.bind(this);
 	}
 
@@ -37,6 +37,7 @@ class TodoForm extends React.Component {
 		let body = this.props.todo ? this.state.body : "";
 		let indexPath = this.props.todo ? `/projects/${this.props.todo.project_id}/todos` : "";
 		let projectPath = this.props.todo ? `/projects/${this.props.todo.project_id}` : "";
+		
 		return(
 			<div className="todo-index-body">
 				<Link to={projectPath} className="project-title">{projectTitle}</Link>

@@ -19,20 +19,24 @@ class MessageIndex extends React.Component {
 				</Link>
 				<div className="todo-index-container">
 					<Link className="delete-project-btn" to={`/projects/${this.props.match.params.projectId}`}>X</Link>
+
+					<Link className='new-todo-button' to={`/projects/${this.props.match.params.projectId}/messages/new`}>
+						Post a message
+					</Link>
 					<h2 className="feature-header">Message Board</h2>
 
-				<ul className='todo-list'>
-					{
-						this.props.messages.map(message => (
-							<MessageIndexItem
-								key={message.id}
-								deleteMessage={this.props.deleteMessage}
-								updateMessage={this.props.updateMessage}
-								project={this.props.project}
-								message={message} />
-						))
-					}
-				</ul>
+					<ul className='todo-list'>
+						{
+							this.props.messages.map(message => (
+								<MessageIndexItem
+									key={message.id}
+									deleteMessage={this.props.deleteMessage}
+									updateMessage={this.props.updateMessage}
+									project={this.props.project}
+									message={message} />
+							))
+						}
+					</ul>
 				</div>
 			</div>
 		)

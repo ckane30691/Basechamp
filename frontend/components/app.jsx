@@ -11,6 +11,7 @@ import TodoIndexContainer from './todos/todo_index_container';
 import TodoFormContainer from './todos/todo_form_container';
 import TodoShowContainer from './todos/todo_show_container';
 import MessageIndexContainer from './messages/message_index_container';
+import MessageFormContainer from './messages/message_form_container';
 
 import {
   Route,
@@ -45,10 +46,12 @@ const App = () => (
       <ProtectedRoute exact path="/projects/:projectId" component={ProjectShowContainer} />
       <ProtectedRoute exact path="/projects/:projectId/edit" component={() => <div className="entire-project-body"><ProjectIndexContainer/><ProjectFormContainer/></div>} />
       <ProtectedRoute exact path="/projects/:projectId/todos" component={TodoIndexContainer} />
-      <ProtectedRoute exact path="/projects/:projectId/messages" component={MessageIndexContainer} />
       <ProtectedRoute exact path="/projects/:projectId/todos/new" component={TodoFormContainer} />
       <ProtectedRoute exact path="/projects/:projectId/todos/:todoId" component={TodoShowContainer} />
       <ProtectedRoute exact path="/projects/:projectId/todos/:todoId/edit" component={TodoFormContainer} />
+      <ProtectedRoute exact path="/projects/:projectId/messages" component={MessageIndexContainer} />
+      <ProtectedRoute exact path="/projects/:projectId/messages/new" component={MessageFormContainer} />
+      <ProtectedRoute exact path="/projects/:projectId/messages/:messageId/edit" component={MessageFormContainer} />
     </Switch>
 </div>
 );
