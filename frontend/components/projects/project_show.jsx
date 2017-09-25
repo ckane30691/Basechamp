@@ -14,23 +14,23 @@ class ProjectShow extends React.Component {
 				<div className="project-show-body">
 					<h1 className='project-title'>{title}</h1>
 					<br/>
-					<div className="generic-show-container">
-						<Link className="generic-show-title" to={`/projects/${this.props.match.params.projectId}/todos`}>
-							To-dos
-						</Link>
-						<hr/>
-						<img className="generic-show-img" src="https://s3-us-west-1.amazonaws.com/basechamp/checkmark.png" />
-						<p className="generic-show-desc">Make lists of work that needs to get done.</p>
-					</div>
+					<Link to={`/projects/${this.props.match.params.projectId}/todos`}>
+						<div className="generic-show-container">
+								<p className="generic-show-title">To-dos</p>
+							<hr/>
+							<img className="generic-show-img" src="https://s3-us-west-1.amazonaws.com/basechamp/checkmark.png" />
+							<p className="generic-show-desc">Make lists of work that needs to get done.</p>
+						</div>
+					</Link>
 
-					<div className="generic-show-container">
-						<Link to={`/projects/${this.props.match.params.projectId}/messages`} className="generic-show-title">
-							Message Board
-						</Link>
-						<hr />
-						<img className="generic-show-img" src="https://s3-us-west-1.amazonaws.com/basechamp/todos_icon.png" />
-						<p className="generic-show-desc">Post announcements, pitch ideas, & keep feedback on topic</p>
-					</div>
+					<Link to={`/projects/${this.props.match.params.projectId}/messages`}>
+						<div className="generic-show-container">
+								<p  className="generic-show-title">Message Board</p>
+							<hr />
+							<img className="generic-show-img" src="https://s3-us-west-1.amazonaws.com/basechamp/todos_icon.png" />
+							<p className="generic-show-desc">Post announcements, pitch ideas, & keep feedback on topic</p>
+						</div>
+				 </Link>
 
 					<div className="generic-show-container">
 						<h1 className="generic-show-title">Coming Soon</h1>

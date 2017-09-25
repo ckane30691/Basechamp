@@ -1,3 +1,241 @@
 // Place all the styles related to the api/projects controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+ .entire-project-body {
+   position: relative;
+ }
+
+ .project-idx-container {
+   text-align: center;
+   padding-left: 200px;
+   padding-right: 200px;
+   padding-top: 100px;
+   padding-bottom: 100px;
+   position: relative;
+ }
+
+ .project-idx-container:before {
+   content: '';
+   position: absolute;
+   top: 115px;
+   left: 200px;
+   right: 200px;
+   border-bottom: 1px solid rgba(0,0,0,0.1);
+   z-index: -1;
+ }
+
+ .project-idx-container h2 {
+   color:  #877457;
+   font-size: 1.3em;
+   font-family: "helvetica";
+   background: #f5efe6;
+   display: inline-flex;
+   margin-bottom: 30px;
+}
+
+.project-list {
+  display: flex;
+  justify-content: space-around;
+  align-content: center;
+  flex-wrap: wrap;
+}
+
+.project-list li {
+  background-color: #fff;
+  height: 200px;
+  width: 300px;
+  font-weight: bold;
+  text-align: left;
+  border-radius: 0.4rem;
+  margin-bottom: 20px;
+  padding-top: 30px;
+  padding-left: 20px;
+  padding-right: 30px;
+  box-sizing: border-box;
+  position: relative;
+  color: #283c46;
+  border: 1px solid #bfbfbf;
+  border-bottom-width: 2px;
+  border-color: rgba(0,0,0,0.15);
+}
+
+.project-desc {
+  font-size: 0.8em;
+  margin-top: 5px;
+  font-weight: 500;
+}
+
+.delete-project-btn {
+  position: absolute;
+  font-weight: bold;
+  color: red;
+  right: 12px;
+  top: 10px;
+  z-index: 1;
+}
+
+.project-new-button {
+  padding-left: 5px;
+  padding-right: 8px;
+  padding-top: 0;
+  padding-bottom: 0;
+  border-radius: 0.4rem;
+  position: absolute;
+  left: 160px;
+  top: 95px;
+  text-decoration: none;
+  text-align: center;
+  font-weight: bold;
+  color: #283c46;
+  display: inline-block;
+  line-height: 1.5;
+  white-space: normal;
+  vertical-align: middle;
+  background-color: #fff;
+  border: 1px solid #bfbfbf;
+  border-color: rgba(0,0,0,0.15);
+  border-bottom-width: 2px;
+}
+
+.new-project-container {
+  background-color: #fff;
+  border-radius: 0.4rem;
+  padding: 20px;
+  width: 270px;
+  height: 180px;
+  position: absolute;
+  left: 200px;
+  top: 145px;
+  border: 1px solid #bfbfbf;
+  border-color: rgba(0,0,0,0.15);
+  border-bottom-width: 2px;
+}
+
+.project-input {
+  transition: all 0.2s ease;
+  display: block;
+  width: 250px;
+  margin-bottom: 5px;
+  padding: 0.75em 0.6em;
+  background-color: #fff;
+  border: 2px solid #bfbfbf;
+  font-size: 1rem;
+  font-family: monospace;
+  position: absolute;
+}
+
+.edit-project-btn {
+  padding-left: 5px;
+  padding-right: 8px;
+  padding-top: 0;
+  padding-bottom: 0;
+  border-radius: 0.4rem;
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+  text-decoration: none;
+  text-align: center;
+  font-weight: bold;
+  color: #283c46;
+  display: inline-block;
+  line-height: 1.5;
+  white-space: normal;
+  vertical-align: middle;
+  background-color: #fff;
+  border: 1px solid #bfbfbf;
+  border-color: rgba(0,0,0,0.15);
+  border-bottom-width: 2px;
+}
+
+.pti {
+  left: 20px;
+  top: 40px;
+}
+
+.pdi {
+  left: 20px;
+  bottom: 70px;
+}
+
+.project-submit {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  background-color: #3cb371;
+  border-radius: 0.4rem;
+  font-weight: bold;
+  color: white;
+  padding: 10px;
+  border: 1px solid #bfbfbf;
+  border-bottom-width: 2px;
+  border-color: rgba(0,0,0,0.15);
+}
+
+.project-show-body {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding-left: 200px;
+  padding-right: 200px;
+  padding-top: 100px;
+}
+
+.project-title {
+  font-size: 1.5em;
+  color: #283c46;
+  font-weight: bold;
+  flex: 0 0 100%;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.generic-show-container {
+  width: 260px;
+  height: 260px;
+  text-align: center;
+  color: #283c46;
+  background-color: #fff;
+  padding: 25px;
+  box-sizing: border-box;
+  border-radius: 0.5em;
+  position: relative;
+  border: 1px solid #bfbfbf;
+  border-bottom-width: 2px;
+  border-color: rgba(0,0,0,0.15);
+}
+
+.generic-show-title {
+  font-size: 1.17em;
+  font-weight: bold;
+}
+
+.generic-show-img {
+  height: 95px;
+  width: 95px;
+  position: absolute;
+  left: 85px;
+}
+
+.generic-show-desc {
+  font-size: .8em;
+  position: absolute;
+  bottom: 30px;
+  left: 10px;
+  padding-right: 10px;
+}
+
+.show-footer {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-left: 340px;
+  padding-right: 340px;
+  color: #283c46;
+  text-align: center;
+}
+
+.footer-desc {
+  font-size: .8em;
+}

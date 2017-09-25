@@ -1,3 +1,69 @@
 // Place all the styles related to the api/comments controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+.comment-form-container {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  margin-bottom: 80px;
+}
+
+.comment-input {
+  transition: all 0.2s ease;
+  display: block;
+  margin-bottom: 0.75em;
+  padding: 0.75em 0.6em;
+  width: 760px;
+  background-color: #fff;
+  border: 2px solid #283c46;
+  font-size: 1.0rem;
+  font-family: monospace;
+}
+
+.comment-submit {
+  background-color: #3cb371;
+  color: #fff;
+  width: 150px;
+  font-size: .8em;
+  font-weight: bold;
+  padding: 0.75em 0.75em 0.75em 0.75em;
+  border-radius: 0.5em;
+  border: 1px solid #bfbfbf;
+  border-bottom-width: 2px;
+  border-color: rgba(0,0,0,0.15);
+  transition: all 0.2s ease;
+  position: absolute;
+  text-align: center;
+  left: 360px
+}
+
+.comment-index-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-left: 360px;
+  color: #283c46;
+  margin-top: -75px;
+	flex-wrap: wrap;
+}
+
+.comment-index-container li {
+  margin-bottom: 25px;
+	min-width: 400px;
+	max-width: 780px;
+	padding-right: 25px;
+	padding-top: 40px;
+	padding-left: 25px;
+	padding-bottom: 0px;
+	background-color: #fff;
+  border: 1px solid #bfbfbf;
+  border-bottom-width: 2px;
+  border-color: rgba(0,0,0,0.15);
+  position: relative;
+  border-radius: 1.1em;
+	box-sizing: border-box;
+}
+
+.comment-index-container p {
+	font-weight: bold;
+}

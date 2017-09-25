@@ -1,3 +1,158 @@
 // Place all the styles related to the api/todos controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+.todo-list li {
+  position: relative;
+  background-color: #fff;
+  width: 685px;
+  min-height: 105px;
+  padding: 25px;
+  padding-right: 100px;
+  border-radius: 1.2em;
+  border: 1px solid #bfbfbf;
+  border-bottom-width: 2px;
+  border-color: rgba(0,0,0,0.15);
+  margin-bottom: 25px;
+}
+
+.todo-edit-btn {
+  padding-left: 8px;
+  padding-right: 8px;
+  padding-top: 0;
+  padding-bottom: 0;
+  border-radius: 0.4rem;
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+  text-decoration: none;
+  text-align: center;
+  font-weight: bold;
+  color: #283c46;
+  display: inline-block;
+  line-height: 1.5;
+  white-space: normal;
+  vertical-align: middle;
+  background-color: #fff;
+  border: 1px solid #bfbfbf;
+  border-color: rgba(0,0,0,0.15);
+  border-bottom-width: 2px;
+}
+
+.todo-title {
+  color: #1b6ac9;
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+.todo-body {
+  font-size: 0.9em;
+  margin-left: 10px;
+  margin-top: 10px;
+}
+
+.todo-title-input {
+  transition: all 0.2s ease;
+  display: block;
+  margin-bottom: 0.75em;
+  padding: 0.75em 0.6em;
+  width: 500px;
+  background-color: #fff;
+  border: 2px solid #bfbfbf;
+  font-size: 1.0rem;
+  font-family: monospace;
+  position: absolute;
+  bottom: 330px;
+}
+
+.todo-body-input {
+  transition: all 0.2s ease;
+  display: block;
+  margin-bottom: 0.75em;
+  padding: 0.75em 0.6em;
+  width: 500px;
+  height: 200px;
+  background-color: #fff;
+  border: 2px solid #bfbfbf;
+  font-size: 1.0rem;
+  font-family: monospace;
+  position: absolute;
+  bottom: 110px;
+}
+
+.todo-submit {
+  background-color: #3cb371;
+  color: #fff;
+  width: 120px;
+  font-size: .8em;
+  font-weight: bold;
+  text-align: center;
+  padding: .9em .9em .9em .9em;
+  border-radius: 0.5em;
+  border: 1px solid #bfbfbf;
+  border-bottom-width: 2px;
+  border-color: rgba(0,0,0,0.15);
+  transition: all 0.2s ease;
+  position: absolute;
+  bottom: 50px;
+  box-sizing: border-box;
+}
+
+.todo-show {
+  background-color: #fff;
+  border: 1px solid #bfbfbf;
+  border-bottom-width: 2px;
+  border-color: rgba(0,0,0,0.15);
+  position: relative;
+  width: 450px;
+  align-self: center;
+  border-radius: 1.1em;
+  padding: 25px;
+  padding-bottom: 50px;
+}
+
+.new-todo-button {
+		background-color: #3cb371;
+		color: #fff;
+		width: 185px;
+		font-size: .8em;
+		font-weight: bold;
+		text-align: center;
+	 /*border: 1px solid #007bb6;*/
+		padding: .9em .9em .9em .9em;
+		border-radius: 0.5em;
+		border: 1px solid #bfbfbf;
+		border-bottom-width: 2px;
+		border-color: rgba(0,0,0,0.15);
+		transition: all 0.2s ease;
+		position: absolute;
+		top: 130px;
+		left: 300px;
+		box-sizing: border-box;
+}
+
+.todo-index-body {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.todo-index-container {
+	 border-radius: 1.05em;
+	 background-color: #fff;
+	 width: 780px;
+	 min-height: 550px;
+	 position: relative;
+	 text-align: left;
+	 padding-top: 80px;
+	 padding-left: 50px;
+	 padding-right: 50px;
+	 box-sizing: border-box;
+	 display: flex;
+	 flex-direction: column;
+	 align-items: flex-start;
+	 margin-bottom: 100px;
+	 padding-bottom: 50px;
+	 border: 1px solid #bfbfbf;
+	 border-bottom-width: 2px;
+	 border-color: rgba(0,0,0,0.15);
+}

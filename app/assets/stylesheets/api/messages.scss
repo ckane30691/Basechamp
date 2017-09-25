@@ -1,3 +1,39 @@
 // Place all the styles related to the api/messages controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+.message-show {
+  background-color: #fff;
+  border: 1px solid #bfbfbf;
+  border-bottom-width: 2px;
+  border-color: rgba(0,0,0,0.15);
+  position: relative;
+  width: 600px;
+  align-self: center;
+  border-radius: 1.1em;
+  padding: 25px;
+  padding-bottom: 50px;
+
+}
+
+.message-author {
+  color: #877457;
+  font-size: .8em;
+}
+
+.message-submit {
+  background-color: #3cb371;
+  color: #fff;
+  width: 175px;
+  font-size: .8em;
+  font-weight: bold;
+  text-align: center;
+  padding: .9em .9em .9em .9em;
+  border-radius: 0.5em;
+  border: 1px solid #bfbfbf;
+  border-bottom-width: 2px;
+  border-color: rgba(0,0,0,0.15);
+  transition: all 0.2s ease;
+  position: absolute;
+  bottom: 50px;
+  box-sizing: border-box;
+}

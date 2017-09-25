@@ -6,9 +6,9 @@ const ProjectIndexItem = ({ project, deleteProject, updateProject, history}) => 
 		<li>
 			<Link to={`/projects/${project.id}`}>
 				{project.title}
-			</Link>
 			<hr/>
 			<p className="project-desc">{project.description}</p>
+		</Link>
 
 			<button
 				className="delete-project-btn"
