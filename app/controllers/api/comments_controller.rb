@@ -11,16 +11,16 @@ class Api::CommentsController < ApplicationController
 		@comment.message_id = params[:message_id]
 		@comment.author_id = current_user.id
 		if @comment.save
-			render :index
+			render :show
 		else
 			render json: @comment.errors.full_messages, status: 422
 		end
 	end
 
 	def destroy
-		@comment = current_user.find_by(id: params[:id])
+		@comment = current_user.comments.find_by(id: params[:id])
 		if @comment.destroy
-			render :index
+			render :show
 		else
 			render json: ["You are not the author of this message"], status: 403
 		end
@@ -29,6 +29,6 @@ class Api::CommentsController < ApplicationController
 	private
 
 	def comment_params
-		params.require(:message).permit(:body)
+		params.require(:comment).permit(:body)
 	end
 end
