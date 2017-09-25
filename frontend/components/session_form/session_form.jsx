@@ -61,16 +61,16 @@ class SessionForm extends React.Component {
         <form onSubmit={this.handleSubmit}
           className={`${this.props.formType}-form-box`}>
           {passage}
-
+          <div className="errors">{this.renderErrors()}</div>
           <div className="session-form">
             <br />
-              <input type="text"
+              <input required type="text"
                 value={this.state.username}
                 onChange={this.update('username')}
                 className={`session-${this.props.formType}-input`}
                 placeholder="Enter Username" />
           <br />
-               <input type="password"
+               <input required type="password"
                  value={this.state.password}
                  onChange={this.update('password')}
                  className="password-input"

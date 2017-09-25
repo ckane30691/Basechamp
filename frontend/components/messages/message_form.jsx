@@ -44,12 +44,12 @@ class MessageForm extends React.Component {
 				<form className="todo-index-container" onSubmit={this.handleSubmit}>
 					<Link to={indexPath} className="feature-header">Messages</Link>
 
-					<input className="todo-title-input" type="text"
+					<input required className="todo-title-input" type="text"
 						value={messageTitle}
 						onChange={this.update('title')}
 						placeholder="Title..." />
 
-					<textarea className="todo-body-input" type="text"
+					<textarea required className="todo-body-input" type="text"
 						value={body}
 						onChange={this.update('body')}
 						placeholder="Write away..."/>

@@ -33,7 +33,7 @@ class ProjectForm extends React.Component {
 		return(
 			<div className="new-project-container">
 				<form onSubmit={this.handleSubmit}>
-					<input type="text"
+					<input required type="text"
 						value={this.state.title}
 						onChange={this.update('title')}
 						className="project-input pti"
