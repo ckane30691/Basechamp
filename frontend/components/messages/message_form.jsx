@@ -54,7 +54,7 @@ class MessageForm extends React.Component {
 						onChange={this.update('body')}
 						placeholder="Write away..."/>
 
-					<input className="todo-submit" type="submit" value="Post this message" />
+					<input className="message-submit" type="submit" value="Post this message" />
 					<Link className="delete-project-btn" to={indexPath}>
 						X
 					</Link>

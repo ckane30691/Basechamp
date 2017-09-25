@@ -21,14 +21,14 @@ class CommentForm extends React.Component {
 	render() {
 		let body = this.props.comment ? this.state.body : "";
 		return(
-			<div>
-				<form onSubmit={this.handleSubmit}>
-					<input
+			<div className="comment-form-container">
+				<form className="comment-form" onSubmit={this.handleSubmit}>
+					<input className="comment-input"
 						type="text"
 						value={body}
 						onChange={this.update('body')}
 						placeholder="Add a comment..." />
-					<input type="submit" value="Add this comment" />
+					<input className="comment-submit" type="submit" value="Add this comment" />
 				</form>
 			</div>
 		)

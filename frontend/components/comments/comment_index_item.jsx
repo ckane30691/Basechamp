@@ -3,15 +3,13 @@ import { withRouter } from 'react-router-dom';
 
 const CommentIndexItem = (props) => {
 
-	// const date = new Date(comment.created_at);
-	// debugger
+	const date = new Date(props.comment.created_at);
 	return (
 		<li>
-			<h4>{props.comment.body}</h4>
-			{props.comment.author}
-			{props.comment.created_at}
+			<h3>{props.comment.body}</h3>
+			<h5 className="message-author">Posted on: {(date.getMonth() + 1) + "/" + date.getDate() + "/" + date.getFullYear()} by {props.comment.author}</h5>
 			<br/>
-			<button onClick={() => props.deleteComment(props.comment.id)}>Delete</button>
+			<button className="delete-project-btn" onClick={() => props.deleteComment(props.comment.id)}>X</button>
 			<br/>
 		</li>
 	)

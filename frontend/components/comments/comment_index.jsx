@@ -10,8 +10,8 @@ class CommentIndex extends React.Component {
 
 	render() {
 		return(
-			<div>
-			<ul>
+			<div className="comment-index-container">
+			<ul className="comment-list">
 				{
 					this.props.comments.map(comment => (
 						<CommentIndexItem
