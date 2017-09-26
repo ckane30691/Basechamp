@@ -222,3 +222,8 @@
  .errors {
    color: red;
  }
+
+ .errors-ul {
+   padding: 0px;
+   width: 100px;
+ }

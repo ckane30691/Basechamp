@@ -15,6 +15,7 @@ class MessageIndex extends React.Component {
 
 	// NOTE Errors are not rendering on this page
 	renderErrors() {
+		console.log(this.props.errors);
 		if (this.props.errors) {
 			return (
 				<ul>
@@ -55,7 +56,6 @@ class MessageIndex extends React.Component {
 							))
 						}
 					</ul>
-					<div className="errors">{this.renderErrors()}</div>
 				</div>
 			</div>
 		)

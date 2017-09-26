@@ -41,6 +41,15 @@ class MessageShow extends React.Component {
 							<h3 className="message-author">{message.author} • {(date.getMonth() + 1) + "/" + date.getDate() + "/" + date.getFullYear()}</h3>
 							<h3>{message.title}</h3>
 							<p>{message.body}</p>
+							<button className="delete-project-btn" onClick={() => this.props.deleteMessage(message.id)}>X</button>
+								<br/>
+								<ul>
+									{this.props.errors.map((error, idx) => (
+										<li className="errors" key={`error-${idx}`}>
+											{error}
+										</li>
+									))}
+								</ul>
 					</div>
 				</div>
 			</div>
