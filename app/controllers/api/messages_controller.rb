@@ -37,7 +37,7 @@ class Api::MessagesController < ApplicationController
 
 	def destroy
 		@message = current_user.messages.find_by(id: params[:id])
-		if @message.destroy
+		if @message && @message.destroy
 			render :show
 		else
 			render json: ["You are not the author of this message"], status: 403

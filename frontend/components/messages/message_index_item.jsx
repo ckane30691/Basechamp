@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-const MessageIndexItem = ({message, deleteMessage, updateMessage, project}) => {
+const MessageIndexItem = ({message, deleteMessage, updateMessage, project, errors}) => {
 	const date = new Date(message.created_at);
 	return (
 		<li>
@@ -10,6 +10,7 @@ const MessageIndexItem = ({message, deleteMessage, updateMessage, project}) => {
 				{message.title}
 			</Link>
 			<h4 className='todo-body'>{message.body}</h4>
+			<p className="errors">{errors}</p>
 			<button className="delete-project-btn" onClick={() => deleteMessage(message.id)}>X</button>
 			<Link className="todo-edit-btn" to={`/projects/${message.project_id}/messages/${message.id}/edit`}>Edit</Link>
 		</li>

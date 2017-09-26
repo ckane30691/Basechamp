@@ -9,9 +9,27 @@ class MessageIndex extends React.Component {
 		this.props.fetchMessages(this.props.match.params.projectId)
 	}
 
+	componentDidUpdate() {
+		this.renderErrors()
+	}
+
+	// NOTE Errors are not rendering on this page
+	renderErrors() {
+		if (this.props.errors) {
+			return (
+				<ul>
+					{this.props.errors.map((error, idx) => (
+						<li key={`error-${idx}`}>
+							{error}
+						</li>
+					))}
+				</ul>
+			);
+		}
+	}
+
 	render() {
 		const title = this.props.project ? this.props.project.title : "";
-
 		return (
 			<div className="todo-index-body">
 				<Link className="project-title" to={`/projects/${this.props.match.params.projectId}`}>
@@ -37,6 +55,7 @@ class MessageIndex extends React.Component {
 							))
 						}
 					</ul>
+					<div className="errors">{this.renderErrors()}</div>
 				</div>
 			</div>
 		)
