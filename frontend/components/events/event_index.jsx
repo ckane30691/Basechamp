@@ -19,11 +19,14 @@ class EventIndex extends React.Component {
 				</Link>
 				<div className="todo-index-container">
 					<h2 className="feature-header">Schedule</h2>
+					<Link className='new-todo-button' to={`/projects/${this.props.match.params.projectId}/events/new`}>
+						Create an event
+					</Link>
 					<Calendar
 						minDate={new Date('01/01/1991')}
 						minDetail={"year"}
 						onChange={value => alert(`Selected date is, ${value}`)} />
-					<ul>
+					<ul className='todo-list'>
 						{
 							this.props.events.map(event => (
 								<EventIndexItem
