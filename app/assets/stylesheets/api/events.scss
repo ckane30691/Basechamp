@@ -2,11 +2,6 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-.react-calendar {
-
-
-}
-
 .react-calendar__navigation__label {
 	background: #283c46;
 	color: #fff;
@@ -38,6 +33,8 @@ border: 1px solid #f2f2f2;
 cursor: default;
 }
 
+// Credit for the .link fix below
+// https://stackoverflow.com/questions/15611905/making-the-clickable-area-of-in-line-links-bigger-without-affecting-the-layout
 .dot-link {
     position: relative
 }
@@ -48,3 +45,70 @@ cursor: default;
     left: -25px;
     top: -25px;
 }
+
+.todo-index-container label {
+	font-weight: bold;
+	color: #283c46;
+	margin-bottom: 0px;
+}
+
+.todo-index-container label input {
+	font-weight: normal;
+}
+
+.event-title-input {
+	position: absolute;
+	font-size: 1.3em;
+	font-weight: bold;
+	border-radius: 0.4rem;
+	border: 1px solid #bfbfbf;
+	padding: .6rem;
+	background-color: #fff;
+	top: 130px;
+	width: 85%;
+}
+
+.starts-input {
+	border-radius: 0.4rem;
+	border: 1px solid #bfbfbf;
+	padding: .6rem;
+	background-color: #fff;
+	width: 263px;
+	margin-left: 10px
+}
+
+.ends-input {
+	border-radius: 0.4rem;
+	border: 1px solid #bfbfbf;
+	padding: .6rem;
+	background-color: #fff;
+	width: 263px;
+	margin-left: 17px
+}
+
+.notes-input {
+	border-radius: 0.4rem;
+	border: 1px solid #bfbfbf;
+	padding: .6rem;
+	background-color: #fff;
+	width: 645px;
+	margin-left: 17px
+}
+
+// ::-webkit-datetime-edit { padding: 1em; }
+// ::-webkit-datetime-edit-fields-wrapper { background: silver; }
+// ::-webkit-datetime-edit-text { color: red; padding: 0 0.3em; }
+// ::-webkit-datetime-edit-month-field { color: blue; }
+// ::-webkit-datetime-edit-day-field { color: green; }
+// ::-webkit-datetime-edit-year-field { color: purple; }
+::-webkit-inner-spin-button { display: none; }
+// ::-webkit-calendar-picker-indicator { background: orange; }
+
+// .ui-datepicker-header {
+//     margin-bottom: 0.6rem;
+//     padding: 0.6rem 0.8rem;
+//     background: #3cb371;
+//     border-radius: 0.4rem 0.4rem 0 0;
+//     font-weight: bold;
+//     color: #fff;
+// }

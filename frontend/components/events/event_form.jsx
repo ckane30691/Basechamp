@@ -46,33 +46,45 @@ class EventForm extends React.Component {
 				<form className="todo-index-container" onSubmit={this.handleSubmit}>
 					<Link to={indexPath} className="feature-header">Events</Link>
 
-					<input required className="todo-title-input" type="text"
+					<input required className="event-title-input" type="text"
 						value={eventTitle}
 						onChange={this.update('title')}
-						placeholder="Title..." />
+						placeholder="What's the event?" />
 
-					<input
-						type="date"
-						value={startDate}
-						onChange={this.update('start_date')}
-						/>
+					<label> Starts:
+
+						<input
+							className="starts-input"
+							type="date"
+							value={startDate}
+							onChange={this.update('start_date')}
+							/>
+					</label>
 					<br/>
 
-					<textarea type="text"
-						value={body}
-						onChange={this.update('body')}
-						placeholder="Write away..."/>
+					<label> Ends:
+
+						<input
+							className="ends-input"
+							type="date"
+							value={endDate}
+							onChange={this.update('end_date')}
+							/>
+					</label>
+
+					<label> Notes:
+						<textarea type="text"
+							className="notes-input"
+							value={body}
+							onChange={this.update('body')}
+							placeholder="Add any notes..."/>
+					</label>
 
 					<input className="message-submit" type="submit" value="Post this event" />
 					<Link className="delete-project-btn" to={indexPath}>
 						X
 					</Link>
 
-					<input
-						type="date"
-						value={endDate}
-						onChange={this.update('end_date')}
-						/>
 				</form>
 			</div>
 		)
