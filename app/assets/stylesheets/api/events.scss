@@ -1,3 +1,38 @@
 // Place all the styles related to the api/events controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+.react-calendar {
+
+
+}
+
+.react-calendar__navigation__label {
+	background: #283c46;
+	color: #fff;
+	text-align: center;
+	padding: 20px;
+	font-weight: bold;
+}
+
+.react-calendar__navigation__arrow {
+	background: #283c46;
+	color: #fff;
+	padding: 10px;
+	font-size: 1.5em;
+}
+
+.react-calendar__month-view__weekdays__weekday {
+	background: #283c46;
+	color: #fff;
+	text-align: center;
+	padding: 5px;
+}
+
+.react-calendar__tile {
+text-align: center;
+word-break: break-all;
+position: relative;
+height: 50px;
+border: 1px solid #f2f2f2;
+}

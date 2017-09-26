@@ -18,8 +18,9 @@ class EventIndex extends React.Component {
 					{title}
 				</Link>
 				<div className="todo-index-container">
+					<h2 className="feature-header">Schedule</h2>
+					<Calendar />
 				</div>
-				<Calendar />
 			</div>
 		)
 	}
