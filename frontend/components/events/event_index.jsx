@@ -15,12 +15,29 @@ class EventIndex extends React.Component {
 			this.props.events.map(event => {
 				const startDate = new Date(event.start_date);
 				return(
-					view === 'month' && date.getFullYear() == startDate.getFullYear()
+					view === 'month'
+					&& (date.getFullYear() == startDate.getFullYear())
 					&& (date.getMonth() == startDate.getMonth())
-					&& (date.getDate() == startDate.getDate()) ? <div>•</div> : null
+					&& (date.getDate() == startDate.getDate()) ?
+					<Link
+						to={`/projects/${this.props.match.params.projectId}/events/${event.id}`}
+						className="dot-link">•</Link>
+					: null
 				)
 			})
 		)
+	}
+
+	compareStartDates(a, b) {
+		let first = new Date(a.start_date);
+		let second = new Date(b.start_date);
+		if (first.getTime() < second.getTime()) {
+			return -1
+		} else if (first.getTime() > second.getTime()) {
+			return 1
+		} else {
+			return 0
+		}
 	}
 
 	render() {
@@ -38,11 +55,10 @@ class EventIndex extends React.Component {
 					<Calendar
 						minDate={new Date('01/01/1991')}
 						minDetail={"year"}
-						onChange={value => alert(`Selected date is, ${value}`)}
 						renderChildren={this.mapEventsToCalendar()} />
 					<ul className='todo-list'>
 						{
-							this.props.events.map(event => (
+							this.props.events.sort(this.compareStartDates).map(event => (
 								<EventIndexItem
 									key={event.id}
 									deleteEvent={this.props.deleteEvent}

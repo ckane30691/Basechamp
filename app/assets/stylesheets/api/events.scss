@@ -36,3 +36,14 @@ position: relative;
 height: 50px;
 border: 1px solid #f2f2f2;
 }
+
+.dot-link {
+    position: relative
+}
+.dot-link:after{
+    content:"";
+    padding: 50px;
+    position: absolute;
+    left: -25px;
+    top: -25px;
+}
