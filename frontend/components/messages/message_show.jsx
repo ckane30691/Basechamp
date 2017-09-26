@@ -1,7 +1,5 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import CommentFormContainer from '../comments/comment_form_container';
-import CommentIndexContainer from '../comments/comment_index_container';
 
 class MessageShow extends React.Component {
 
