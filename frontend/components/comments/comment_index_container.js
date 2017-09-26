@@ -8,7 +8,8 @@ import { withRouter } from 'react-router-dom';
 const mapStateToProps = (state) => {
 	return {
 		comments: Object.keys(state.entities.comments)
-		.map(id => state.entities.comments[id])
+		.map(id => state.entities.comments[id]),
+		currentUser: state.session.currentUser
 	}
 }
 
