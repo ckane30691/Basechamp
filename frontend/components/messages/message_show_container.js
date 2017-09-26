@@ -10,7 +10,8 @@ const mapStateToProps = (state, ownProps) => {
 	return {
 		message,
 		project,
-		errors: state.errors.message
+		errors: state.errors.message,
+		currentUser: state.session.currentUser
 	};
 };
 

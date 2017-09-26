@@ -16,7 +16,8 @@ const mapStateToProps = (state, ownProps) => {
 		messages: Object.keys(state.entities.messages)
 		.map(id => state.entities.messages[id]),
 		project,
-		errors: state.errors.message
+		errors: state.errors.message,
+		currentUser: state.session.currentUser
 	}
 };
 

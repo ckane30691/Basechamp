@@ -14,6 +14,14 @@ class MessageShow extends React.Component {
 		const title = this.props.project ? this.props.project.title : "";
 		const message = this.props.message ? this.props.message : {title: "", body: ""};
 		const date = this.props.message ? new Date(this.props.message.created_at) : new Date("");
+		const edit = this.props.currentUser && this.props.message &&
+		this.props.currentUser.id === this.props.message.author_id ?
+		<Link
+			className="todo-edit-btn"
+			to={`/projects/${message.project_id}/messages/${message.id}/edit`}>
+			Edit
+		</Link> :
+		"";
 
 		return (
 			<div className="todo-index-body">
@@ -34,10 +42,7 @@ class MessageShow extends React.Component {
 							Message
 						</Link>
 						<div className="message-show">
-							<Link className="todo-edit-btn"
-								to={`/projects/${this.props.match.params.projectId}/messages/${this.props.match.params.messageId}/edit`}>
-								Edit
-							</Link>
+							{edit}
 							<h3 className="message-author">{message.author} • {(date.getMonth() + 1) + "/" + date.getDate() + "/" + date.getFullYear()}</h3>
 							<h3>{message.title}</h3>
 							<p>{message.body}</p>

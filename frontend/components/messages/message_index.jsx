@@ -52,6 +52,7 @@ class MessageIndex extends React.Component {
 									deleteMessage={this.props.deleteMessage}
 									updateMessage={this.props.updateMessage}
 									project={this.props.project}
+									currentUser={this.props.currentUser}
 									message={message} />
 							))
 						}
