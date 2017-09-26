@@ -9,26 +9,6 @@ class MessageIndex extends React.Component {
 		this.props.fetchMessages(this.props.match.params.projectId)
 	}
 
-	componentDidUpdate() {
-		this.renderErrors()
-	}
-
-	// NOTE Errors are not rendering on this page
-	renderErrors() {
-		console.log(this.props.errors);
-		if (this.props.errors) {
-			return (
-				<ul>
-					{this.props.errors.map((error, idx) => (
-						<li key={`error-${idx}`}>
-							{error}
-						</li>
-					))}
-				</ul>
-			);
-		}
-	}
-
 	render() {
 		const title = this.props.project ? this.props.project.title : "";
 		return (

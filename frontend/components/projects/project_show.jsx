@@ -32,11 +32,14 @@ class ProjectShow extends React.Component {
 						</div>
 				 </Link>
 
+				 <Link to={`/projects/${this.props.match.params.projectId}/events`}>
 					<div className="generic-show-container">
-						<h1 className="generic-show-title">Coming Soon</h1>
+						<h1 className="generic-show-title">Events</h1>
 						<hr />
 						<img className="generic-show-img" src="https://s3-us-west-1.amazonaws.com/basechamp/calendar_icon.png" />
+						<p className="generic-show-desc">Set important dates on a shared schedule</p>
 					</div>
+				</Link>
 				</div>
 
 

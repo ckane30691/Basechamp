@@ -15,6 +15,7 @@ import MessageFormContainer from './messages/message_form_container';
 import MessageShowContainer from './messages/message_show_container';
 import CommentIndexContainer from './comments/comment_index_container';
 import CommentFormContainer from './comments/comment_form_container';
+import EventIndexContainer from './events/event_index_container';
 
 import {
   Route,
@@ -56,6 +57,7 @@ const App = () => (
       <ProtectedRoute exact path="/projects/:projectId/messages/new" component={MessageFormContainer} />
       <ProtectedRoute exact path="/projects/:projectId/messages/:messageId" component={() => <div><MessageShowContainer/><CommentIndexContainer/><CommentFormContainer/></div>} />
       <ProtectedRoute exact path="/projects/:projectId/messages/:messageId/edit" component={MessageFormContainer} />
+      <ProtectedRoute exact path="/projects/:projectId/events" component={EventIndexContainer} />
     </Switch>
 </div>
 );
