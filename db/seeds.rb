@@ -8,8 +8,7 @@
 
 16.times do
 	Comment.create({
-		title: Faker::Company.catch_phrase,
-		body: Faker::Company.bs,
+		body: Faker::StarWars.quote,
 		author_id: rand(10),
 		message_id: rand(12),
 		})
