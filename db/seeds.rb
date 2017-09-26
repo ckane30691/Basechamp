@@ -6,11 +6,29 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
-# 10.times do
-# 	Message.create({
-# 		title: Faker::Company.catch_phrase,
-# 		body: Faker::Company.buzzword,
-# 		author_id: rand(10),
-# 		project_id: 41,
-# 		})
-# end
+4.times do
+	Message.create({
+		title: Faker::Company.catch_phrase,
+		body: Faker::Company.bs,
+		author_id: rand(10),
+		project_id: 3,
+		})
+end
+
+4.times do
+	Message.create({
+		title: Faker::Company.catch_phrase,
+		body: Faker::Company.bs,
+		author_id: rand(10),
+		project_id: 5,
+		})
+end
+
+4.times do
+	Message.create({
+		title: Faker::Company.catch_phrase,
+		body: Faker::Company.bs,
+		author_id: rand(10),
+		project_id: 9,
+		})
+end
