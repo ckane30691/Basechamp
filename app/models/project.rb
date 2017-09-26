@@ -21,4 +21,5 @@ class Project < ApplicationRecord
 
 	has_many :todos, dependent: :destroy
 	has_many :messages, dependent: :destroy
+	has_many :events, dependent: :destroy
 end
