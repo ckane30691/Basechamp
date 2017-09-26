@@ -1,5 +1,5 @@
 import React from 'react';
-// import EventIndexItem from './event_index_item';
+import EventIndexItem from './event_index_item';
 import Calendar from 'react-calendar'
 import { Link } from 'react-router-dom';
 
@@ -19,7 +19,22 @@ class EventIndex extends React.Component {
 				</Link>
 				<div className="todo-index-container">
 					<h2 className="feature-header">Schedule</h2>
-					<Calendar />
+					<Calendar
+						minDate={new Date('01/01/1991')}
+						minDetail={"year"}
+						onChange={value => alert(`Selected date is, ${value}`)} />
+					<ul>
+						{
+							this.props.events.map(event => (
+								<EventIndexItem
+									key={event.id}
+									deleteEvent={this.props.deleteEvent}
+									updateEvent={this.props.updateEvent}
+									currentUser={this.props.currentUser}
+									event={event} />
+							))
+						}
+					</ul>
 				</div>
 			</div>
 		)

@@ -4,7 +4,8 @@ import {fetchProject} from '../../actions/project_actions';
 
 import {
 	fetchEvents,
-	deleteEvent
+	deleteEvent,
+	updateEvent
 } from '../../actions/event_actions';
 
 const mapStateToProps = (state, ownProps) => {
@@ -21,8 +22,9 @@ const mapStateToProps = (state, ownProps) => {
 const mapDispatchToProps = dispatch => ({
 	fetchEvents: projectId => dispatch(fetchEvents(projectId)),
 	fetchProject: projectId => dispatch(fetchProject(projectId)),
+	updateEvent: event => dispatch(updateEvent(event)),
 	fetchEvent: id => dispatch(fetchEvent(id)),
-	deleteEvent: id => dispatch(deleteEvent(id)),
+	deleteEvent: id => dispatch(deleteEvent(id))
 })
 
 export default connect(
