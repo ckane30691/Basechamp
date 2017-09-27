@@ -6,7 +6,7 @@ const EventIndexItem = ({event, deleteEvent, updateEvent, currentUser}) => {
 	const startDate = new Date(event.start_date);
 	const endDate = new Date(event.end_date);
 
-	const edit = currentUser && currentUser.id === event.author_id ? <Link className="todo-edit-btn" to={`/projects/${event.project_id}/events/${event.id}/edit`}>Edit</Link> : ""
+	const edit = currentUser && currentUser.id === event.author_id ? <Link className="event-edit-btn" to={`/projects/${event.project_id}/events/${event.id}/edit`}>Edit</Link> : ""
 	const deleteBtn = currentUser && currentUser.id === event.author_id ? <button className="delete-project-btn" onClick={() => deleteEvent(event.id)}>X</button> : ""
 	return (
 		<div>

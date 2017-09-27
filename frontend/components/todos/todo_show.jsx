@@ -18,7 +18,7 @@ class TodoShow extends React.Component {
 					to={`/projects/${this.props.match.params.projectId}`}>
 					{title}
 				</Link>
-				<div className="todo-index-container">
+				<div className="todo-show-container">
 						<Link
 							className="back-btn"
 							to={`/projects/${this.props.match.params.projectId}/todos`}>
@@ -30,13 +30,13 @@ class TodoShow extends React.Component {
 							To-do
 						</Link>
 						<div className="todo-show">
-						<Link className="todo-edit-btn"
-							to={`/projects/${this.props.match.params.projectId}/todos/${this.props.match.params.todoId}/edit`}>
-							Edit
-						</Link>
 						<h3>{todo.title}</h3>
 						<p>{todo.body}</p>
 					</div>
+					<Link className="todo-show-edit-btn"
+						to={`/projects/${this.props.match.params.projectId}/todos/${this.props.match.params.todoId}/edit`}>
+						Edit
+					</Link>
 				</div>
 			</div>
 		)

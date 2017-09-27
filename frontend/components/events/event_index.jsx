@@ -47,9 +47,9 @@ class EventIndex extends React.Component {
 				<Link className="project-title" to={`/projects/${this.props.match.params.projectId}`}>
 					{title}
 				</Link>
-				<div className="todo-index-container">
+				<div className="generic-index-container index-height">
 					<h2 className="feature-header">Schedule</h2>
-					<Link className='new-todo-button' to={`/projects/${this.props.match.params.projectId}/events/new`}>
+					<Link className='new-todo-button top' to={`/projects/${this.props.match.params.projectId}/events/new`}>
 						Create an event
 					</Link>
 					<Link className="back-btn" to={`/projects/${this.props.match.params.projectId}`}>↷</Link>

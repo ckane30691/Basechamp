@@ -12,15 +12,21 @@ class TodoIndex extends React.Component {
 	render() {
 
 		const title = this.props.project ? this.props.project.title : "";
+		const extraBtn = this.props.todos && this.props.todos.length > 3 ?
+			<Link className='new-todo-button top' to={`/projects/${this.props.match.params.projectId}/todos/new`}>
+				Make another to-do
+			</Link>
+			: "";
 
 		return (
 			<div className="todo-index-body">
 				<Link className="project-title" to={`/projects/${this.props.match.params.projectId}`}>{title}</Link>
-				<div className="todo-index-container">
+				<div className="generic-index-container index-height">
 					<Link className="back-btn" to={`/projects/${this.props.match.params.projectId}`}>↷</Link>
-					<Link className='new-todo-button' to={`/projects/${this.props.match.params.projectId}/todos/new`}>
+					<Link className='new-todo-button bottom' to={`/projects/${this.props.match.params.projectId}/todos/new`}>
 						Make another to-do
 					</Link>
+					{extraBtn}
 					<h2 className="feature-header">To-dos</h2>
 
 					<ul className='todo-list'>

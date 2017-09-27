@@ -9,7 +9,7 @@ const TodoIndexItem = ({todo, deleteTodo, updateTodo, project}) => {
 			</Link>
 			<h2 className='todo-body'>{todo.body}</h2>
 			<button className="delete-project-btn" onClick={() => deleteTodo(todo.id)}>X</button>
-			<Link className="todo-edit-btn" to={`/projects/${todo.project_id}/todos/${todo.id}/edit`}>Edit</Link>
+			<Link className="todo-edit-btn" to={`/projects/${todo.project_id}/todos/${todo.id}/edit`}>Edit this to-do</Link>
 		</li>
 	)
 }

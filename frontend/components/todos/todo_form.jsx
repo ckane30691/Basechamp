@@ -41,21 +41,23 @@ class TodoForm extends React.Component {
 		return(
 			<div className="todo-index-body">
 				<Link to={projectPath} className="project-title">{projectTitle}</Link>
-				<form className="todo-index-container" onSubmit={this.handleSubmit}>
+				<form className="generic-index-container form-height" onSubmit={this.handleSubmit}>
 					<Link to={indexPath} className="feature-header">To-dos</Link>
+					<div className="input-div">
 					<input required className="todo-title-input" type="text"
 						value={todoTitle}
 						onChange={this.update('title')}
-						placeholder="Name this to-do" />
+						placeholder="Name this to-do..." />
 
 					<br/>
 
 					<textarea className="todo-body-input" type="text"
 						value={body}
 						onChange={this.update('body')}
-						placeholder="Enter a description"/>
-
+						placeholder="Add extra details..."/>
 					<input className="todo-submit" type="submit" value="Add to todo" />
+					</div>
+
 					<Link className="back-btn" to={indexPath}>
 						↷
 					</Link>

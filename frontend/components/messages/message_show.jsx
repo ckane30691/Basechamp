@@ -15,7 +15,7 @@ class MessageShow extends React.Component {
 		const edit = this.props.currentUser && this.props.message &&
 		this.props.currentUser.id === this.props.message.author_id ?
 		<Link
-			className="todo-edit-btn"
+			className="message-edit-btn"
 			to={`/projects/${message.project_id}/messages/${message.id}/edit`}>
 			Edit
 		</Link> :
@@ -28,7 +28,7 @@ class MessageShow extends React.Component {
 					to={`/projects/${this.props.match.params.projectId}`}>
 					{title}
 				</Link>
-				<div className="todo-index-container">
+				<div className="generic-index-container index-height">
 						<Link
 							className="back-btn"
 							to={`/projects/${this.props.match.params.projectId}/messages`}>

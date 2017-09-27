@@ -16,10 +16,10 @@ class MessageIndex extends React.Component {
 				<Link className="project-title" to={`/projects/${this.props.match.params.projectId}`}>
 					{title}
 				</Link>
-				<div className="todo-index-container">
+				<div className="generic-index-container index-height">
 					<Link className="back-btn" to={`/projects/${this.props.match.params.projectId}`}>↷</Link>
 
-					<Link className='new-todo-button' to={`/projects/${this.props.match.params.projectId}/messages/new`}>
+					<Link className='new-todo-button top' to={`/projects/${this.props.match.params.projectId}/messages/new`}>
 						Post a message
 					</Link>
 					<h2 className="feature-header">Message Board</h2>
