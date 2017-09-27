@@ -41,15 +41,17 @@ class MessageForm extends React.Component {
 		return (
 			<div className="todo-index-body">
 				<Link to={projectPath} className="project-title">{projectTitle}</Link>
-				<form className="generic-index-container form-height" onSubmit={this.handleSubmit}>
+				<form className="generic-index-container" onSubmit={this.handleSubmit}>
 					<Link to={indexPath} className="feature-header">Messages</Link>
 
-					<input required className="todo-title-input" type="text"
+					<input required className="message-title-input" type="text"
 						value={messageTitle}
 						onChange={this.update('title')}
 						placeholder="Title..." />
 
-					<textarea required className="todo-body-input" type="text"
+
+
+					<textarea required className="message-body-input" type="text"
 						value={body}
 						onChange={this.update('body')}
 						placeholder="Write away..."/>

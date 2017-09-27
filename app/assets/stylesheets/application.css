@@ -204,7 +204,7 @@
   color: #283c46;
   font-weight: bold;
   text-align: center;
-  margin-bottom: 90px;
+  margin-bottom: 40px;
   align-self: center;
 }
 
@@ -266,7 +266,7 @@
  }
 
  .generic-list {
-   margin-top: -50px;
+   /*margin-top: -50px;*/
    margin-bottom: 20px;
  }
 

@@ -13,7 +13,7 @@ class TodoIndex extends React.Component {
 
 		const title = this.props.project ? this.props.project.title : "";
 		const extraBtn = this.props.todos && this.props.todos.length > 3 ?
-			<Link className='new-todo-button top' to={`/projects/${this.props.match.params.projectId}/todos/new`}>
+			<Link className='new-todo-button top-corner' to={`/projects/${this.props.match.params.projectId}/todos/new`}>
 				Make another to-do
 			</Link>
 			: "";

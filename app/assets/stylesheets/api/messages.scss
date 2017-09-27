@@ -28,7 +28,7 @@
   font-weight: bold;
   text-align: center;
   padding: .9em .9em .9em .9em;
-  border-radius: 0.5em;
+  border-radius: 0.2em;
   border: 1px solid #bfbfbf;
   border-bottom-width: 2px;
   border-color: rgba(0,0,0,0.15);
@@ -81,4 +81,24 @@
 
 .message-body {
   display: inline;
+}
+
+.message-title-input {
+  font-size: 2em;
+  font-weight: bold;
+  margin-bottom: 20px;
+  width: 660px;
+  color: #283c46;
+}
+
+.message-body-input {
+  resize: none;
+  width: 660px;
+  height: 25px;
+  margin-bottom: 80px;
+  color: #283c46;
+}
+
+.message-body-input:focus {
+  height: 130px;
 }
