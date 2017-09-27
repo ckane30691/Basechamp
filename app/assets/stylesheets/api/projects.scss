@@ -47,7 +47,7 @@
   width: 300px;
   font-weight: bold;
   text-align: left;
-  border-radius: 0.4rem;
+  border-radius: 0.2em;
   margin-bottom: 20px;
   padding-top: 30px;
   padding-left: 20px;
@@ -75,17 +75,18 @@
 }
 
 .project-new-button {
-  padding-left: 5px;
-  padding-right: 8px;
-  padding-top: 0;
+  padding-left: 7px;
+  padding-right: 10px;
+  padding-top: 2px;
   padding-bottom: 0;
-  border-radius: 0.4rem;
+  border-radius: 0.2em;
   position: absolute;
   left: 160px;
   top: 95px;
   text-decoration: none;
   text-align: center;
   font-weight: bold;
+  font-size: .8em;
   color: #283c46;
   display: inline-block;
   line-height: 1.5;
@@ -99,7 +100,7 @@
 
 .new-project-container {
   background-color: #fff;
-  border-radius: 0.4rem;
+  border-radius: 0.2em;
   padding: 20px;
   width: 270px;
   height: 180px;
@@ -125,17 +126,17 @@
 }
 
 .edit-project-btn {
-  padding-left: 5px;
-  padding-right: 8px;
-  padding-top: 0;
-  padding-bottom: 0;
-  border-radius: 0.4rem;
+  padding: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 0.2rem;
   position: absolute;
   right: 10px;
-  bottom: 10px;
+  bottom: 15px;
   text-decoration: none;
   text-align: center;
-  font-weight: bold;
+  font-weight: 600;
+  font-size: .8em;
   color: #283c46;
   display: inline-block;
   line-height: 1.5;
@@ -162,10 +163,10 @@
   bottom: 20px;
   left: 20px;
   background-color: #3cb371;
-  border-radius: 0.4rem;
+  border-radius: 0.2em;
   font-weight: bold;
   color: white;
-  padding: 10px;
+  padding: 8px;
   border: 1px solid #bfbfbf;
   border-bottom-width: 2px;
   border-color: rgba(0,0,0,0.15);
@@ -197,7 +198,7 @@
   background-color: #fff;
   padding: 25px;
   box-sizing: border-box;
-  border-radius: 0.5em;
+  border-radius: 0.2em;
   position: relative;
   border: 1px solid #bfbfbf;
   border-bottom-width: 2px;
