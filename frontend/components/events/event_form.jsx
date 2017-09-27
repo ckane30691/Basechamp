@@ -54,17 +54,19 @@ class EventForm extends React.Component {
 					<label> Starts:
 
 						<input
+							required
 							className="starts-input"
 							type="date"
 							value={startDate}
 							onChange={this.update('start_date')}
 							/>
 					</label>
-				
+
 
 					<label> Ends:
 
 						<input
+							required
 							className="ends-input"
 							type="date"
 							value={endDate}
