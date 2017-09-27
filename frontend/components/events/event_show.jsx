@@ -15,7 +15,7 @@ class EventShow extends React.Component {
 		const edit = this.props.currentUser && this.props.event &&
 		this.props.currentUser.id === this.props.event.author_id ?
 		<Link
-			className="todo-edit-btn"
+			className="event-edit-btn"
 			to={`/projects/${event.project_id}/events/${event.id}/edit`}>
 			Edit
 		</Link> :
@@ -41,14 +41,22 @@ class EventShow extends React.Component {
 							to={`/projects/${this.props.match.params.projectId}/events`}>
 							Event
 						</Link>
-						<div className="message-show">
+						<div className="event-show">
 							{edit}
-							<h3 className="event-author">{event.author} • {(createdDate.getMonth() + 1) + "/" + createdDate.getDate() + "/" + createdDate.getFullYear()}</h3>
+							<div className="event-info">
 							<h3>{event.title}</h3>
 							<p>{event.body}</p>
-							<h4>Event starts: {(startDate.getMonth() + 1) + "/" + startDate.getDate() + "/" + startDate.getFullYear()}</h4>
-							<h4>Event Ends: {(endDate.getMonth() + 1) + "/" + endDate.getDate() + "/" + endDate.getFullYear()}</h4>
+							<h4>Event Ends: {endDate.toString().split(" ").slice(0,3).join(" ")}</h4>
+							</div>
+							<div className="date-container">
+								<div className="date-header">
+									{startDate.toString().split(" ").slice(1,2).join(" ")}
+								</div>
+								<h1>{startDate.toString().split(" ").slice(2,3).join(" ")}</h1>
+								{startDate.toString().split(" ").slice(0,1).join(" ")}
+							</div>
 								<br/>
+								<h3 className="event-show-author">Posted By: {event.author} • {(createdDate.getMonth() + 1) + "/" + createdDate.getDate() + "/" + createdDate.getFullYear()}</h3>
 								<ul>
 									{this.props.errors.map((error, idx) => (
 										<li className="errors" key={`error-${idx}`}>
