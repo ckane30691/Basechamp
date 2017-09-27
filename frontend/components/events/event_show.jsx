@@ -30,7 +30,7 @@ class EventShow extends React.Component {
 					to={`/projects/${this.props.match.params.projectId}`}>
 					{title}
 				</Link>
-				<div className="todo-index-container">
+				<div className="event-show-container">
 						<Link
 							className="delete-project-btn"
 							to={`/projects/${this.props.match.params.projectId}/events`}>

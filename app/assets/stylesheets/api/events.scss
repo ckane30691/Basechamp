@@ -54,6 +54,27 @@
 	margin-bottom: 15px;
 }
 
+.event-show-container {
+		 border-radius: 1.05em;
+		 background-color: #fff;
+		 width: 780px;
+		 min-height: 550px;
+		 position: relative;
+		 text-align: left;
+		 padding-top: 80px;
+		 padding-left: 50px;
+		 padding-right: 50px;
+		 box-sizing: border-box;
+		 display: flex;
+		 flex-direction: column;
+		 align-items: center;
+		 margin-bottom: 100px;
+		 padding-bottom: 50px;
+		 border: 1px solid #bfbfbf;
+		 border-bottom-width: 2px;
+		 border-color: rgba(0,0,0,0.15);
+}
+
 .event-index-container label input {
 	font-weight: normal;
 }
@@ -190,9 +211,7 @@
 }
 
 .event-info {
-	position: absolute;
-	bottom: 0px;
-	left: 180px;
+	margin-top: 160px;
 }
 
 .event-edit-btn {
