@@ -56,8 +56,8 @@ class TodoForm extends React.Component {
 						placeholder="Enter a description"/>
 
 					<input className="todo-submit" type="submit" value="Add to todo" />
-					<Link className="delete-project-btn" to={indexPath}>
-						X
+					<Link className="back-btn" to={indexPath}>
+						↷
 					</Link>
 				</form>
 		</div>

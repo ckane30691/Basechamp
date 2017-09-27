@@ -32,9 +32,9 @@ class EventShow extends React.Component {
 				</Link>
 				<div className="event-show-container">
 						<Link
-							className="delete-project-btn"
+							className="back-btn"
 							to={`/projects/${this.props.match.params.projectId}/events`}>
-							X
+							↷
 						</Link>
 						<Link
 							className="feature-header"

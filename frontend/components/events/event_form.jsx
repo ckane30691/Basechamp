@@ -85,8 +85,8 @@ class EventForm extends React.Component {
 					</div>
 
 					<input className="message-submit" type="submit" value="Post this event" />
-					<Link className="delete-project-btn" to={indexPath}>
-						X
+					<Link className="back-btn" to={indexPath}>
+						↷
 					</Link>
 
 				</form>

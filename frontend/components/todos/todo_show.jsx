@@ -20,9 +20,9 @@ class TodoShow extends React.Component {
 				</Link>
 				<div className="todo-index-container">
 						<Link
-							className="delete-project-btn"
+							className="back-btn"
 							to={`/projects/${this.props.match.params.projectId}/todos`}>
-							X
+							↷
 						</Link>
 						<Link
 							className="feature-header"

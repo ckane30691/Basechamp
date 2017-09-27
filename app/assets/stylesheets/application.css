@@ -227,3 +227,12 @@
    padding: 0px;
    width: 100px;
  }
+
+ .back-btn {
+  font-size: 2.5em;
+  position: absolute;
+  font-weight: bold;
+  color: #ec7a3c;
+  right: 12px;
+  top: 0px;
+ }

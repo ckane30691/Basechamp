@@ -55,8 +55,8 @@ class ProjectForm extends React.Component {
 
 				</form>
 				<Link to="/projects"
-					className="delete-project-btn">
-					X
+					className="back-btn">
+					↷
 				</Link>
 			</div>
 		)

@@ -52,6 +52,7 @@ class EventIndex extends React.Component {
 					<Link className='new-todo-button' to={`/projects/${this.props.match.params.projectId}/events/new`}>
 						Create an event
 					</Link>
+					<Link className="back-btn" to={`/projects/${this.props.match.params.projectId}`}>↷</Link>
 					<Calendar
 						minDate={new Date('01/01/1991')}
 						minDetail={"year"}

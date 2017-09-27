@@ -55,8 +55,8 @@ class MessageForm extends React.Component {
 						placeholder="Write away..."/>
 
 					<input className="message-submit" type="submit" value="Post this message" />
-					<Link className="delete-project-btn" to={indexPath}>
-						X
+					<Link className="back-btn" to={indexPath}>
+						↷
 					</Link>
 
 				</form>

@@ -17,7 +17,7 @@ class TodoIndex extends React.Component {
 			<div className="todo-index-body">
 				<Link className="project-title" to={`/projects/${this.props.match.params.projectId}`}>{title}</Link>
 				<div className="todo-index-container">
-					<Link className="delete-project-btn" to={`/projects/${this.props.match.params.projectId}`}>X</Link>
+					<Link className="back-btn" to={`/projects/${this.props.match.params.projectId}`}>↷</Link>
 					<Link className='new-todo-button' to={`/projects/${this.props.match.params.projectId}/todos/new`}>
 						Make another to-do
 					</Link>

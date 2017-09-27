@@ -17,7 +17,7 @@ class MessageIndex extends React.Component {
 					{title}
 				</Link>
 				<div className="todo-index-container">
-					<Link className="delete-project-btn" to={`/projects/${this.props.match.params.projectId}`}>X</Link>
+					<Link className="back-btn" to={`/projects/${this.props.match.params.projectId}`}>↷</Link>
 
 					<Link className='new-todo-button' to={`/projects/${this.props.match.params.projectId}/messages/new`}>
 						Post a message
