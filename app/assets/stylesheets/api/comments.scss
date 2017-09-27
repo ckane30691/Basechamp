@@ -15,9 +15,11 @@
   padding: 0.75em 0.6em;
   width: 760px;
   background-color: #fff;
-  border: 2px solid #283c46;
+  border: 1px solid #bfbfbf;
   font-size: 1.0rem;
-  font-family: monospace;
+  border-radius: .2em;
+  resize: none;
+  height: 25px;
 }
 
 .comment-submit {
@@ -27,14 +29,19 @@
   font-size: .8em;
   font-weight: bold;
   padding: 0.75em 0.75em 0.75em 0.75em;
-  border-radius: 0.5em;
+  border-radius: 0.2em;
   border: 1px solid #bfbfbf;
   border-bottom-width: 2px;
   border-color: rgba(0,0,0,0.15);
   transition: all 0.2s ease;
   position: absolute;
   text-align: center;
-  left: 360px
+  left: 285px;
+  bottom: -55px;
+}
+
+.comment-input:focus {
+  height: 150px;
 }
 
 .comment-index-container {
@@ -48,19 +55,15 @@
 }
 
 .comment-index-container li {
-  margin-bottom: 25px;
-	min-width: 400px;
-	max-width: 780px;
+	width: 780px;
 	padding-right: 25px;
-	padding-top: 40px;
+	padding-top: 20px;
 	padding-left: 25px;
 	padding-bottom: 0px;
-	background-color: #fff;
-  border: 1px solid #bfbfbf;
-  border-bottom-width: 2px;
+  margin-bottom: -20px;
+  border-top: 1px solid #bfbfbf;
   border-color: rgba(0,0,0,0.15);
   position: relative;
-  border-radius: 1.1em;
 	box-sizing: border-box;
 }
 
