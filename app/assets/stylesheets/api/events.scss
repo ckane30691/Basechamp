@@ -36,14 +36,16 @@
 // Credit for the .link fix below
 // https://stackoverflow.com/questions/15611905/making-the-clickable-area-of-in-line-links-bigger-without-affecting-the-layout
 .dot-link {
-    position: relative
+  position: relative;
+	font-size: 2em;
+  color: #ff7043;
 }
 .dot-link:after{
-    content:"";
-    padding: 50px;
-    position: absolute;
-    left: -25px;
-    top: -25px;
+  content:"";
+  padding: 50px;
+  position: absolute;
+  left: -50px;
+  top: -50px;
 }
 
 .todo-index-container label {
