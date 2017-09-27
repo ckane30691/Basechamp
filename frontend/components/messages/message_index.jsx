@@ -11,6 +11,14 @@ class MessageIndex extends React.Component {
 
 	render() {
 		const title = this.props.project ? this.props.project.title : "";
+
+		const extraBtn = this.props.messages && this.props.messages.length > 3 ?
+		<Link className='new-message-button top-corner'
+			to={`/projects/${this.props.match.params.projectId}/messages/new`}>
+			Post a message
+		</Link>
+		: "";
+
 		return (
 			<div className="todo-index-body">
 				<Link className="project-title" to={`/projects/${this.props.match.params.projectId}`}>
@@ -19,12 +27,14 @@ class MessageIndex extends React.Component {
 				<div className="generic-index-container index-height">
 					<Link className="back-btn" to={`/projects/${this.props.match.params.projectId}`}>↷</Link>
 
-					<Link className='new-todo-button top' to={`/projects/${this.props.match.params.projectId}/messages/new`}>
+					{extraBtn}
+
+					<Link className='new-message-button bottom-corner' to={`/projects/${this.props.match.params.projectId}/messages/new`}>
 						Post a message
 					</Link>
 					<h2 className="feature-header">Message Board</h2>
 
-					<ul className='todo-list'>
+					<ul className='generic-list'>
 						{
 							this.props.messages.map(message => (
 								<MessageIndexItem

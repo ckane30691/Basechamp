@@ -37,3 +37,48 @@
   bottom: 50px;
   box-sizing: border-box;
 }
+
+.new-message-button {
+	background-color: #3cb371;
+	color: #fff;
+	width: 155px;
+	font-size: .8em;
+	font-weight: bold;
+	text-align: center;
+ /*border: 1px solid #007bb6;*/
+	padding: .7em .7em .7em .7em;
+	border-radius: 0.2em;
+	border: 1px solid #bfbfbf;
+	border-bottom-width: 2px;
+	border-color: rgba(0,0,0,0.15);
+	transition: all 0.2s ease;
+	position: absolute;
+	box-sizing: border-box;
+}
+
+.top-corner {
+  left: 20px;
+  top: 20px;
+}
+
+.bottom-corner {
+  left: 20px;
+  bottom: 20px;
+}
+
+.message-title {
+  display: inline;
+  font-size: 1.1em;
+  font-weight: bold;
+}
+
+.message-edit-btn {
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  font-size: .9em;
+}
+
+.message-body {
+  display: inline;
+}
