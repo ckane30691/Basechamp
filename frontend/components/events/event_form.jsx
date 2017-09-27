@@ -60,7 +60,7 @@ class EventForm extends React.Component {
 							onChange={this.update('start_date')}
 							/>
 					</label>
-					<br/>
+				
 
 					<label> Ends:
 
@@ -72,13 +72,15 @@ class EventForm extends React.Component {
 							/>
 					</label>
 
-					<label> Notes:
-						<textarea type="text"
-							className="notes-input"
-							value={body}
-							onChange={this.update('body')}
-							placeholder="Add any notes..."/>
-					</label>
+					<div className="note-form">
+						<label className="note-title"> Notes:
+							<textarea type="text"
+								className="notes-input"
+								value={body}
+								onChange={this.update('body')}
+								placeholder="Add any notes..."/>
+						</label>
+					</div>
 
 					<input className="message-submit" type="submit" value="Post this event" />
 					<Link className="delete-project-btn" to={indexPath}>

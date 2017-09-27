@@ -49,7 +49,7 @@ cursor: default;
 .todo-index-container label {
 	font-weight: bold;
 	color: #283c46;
-	margin-bottom: 0px;
+	margin-bottom: 15px;
 }
 
 .todo-index-container label input {
@@ -86,13 +86,21 @@ cursor: default;
 	margin-left: 17px
 }
 
+.note-form {
+	position: relative;
+	height: 270px;
+}
+
 .notes-input {
 	border-radius: 0.4rem;
 	border: 1px solid #bfbfbf;
 	padding: .6rem;
+	height: 200px;
 	background-color: #fff;
-	width: 645px;
-	margin-left: 17px
+	width: 590px;
+	position: absolute;
+	left: 70px;
+	resize: none;
 }
 
 // ::-webkit-datetime-edit { padding: 1em; }
