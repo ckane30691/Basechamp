@@ -56,7 +56,7 @@ class EventIndex extends React.Component {
 						minDate={new Date('01/01/1991')}
 						minDetail={"year"}
 						renderChildren={this.mapEventsToCalendar()} />
-					<ul className='todo-list'>
+					<ul className='event-list'>
 						{
 							this.props.events.sort(this.compareStartDates).map(event => (
 								<EventIndexItem

@@ -11,15 +11,15 @@ const EventIndexItem = ({event, deleteEvent, updateEvent, currentUser}) => {
 	return (
 		<div>
 		<li>
-			<h3 className="event-author">{event.author} • {(createdDate.getMonth() + 1) + "/" + createdDate.getDate() + "/" + createdDate.getFullYear()}</h3>
 			<Link className='todo-title' to={`/projects/${event.project_id}/events/${event.id}`}>
 				{event.title}
 			</Link>
-			<h4 className='todo-body'>{event.body}</h4>
+			<h4 className='event-body'>{event.body}</h4>
 			{edit}
 			{deleteBtn}
-			<h4>Event starts: {(startDate.getMonth() + 1) + "/" + startDate.getDate() + "/" + startDate.getFullYear()}</h4>
-			<h4>Event Ends: {(endDate.getMonth() + 1) + "/" + endDate.getDate() + "/" + endDate.getFullYear()}</h4>
+			<h4 className="event-start">Event Starts: {(startDate.getMonth() + 1) + "/" + startDate.getDate() + "/" + startDate.getFullYear()}</h4>
+			<h4 className="event-end">Event Ends: {(endDate.getMonth() + 1) + "/" + endDate.getDate() + "/" + endDate.getFullYear()}</h4>
+			<h3 className="event-author">Posted by: {event.author} • {(createdDate.getMonth() + 1) + "/" + createdDate.getDate() + "/" + createdDate.getFullYear()}</h3>
 		</li>
 		</div>
 	)

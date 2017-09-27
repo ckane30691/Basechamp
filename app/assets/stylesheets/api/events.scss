@@ -25,12 +25,12 @@
 }
 
 .react-calendar__tile {
-text-align: center;
-word-break: break-all;
-position: relative;
-height: 50px;
-border: 1px solid #f2f2f2;
-cursor: default;
+	text-align: center;
+	word-break: break-all;
+	position: relative;
+	height: 50px;
+	border: 1px solid #f2f2f2;
+	cursor: default;
 }
 
 // Credit for the .link fix below
@@ -103,20 +103,41 @@ cursor: default;
 	resize: none;
 }
 
-// ::-webkit-datetime-edit { padding: 1em; }
-// ::-webkit-datetime-edit-fields-wrapper { background: silver; }
-// ::-webkit-datetime-edit-text { color: red; padding: 0 0.3em; }
-// ::-webkit-datetime-edit-month-field { color: blue; }
-// ::-webkit-datetime-edit-day-field { color: green; }
-// ::-webkit-datetime-edit-year-field { color: purple; }
-::-webkit-inner-spin-button { display: none; }
-// ::-webkit-calendar-picker-indicator { background: orange; }
+.event-start {
+	color: #283c46;
+	font-size: .9em;
+}
 
-// .ui-datepicker-header {
-//     margin-bottom: 0.6rem;
-//     padding: 0.6rem 0.8rem;
-//     background: #3cb371;
-//     border-radius: 0.4rem 0.4rem 0 0;
-//     font-weight: bold;
-//     color: #fff;
-// }
+.event-end {
+	color: #283c46;
+	font-size: .9em;
+}
+
+.event-author {
+	color: #877457;
+	font-size: .7em;
+}
+
+.event-body {
+  color: #6d6d6d;
+	font-size: 1em;
+	margin-left: 10px;
+	margin-top: 10px;
+}
+
+.event-list li {
+  position: relative;
+  background-color: #fff;
+  width: 685px;
+  min-height: 105px;
+  padding: 25px;
+  padding-right: 100px;
+  border-radius: 1.2em;
+  border: 1px solid #bfbfbf;
+  border-bottom-width: 2px;
+  border-color: rgba(0,0,0,0.15);
+  margin-bottom: 25px;
+	margin-top: 25px;
+}
+
+::-webkit-inner-spin-button { display: none; }
