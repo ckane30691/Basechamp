@@ -28,7 +28,7 @@ export const dummyLogin = () => (
     url: 'api/session',
     data: {
       user: {
-      username: "Astronaut_Bill",
+      username: "Dwight",
       password: "password"
       }
     }

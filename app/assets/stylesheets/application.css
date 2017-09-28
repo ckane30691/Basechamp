@@ -99,7 +99,7 @@
  .demo-button {
   background-color: #007bb6;
   color: #fff;
-  margin-left: 15px;
+  margin-left: 10px;
   font-size: 0.85em;
   font-weight: bold;
   text-decoration: none;
@@ -119,7 +119,7 @@
  }
 
  .header-name {
-   margin-right: 150px;
+   margin-right: 110px;
    margin-bottom: 10px;
    margin-top: 5px;
  }
@@ -127,7 +127,7 @@
 .header-button {
   background-color: #3cb371;
   color: #fff;
-  width: 80px;
+  width: 60px;
   font-size: .7em;
   font-weight: bold;
   text-align: center;
@@ -138,7 +138,7 @@
   border-color: rgba(0,0,0,0.15);
   transition: all 0.2s ease;
   position: absolute;
-  right: 30px;
+  right: 20px;
   top:0px;
 }
 
@@ -149,7 +149,7 @@
 }
 
 .login-signup a {
-  margin-left: 20px;
+  margin-left: 10px;
 }
 
  .home-container {
