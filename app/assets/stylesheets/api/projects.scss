@@ -34,6 +34,19 @@
    margin-bottom: 30px;
 }
 
+.project-link {
+  position: relative;
+}
+
+.project-link:after{
+  content:"";
+  padding: 100px;
+  padding-right: 138px;
+  position: absolute;
+  left: -20px;
+  top: -75px;
+}
+
 .project-list {
   display: flex;
   justify-content: space-around;
