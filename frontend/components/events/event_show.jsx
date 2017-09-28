@@ -15,7 +15,7 @@ class EventShow extends React.Component {
 		const edit = this.props.currentUser && this.props.event &&
 		this.props.currentUser.id === this.props.event.author_id ?
 		<Link
-			className="event-edit-btn"
+			className="event-edit-btn evt-show"
 			to={`/projects/${event.project_id}/events/${event.id}/edit`}>
 			Edit
 		</Link> :
