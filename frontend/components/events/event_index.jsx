@@ -14,6 +14,10 @@ class EventIndex extends React.Component {
 		return ({date, view}) => (
 			this.props.events.map(event => {
 				const startDate = new Date(event.start_date);
+
+				// https://stackoverflow.com/questions/3674539/incrementing-a-date-in-javascript
+				startDate.setDate(startDate.getDate() + 1)
+				
 				return(
 					view === 'month'
 					&& (date.getFullYear() == startDate.getFullYear())

@@ -20,8 +20,11 @@ class EventShow extends React.Component {
 			Edit
 		</Link> :
 		"";
+		
 		const startDate = new Date(event.start_date);
+		startDate.setDate(startDate.getDate() + 1)
 		const endDate = new Date(event.end_date);
+		endDate.setDate(endDate.getDate() + 1)
 
 		return (
 			<div className="todo-index-body">
