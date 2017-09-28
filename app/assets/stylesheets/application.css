@@ -142,11 +142,11 @@
   top:0px;
 }
 
- .login-signup {
+.login-signup {
   color: #007bb6;
   text-decoration: underline;
   font-size: .75em;
- }
+}
 
 .login-signup a {
   margin-left: 20px;
@@ -266,9 +266,9 @@
    min-height: 450px;
  }
 
- .event-height {
-   min-height: 600px;
- }
+.event-height {
+  min-height: 630px;
+}
 
  .generic-list {
    /*margin-top: -50px;*/

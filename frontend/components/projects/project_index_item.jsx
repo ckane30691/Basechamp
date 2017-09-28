@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link, withRouter } from 'react-router-dom';
 
-const ProjectIndexItem = ({ project, deleteProject, updateProject, history, setCoords}) => {
+const ProjectIndexItem = ({ project, deleteProject, updateProject, history}) => {
 	return (
 		<li>
 			<Link to={`/projects/${project.id}`}>
@@ -15,7 +15,7 @@ const ProjectIndexItem = ({ project, deleteProject, updateProject, history, setC
 				onClick={() => deleteProject(project.id)}>
 				X
 			</button>
-			<Link onClick={(e) => setCoords(e)} className="edit-project-btn" to={`/projects/${project.id}/edit`}>
+			<Link className="edit-project-btn" to={`/projects/${project.id}/edit`}>
 				Edit
 			</Link>
 		</li>

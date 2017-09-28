@@ -120,19 +120,11 @@
   height: 180px;
   position: relative;
   margin: auto;
-  margin-top: -330px;
+  margin-top: -230px;
   border: 1px solid #bfbfbf;
   border-color: rgba(0,0,0,0.15);
   border-bottom-width: 2px;
   -webkit-transition: transform .5s ease-in-out;
-}
-
-.left {
-  transform: translateX(-320px);
-}
-
-.right {
-  transform: translateX(320px);
 }
 
 .project-input {
@@ -146,6 +138,7 @@
   font-size: 1rem;
   font-family: monospace;
   position: absolute;
+  text-align: left;
 }
 
 .edit-project-btn {

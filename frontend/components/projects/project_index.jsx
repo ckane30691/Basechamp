@@ -1,27 +1,12 @@
 import React from 'react';
-import ProjectIndexItem from './project_index_item'
+import ProjectIndexItem from './project_index_item';
+import ProjectFormContainer from './project_form_container';
 import { Link } from 'react-router-dom';
 
 class ProjectIndex extends React.Component {
 
 	componentDidMount() {
 		this.props.fetchProjects()
-	}
-
-	setCoords(e) {
-		let x = e.clientX
-		console.log(document.getElementsByClassName("edit-project-container")[0]);
-		console.log(e.clientX);
-		setTimeout(() => {
-			if (x < 550) {
-				document.getElementsByClassName("edit-project-container")[0].className = "edit-project-container left";
-			} else if (x < 990) {
-				document.getElementsByClassName("edit-project-container")[0].className = "edit-project-container mid";
-			} else {
-				document.getElementsByClassName("edit-project-container")[0].className = "edit-project-container right";
-			}
-		}, 1)
-		// document.getElementsByClassName("edit-project-container")[0].style.transform = 'translateX(-180px)';
 	}
 
 	render() {
@@ -33,12 +18,13 @@ class ProjectIndex extends React.Component {
 				<ul className='project-list'>
 					{
 						this.props.projects.map(project => (
-							<ProjectIndexItem
+							<div><ProjectIndexItem
 								key={project.id}
 								deleteProject={this.props.deleteProject}
 								updateProject={this.props.updateProject}
 								setCoords={this.setCoords}
 								project={project} />
+							<ProjectFormContainer renderId={project.id} shouldRender={false} formType={'edit'} /></div>
 						))
 				  }
 				</ul>

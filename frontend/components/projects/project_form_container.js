@@ -9,10 +9,16 @@ import { withRouter } from 'react-router-dom';
 
 const mapStateToProps = (state, ownProps) => {
 	let project = {title: "", description: ""}
-	if (ownProps.match.path == "/projects/:projectId/edit") {
-		project = state.entities.projects[ownProps.match.params.projectId];
-	}
-	return {project}
+	let shouldRender = false;
+	if (ownProps.match.path === "/projects/new") {
+		shouldRender = true;
+	} else if (ownProps.match.path === "/projects/:projectId/edit") {
+			project = state.entities.projects[ownProps.match.params.projectId];
+			if (ownProps.renderId == ownProps.match.params.projectId) {
+				shouldRender = true;
+			}
+		}
+	return {project, shouldRender}
 };
 
 const mapDispatchToProps = (dispatch, ownProps) => {

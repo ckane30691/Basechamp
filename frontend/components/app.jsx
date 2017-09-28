@@ -50,7 +50,7 @@ const App = () => (
       // https://stackoverflow.com/questions/33062830/using-react-router-with-a-layout-page-or-multiple-components-per-page
       <ProtectedRoute exact path="/projects/new" component={() =><div className="entire-project-body"><ProjectIndexContainer/><ProjectFormContainer/></div>} />
       <ProtectedRoute exact path="/projects/:projectId" component={ProjectShowContainer} />
-      <ProtectedRoute exact path="/projects/:projectId/edit" component={() => <div className="entire-project-body"><ProjectIndexContainer/><ProjectFormContainer/></div>} />
+      <ProtectedRoute exact path="/projects/:projectId/edit" component={() => <div className="entire-project-body"><ProjectIndexContainer/></div>} />
       <ProtectedRoute exact path="/projects/:projectId/todos" component={TodoIndexContainer} />
       <ProtectedRoute exact path="/projects/:projectId/todos/new" component={TodoFormContainer} />
       <ProtectedRoute exact path="/projects/:projectId/todos/:todoId" component={TodoShowContainer} />
