@@ -32,7 +32,7 @@ class ProjectForm extends React.Component {
 		const title = this.state ? this.state.title : "";
 		const desc = this.state ? this.state.description : "";
 		return(
-			<div className="new-project-container">
+			<div className={`${this.props.formType}-project-container`}>
 				<form onSubmit={this.handleSubmit}>
 					<input required type="text"
 						value={title}

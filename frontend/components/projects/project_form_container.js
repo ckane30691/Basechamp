@@ -23,7 +23,8 @@ const mapDispatchToProps = (dispatch, ownProps) => {
 	const processForm = (formType === 'new') ? createProject : updateProject;
 	return {
 		processForm: project => dispatch(processForm(project)),
-		fetchProject: id => dispatch(fetchProject(id))
+		fetchProject: id => dispatch(fetchProject(id)),
+		formType
 	}
 };
 
