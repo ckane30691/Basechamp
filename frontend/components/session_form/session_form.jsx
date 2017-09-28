@@ -59,7 +59,7 @@ class SessionForm extends React.Component {
     return (
       <div className={`session-${this.props.formType}-container`}>
         <form onSubmit={this.handleSubmit}
-          className={`${this.props.formType}-form-box`}>
+          className={`session-form-box`}>
           {passage}
           <div className="errors">{this.renderErrors()}</div>
           <div className="session-form">
@@ -77,7 +77,7 @@ class SessionForm extends React.Component {
                  placeholder="Enter Password"
                />
              <br/>
-             <input className={`${this.props.formType}-submit`} type="submit" value="Submit" />
+             <input className='signup-submit' type="submit" value={text} />
           </div>
         </form>
       </div>

@@ -6,12 +6,10 @@
 	 font-size: 1.0rem;
 	 color: #283c46;
 	 width: 500px;
-	 height: 240px;
-	 text-align: center;
-	 font-weight: bold;
+	 height: 230px;
 	 box-shadow: 0 2px 10px 0 rgba(0,0,0,0.1);
 	 max-width: 40rem;
-	 border-radius: 0.5em;
+	 border-radius: 0.2em;
 	 padding-top: 25px;
 	 margin: 1.5em auto 1em auto;
 	 background-color: #fff;
@@ -23,14 +21,16 @@
 	 display: block;
 	 margin-bottom: 0.75em;
 	 padding: 0.75em 0.6em;
-	 width: 75%;
+	 width: 78%;
 	 background-color: #fff;
-	 border: 2px solid #bfbfbf;
-	 font-size: 1.0rem;
-	 font-family: monospace;
+	 border: 1px solid #bfbfbf;
+	 font-size: .8em;
+	 font-family: helvetica;
 	 position: absolute;
 	 left: 45px;
 	 top: 73px;
+   font-weight: 400;
+   border-radius: .2em;
  }
 
  .password-input {
@@ -38,14 +38,16 @@
 	display: block;
 	margin-bottom: 0.75em;
 	padding: 0.75em 0.6em;
-	width: 75%;
+	width: 78%;
 	background-color: #fff;
-	border: 2px solid #bfbfbf;
-	font-size: 1.0rem;
-	font-family: monospace;
+	border: 1px solid #bfbfbf;
+	font-size: .8em;
+	font-family: helvetica;
 	position: absolute;
 	left: 45px;
 	bottom: 75px;
+  font-weight: 400;
+  border-radius: .2em;
  }
 
 
@@ -53,12 +55,10 @@
 	font-size: 1.0rem;
 	color: #283c46;
 	width: 500px;
-	height: 270px;
-	text-align: center;
-	font-weight: bold;
+	height: 260px;
 	box-shadow: 0 2px 10px 0 rgba(0,0,0,0.1);
 	max-width: 40rem;
-	border-radius: 0.5em;
+	border-radius: 0.2em;
 	padding-top: 25px;
 	margin: 1.5em auto 1em auto;
 	background-color: #fff;
@@ -68,31 +68,22 @@
 .session-login-input {
  transition: all 0.2s ease;
  display: block;
+ border-radius: .2em;
  margin-bottom: 0.75em;
  padding: 0.75em 0.6em;
- width: 75%;
+ width: 78%;
  background-color: #fff;
- border: 2px solid #bfbfbf;
- font-size: 1.0rem;
- font-family: monospace;
+ border: 1px solid #bfbfbf;
+ font-size: .8em;
+ font-family: helvetica;
  position: absolute;
  left: 45px;
  top: 100px;
+ font-weight: 400;
 }
 
-.login-submit {
-	background-color: #3cb371;
-	color: #fff;
-	width: 75%;
-	font-size: 1em;
-	font-weight: bold;
-	padding: 0.75em 0.75em 0.75em 0.75em;
-	border-radius: 0.5em;
-	border: 1px solid #bfbfbf;
-	border-bottom-width: 2px;
-	border-color: rgba(0,0,0,0.15);
-	transition: all 0.2s ease;
-	position: absolute;
-	bottom: 25px;
-	left: 45px
+
+.session-form-box p {
+  text-align: center;
+  font-weight: bold;
 }
