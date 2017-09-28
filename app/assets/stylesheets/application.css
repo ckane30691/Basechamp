@@ -266,6 +266,10 @@
    min-height: 450px;
  }
 
+ .event-height {
+   min-height: 600px;
+ }
+
  .generic-list {
    /*margin-top: -50px;*/
    margin-bottom: 20px;
