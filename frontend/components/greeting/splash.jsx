@@ -20,14 +20,14 @@ const Splash = () => (
 
 			<div className="splash-signup">
 				<div className="call-to-action">
-					<h3>Try Basechamp Today:</h3>
+					<h3>Try Basechamp Today: <span id="arrow">⟶</span></h3>
 
 					<ul>
-						<li>Everything will be in one organized place</li>
-						<li>Everyone will be on the same page</li>
-						<li>Projects will get off the ground faster</li>
-						<li>You'll know exactly what’s going on</li>
-						<li>You'll free up time spent on meetings</li>
+						<li><span>✓</span>Everything will be in one organized place</li>
+						<li><span>✓</span>Everyone will be on the same page</li>
+						<li><span>✓</span>Projects will get off the ground faster</li>
+						<li><span>✓</span>You'll know exactly what’s going on</li>
+						<li><span>✓</span>You'll free up time spent on meetings</li>
 					</ul>
 				</div>
 

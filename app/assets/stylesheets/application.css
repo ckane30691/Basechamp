@@ -186,6 +186,8 @@
 
 .intro-body {
   font-size: 1.0rem;
+  padding-left: 70px;
+  padding-right: 70px;
 }
 
 .splash {
@@ -212,13 +214,35 @@
  .splash-signup {
    display: flex;
    align-items: center;
-   justify-content: space-around;
+   justify-content: space-between;
+   padding-left: 50px;
  }
 
- .call-to-action h3 {
-   font-family: 'Merriweather', serif;
-   width: 50%;
+ .call-to-action {
+   color: #283c46;
+   margin-top: -30px;
  }
+
+.call-to-action h3 {
+ font-family: 'Merriweather', serif;
+ width: 100%;
+}
+
+.call-to-action span {
+ font-size: 1.3em;
+ font-weight: bold;
+}
+
+#arrow {
+  font-size: 1.5em;
+}
+
+.call-to-action ul {
+ font-size: .8em;
+ color: #283c46;
+ font-weight: bold;
+}
+
 
  .errors {
    color: red;
