@@ -6,6 +6,6 @@ class CreateProjects < ActiveRecord::Migration[5.1]
       t.integer :author_id, null: false
       t.timestamps
     end
-    add_index :projects, :title, unique: true
+    add_index :projects, [:title, :author_id], unique: true
   end
 end

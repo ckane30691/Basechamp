@@ -49,7 +49,7 @@ ActiveRecord::Schema.define(version: 20170926160149) do
     t.integer "author_id", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.index ["title"], name: "index_projects_on_title", unique: true
+    t.index ["title", "author_id"], name: "index_projects_on_title_and_author_id", unique: true
   end
 
   create_table "todos", force: :cascade do |t|
