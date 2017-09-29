@@ -41,4 +41,3 @@ If you find a bug, please open an issue [here](https://github.com/ckane30691/Bas
 * Implement Teams
 * Implement User Profile
 * Implement User Search
-* Implement Teams
