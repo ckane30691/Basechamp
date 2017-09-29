@@ -17,6 +17,17 @@ class SessionForm extends React.Component {
     this.redirectIfLoggedIn();
   }
 
+  componentDidMount() {
+    this.props.receiveCurrentUser(null)
+  }
+
+
+  componentWillReceiveProps(newProps) {
+    if (newProps.formType !== this.props.formType) {
+      this.props.receiveCurrentUser(null)
+    }
+  }
+
   redirectIfLoggedIn() {
     if (this.props.loggedIn) {
       hashHistory.push("/projects");

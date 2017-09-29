@@ -18,13 +18,15 @@ class ProjectIndex extends React.Component {
 				<ul className='project-list'>
 					{
 						this.props.projects.map(project => (
-							<div><ProjectIndexItem
-								key={project.id}
-								deleteProject={this.props.deleteProject}
-								updateProject={this.props.updateProject}
-								setCoords={this.setCoords}
-								project={project} />
-							<ProjectFormContainer renderId={project.id} shouldRender={false} formType={'edit'} /></div>
+							<div>
+								<ProjectIndexItem
+									key={project.id}
+									deleteProject={this.props.deleteProject}
+									updateProject={this.props.updateProject}
+									setCoords={this.setCoords}
+									project={project} />
+								<ProjectFormContainer renderId={project.id} shouldRender={false} formType={'edit'} />
+						 </div>
 						))
 				  }
 				</ul>

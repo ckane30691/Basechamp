@@ -1,8 +1,10 @@
 import React from 'react';
 import { Link, withRouter } from 'react-router-dom';
+import Draggable from 'react-draggable';
 
 const ProjectIndexItem = ({ project, deleteProject, updateProject, history}) => {
 	return (
+		<Draggable>
 		<li>
 			<Link className='project-link' to={`/projects/${project.id}`}>
 				{project.title}
@@ -19,6 +21,7 @@ const ProjectIndexItem = ({ project, deleteProject, updateProject, history}) => 
 				Edit
 			</Link>
 		</li>
+		</Draggable>
 	);
 };
 

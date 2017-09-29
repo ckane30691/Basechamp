@@ -246,6 +246,7 @@
 
  .errors {
    color: red;
+   text-align: center;
  }
 
  .errors-ul {
