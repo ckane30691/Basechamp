@@ -29,8 +29,8 @@ const EventIndexItem = ({event, deleteEvent, updateEvent, currentUser}) => {
 				{(startDate.getMonth() + 1) + "/" + startDate.getDate()  + "/" + startDate.getFullYear()}
 				- {(endDate.getMonth() + 1) + "/" + endDate.getDate() + "/" + endDate.getFullYear()}
 			</h4>
-			<h3 className="event-author">Posted by: {event.author} • {(createdDate.getMonth() + 1) + "/" + createdDate.getDate() + "/" + createdDate.getFullYear()}</h3>
 		</li>
+		<h3 className="event-author">Posted by: {event.author} • {(createdDate.getMonth() + 1) + "/" + createdDate.getDate() + "/" + createdDate.getFullYear()}</h3>
 		</div>
 	)
 }
