@@ -21,6 +21,11 @@ class MessageForm extends React.Component {
 		this.setState(newProps.message)
 	}
 
+	componentDidMount() {
+		$("#test").focus()
+		$("#test").get(0).setSelectionRange(0,0)
+	}
+
 	update(field) {
 		return e => this.setState({[field]: e.target.value});
 	}
@@ -39,19 +44,19 @@ class MessageForm extends React.Component {
 		let projectPath = `/projects/${this.props.match.params.projectId}`;
 
 		return (
-			<div className="todo-index-body">
+			<div className='todo-index-body'>
 				<Link to={projectPath} className="project-title">{projectTitle}</Link>
 				<form className="generic-index-container flex-start" onSubmit={this.handleSubmit}>
 					<Link to={indexPath} className="feature-header">Messages</Link>
 
-					<input required className="message-title-input" type="text"
+					<input id="test" required className={`message-title-input message-${this.props.formType}`} type="text"
 						value={messageTitle}
 						onChange={this.update('title')}
 						placeholder="Title..." />
 
 
 
-					<textarea required className="message-body-input" type="text"
+					<textarea required className={`message-body-input message-${this.props.formType}`} type="text"
 						value={body}
 						onChange={this.update('body')}
 						placeholder="Write away..."/>

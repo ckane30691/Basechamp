@@ -97,11 +97,13 @@
 .message-body-input {
   resize: none;
   width: 660px;
-  height: 25px;
+  height: 90px;
   margin-bottom: 80px;
   color: #283c46;
 }
 
-.message-body-input:focus {
-  height: 130px;
+.message-edit {
+  // border: 1px solid #bfbfbf;
+  // border-bottom-width: 2px;
+  // border-color: rgba(0,0,0,0.15);
 }

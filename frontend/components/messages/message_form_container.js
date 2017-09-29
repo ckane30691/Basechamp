@@ -28,7 +28,8 @@ const mapDispatchToProps = (dispatch, ownProps) => {
 	return {
 		processForm: message => dispatch(processForm(message)),
 		fetchMessage: id => dispatch(fetchMessage(id)),
-		fetchProject: id => dispatch(fetchProject(id))
+		fetchProject: id => dispatch(fetchProject(id)),
+		formType
 	}
 }
 
