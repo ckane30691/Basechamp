@@ -17,7 +17,7 @@ class EventIndex extends React.Component {
 
 				// https://stackoverflow.com/questions/3674539/incrementing-a-date-in-javascript
 				startDate.setDate(startDate.getDate() + 1)
-				
+
 				return(
 					view === 'month'
 					&& (date.getFullYear() == startDate.getFullYear())
@@ -59,7 +59,7 @@ class EventIndex extends React.Component {
 				<Link className="project-title" to={`/projects/${this.props.match.params.projectId}`}>
 					{title}
 				</Link>
-				<div className="generic-index-container event-height">
+				<div className="generic-index-container centered event-height">
 					<h2 className="feature-header">Schedule</h2>
 					{extraBtn}
 					<Link className='new-message-button bottom-corner' to={`/projects/${this.props.match.params.projectId}/events/new`}>

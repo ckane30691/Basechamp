@@ -41,7 +41,7 @@ class TodoForm extends React.Component {
 		return(
 			<div className="todo-index-body">
 				<Link to={projectPath} className="project-title">{projectTitle}</Link>
-				<form className="generic-index-container form-height" onSubmit={this.handleSubmit}>
+				<form className="generic-index-container flex-start form-height" onSubmit={this.handleSubmit}>
 					<Link to={indexPath} className="feature-header">To-dos</Link>
 					<div className="input-div">
 					<input required className="todo-title-input" type="text"

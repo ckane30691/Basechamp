@@ -24,7 +24,7 @@ class MessageIndex extends React.Component {
 				<Link className="project-title" to={`/projects/${this.props.match.params.projectId}`}>
 					{title}
 				</Link>
-				<div className="generic-index-container index-height">
+				<div className="generic-index-container flex-start index-height">
 					<Link className="back-btn" to={`/projects/${this.props.match.params.projectId}`}>↷</Link>
 
 					{extraBtn}

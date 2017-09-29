@@ -41,7 +41,7 @@ class MessageForm extends React.Component {
 		return (
 			<div className="todo-index-body">
 				<Link to={projectPath} className="project-title">{projectTitle}</Link>
-				<form className="generic-index-container" onSubmit={this.handleSubmit}>
+				<form className="generic-index-container flex-start" onSubmit={this.handleSubmit}>
 					<Link to={indexPath} className="feature-header">Messages</Link>
 
 					<input required className="message-title-input" type="text"

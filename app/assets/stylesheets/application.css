@@ -275,12 +275,19 @@
  	 box-sizing: border-box;
  	 display: flex;
  	 flex-direction: column;
- 	 align-items: flex-start;
  	 margin-bottom: 100px;
  	 padding-bottom: 50px;
  	 border: 1px solid #bfbfbf;
  	 border-bottom-width: 2px;
  	 border-color: rgba(0,0,0,0.15);
+ }
+
+ .centered {
+   align-items: center;
+ }
+
+ .flex-start {
+   align-items: flex-start;
  }
 
  .form-height {

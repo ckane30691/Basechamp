@@ -21,7 +21,7 @@ class TodoIndex extends React.Component {
 		return (
 			<div className="todo-index-body">
 				<Link className="project-title" to={`/projects/${this.props.match.params.projectId}`}>{title}</Link>
-				<div className="generic-index-container index-height">
+				<div className="generic-index-container flex-start index-height">
 					<Link className="back-btn" to={`/projects/${this.props.match.params.projectId}`}>↷</Link>
 					<Link className='new-todo-button bottom' to={`/projects/${this.props.match.params.projectId}/todos/new`}>
 						Make another to-do

@@ -28,7 +28,7 @@ class MessageShow extends React.Component {
 					to={`/projects/${this.props.match.params.projectId}`}>
 					{title}
 				</Link>
-				<div className="generic-index-container show-height">
+				<div className="generic-index-container flex-start show-height">
 						<Link
 							className="back-btn"
 							to={`/projects/${this.props.match.params.projectId}/messages`}>

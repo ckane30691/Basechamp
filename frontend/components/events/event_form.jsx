@@ -43,7 +43,7 @@ class EventForm extends React.Component {
 		return (
 			<div className="todo-index-body">
 				<Link to={projectPath} className="project-title">{projectTitle}</Link>
-				<form className="generic-index-container form-height" onSubmit={this.handleSubmit}>
+				<form className="generic-index-container flex-start form-height" onSubmit={this.handleSubmit}>
 					<Link to={indexPath} className="feature-header">Events</Link>
 
 					<input required className="event-title-input" type="text"
