@@ -8,7 +8,7 @@ class ProjectShow extends React.Component {
 	}
 
 	render() {
-		const title = this.props.project ? this.props.project.title : ""
+		const title = this.props.project ? this.props.project.title : "";
 		return (
 			<div>
 				<div className="project-show-body">
@@ -54,7 +54,7 @@ class ProjectShow extends React.Component {
 					<h6 className="happy-basechamping">Happy Basechamping!</h6>
 				</div>
 		</div>
-		)
+		);
 	}
 }
 

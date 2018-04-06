@@ -10,12 +10,12 @@ class ProjectForm extends React.Component {
 
 	componentDidMount() {
 		if (this.props.match.params.projectId) {
-			this.props.fetchProject(this.props.match.params.projectId)
+			this.props.fetchProject(this.props.match.params.projectId);
 		}
 	}
 
 	componentWillReceiveProps(newProps) {
-		this.setState(newProps.project)
+		this.setState(newProps.project);
 	}
 
 	update(field) {
@@ -25,7 +25,7 @@ class ProjectForm extends React.Component {
 	handleSubmit(e) {
 		e.preventDefault();
 		this.props.processForm(this.state)
-		.then(() => this.props.history.push('/projects'));;
+		.then(() => this.props.history.push('/projects'));
 	}
 
 	render() {
@@ -60,7 +60,7 @@ class ProjectForm extends React.Component {
 						↷
 					</Link>
 				</div>
-			)
+			);
 		} else {
 			return <div></div>;
 		}
