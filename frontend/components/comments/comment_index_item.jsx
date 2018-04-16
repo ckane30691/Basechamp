@@ -16,8 +16,8 @@ const CommentIndexItem = (props) => {
 			{deleteBtn}
 			<br/>
 		</li>
-	)
-}
+	);
+};
 
 
 

@@ -5,7 +5,7 @@ import { Link, withRouter } from 'react-router-dom';
 class CommentIndex extends React.Component {
 
 	componentDidMount() {
-		this.props.fetchComments(this.props.match.params.messageId)
+		this.props.fetchComments(this.props.match.params.messageId);
 	}
 
 	render() {
@@ -23,7 +23,7 @@ class CommentIndex extends React.Component {
 				}
 			</ul>
 			</div>
-		)
+		);
 	}
 }
 
