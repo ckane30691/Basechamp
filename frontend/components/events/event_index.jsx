@@ -1,13 +1,13 @@
 import React from 'react';
 import EventIndexItem from './event_index_item';
-import Calendar from 'react-calendar'
+import Calendar from 'react-calendar';
 import { Link } from 'react-router-dom';
 
 class EventIndex extends React.Component {
 
 	componentDidMount() {
-		this.props.fetchProject(this.props.match.params.projectId)
-		this.props.fetchEvents(this.props.match.params.projectId)
+		this.props.fetchProject(this.props.match.params.projectId);
+		this.props.fetchEvents(this.props.match.params.projectId);
 	}
 
 	mapEventsToCalendar() {
@@ -16,7 +16,7 @@ class EventIndex extends React.Component {
 				const startDate = new Date(event.start_date);
 
 				// https://stackoverflow.com/questions/3674539/incrementing-a-date-in-javascript
-				startDate.setDate(startDate.getDate() + 1)
+				startDate.setDate(startDate.getDate() + 1);
 
 				return(
 					view === 'month'
@@ -27,20 +27,20 @@ class EventIndex extends React.Component {
 						to={`/projects/${this.props.match.params.projectId}/events/${event.id}`}
 						className="dot-link">•</Link>
 					: null
-				)
+				);
 			})
-		)
+		);
 	}
 
 	compareStartDates(a, b) {
 		let first = new Date(a.start_date);
 		let second = new Date(b.start_date);
 		if (first.getTime() < second.getTime()) {
-			return -1
+			return -1;
 		} else if (first.getTime() > second.getTime()) {
-			return 1
+			return 1;
 		} else {
-			return 0
+			return 0;
 		}
 	}
 
@@ -84,7 +84,7 @@ class EventIndex extends React.Component {
 					</ul>
 				</div>
 			</div>
-		)
+		);
 	}
 }
 

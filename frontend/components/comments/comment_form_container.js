@@ -7,13 +7,13 @@ import { withRouter } from 'react-router-dom';
 
 const mapStateToProps = (state, ownProps) => ({
 	comment: {body: "", message_id: ownProps.match.params.messageId}
-})
+});
 
 const mapDispatchToProps = dispatch => ({
 	createComment: comment => dispatch(createComment(comment))
-})
+});
 
 export default withRouter(connect(
 	mapStateToProps,
 	mapDispatchToProps
-)(CommentForm))
+)(CommentForm));

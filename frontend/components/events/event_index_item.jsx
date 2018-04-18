@@ -5,12 +5,24 @@ const EventIndexItem = ({event, deleteEvent, updateEvent, currentUser}) => {
 	const createdDate = new Date(event.created_at);
 
 	const startDate = new Date(event.start_date);
-	startDate.setDate(startDate.getDate() + 1)
+	startDate.setDate(startDate.getDate() + 1);
 	const endDate = new Date(event.end_date);
-	endDate.setDate(endDate.getDate() + 1)
+	endDate.setDate(endDate.getDate() + 1);
 
-	const edit = currentUser && currentUser.id === event.author_id ? <Link className="event-edit-btn evt-idx" to={`/projects/${event.project_id}/events/${event.id}/edit`}>Edit</Link> : ""
-	const deleteBtn = currentUser && currentUser.id === event.author_id ? <button className="delete-event-btn" onClick={() => deleteEvent(event.id)}>X</button> : ""
+	const edit = currentUser && currentUser.id === event.author_id ?
+		<Link className="event-edit-btn evt-idx"
+			to={`/projects/${event.project_id}/events/${event.id}/edit`}>
+			Edit
+		</Link>
+		: "";
+
+	const deleteBtn = currentUser && currentUser.id === event.author_id ?
+		<button className="delete-event-btn" 
+			onClick={() => deleteEvent(event.id)}>
+			X
+		</button>
+		: "";
+
 	return (
 		<div>
 		<li>

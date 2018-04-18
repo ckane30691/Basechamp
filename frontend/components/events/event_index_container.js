@@ -9,14 +9,14 @@ import {
 } from '../../actions/event_actions';
 
 const mapStateToProps = (state, ownProps) => {
-	const project = state.entities.projects[ownProps.match.params.projectId]
+	const project = state.entities.projects[ownProps.match.params.projectId];
 	return {
 		events: Object.keys(state.entities.events)
 		.map(id => state.entities.events[id]),
 		project,
 		errors: state.errors.event,
 		currentUser: state.session.currentUser
-	}
+	};
 };
 
 const mapDispatchToProps = dispatch => ({
@@ -25,7 +25,7 @@ const mapDispatchToProps = dispatch => ({
 	updateEvent: event => dispatch(updateEvent(event)),
 	fetchEvent: id => dispatch(fetchEvent(id)),
 	deleteEvent: id => dispatch(deleteEvent(id))
-})
+});
 
 export default connect(
 	mapStateToProps,

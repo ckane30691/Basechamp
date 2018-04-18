@@ -10,15 +10,15 @@ class EventForm extends React.Component {
 
 	componentWillMount() {
 		if (this.props.match.params.eventId) {
-			this.props.fetchEvent(this.props.match.params.eventId)
-			this.props.fetchProject(this.props.match.params.projectId)
+			this.props.fetchEvent(this.props.match.params.eventId);
+			this.props.fetchProject(this.props.match.params.projectId);
 		} else {
-			this.props.fetchProject(this.props.match.params.projectId)
+			this.props.fetchProject(this.props.match.params.projectId);
 		}
 	}
 
 	componentWillReceiveProps(newProps) {
-		this.setState(newProps.event)
+		this.setState(newProps.event);
 	}
 
 	update(field) {
@@ -28,7 +28,7 @@ class EventForm extends React.Component {
 	handleSubmit(e) {
 		e.preventDefault();
 		this.props.processForm(this.state)
-		.then(() => this.props.history.push(`/projects/${this.props.event.project_id}/events`))
+		.then(() => this.props.history.push(`/projects/${this.props.event.project_id}/events`));
 	}
 
 	render() {
@@ -91,7 +91,7 @@ class EventForm extends React.Component {
 
 				</form>
 			</div>
-		)
+		);
 	}
 
 }
