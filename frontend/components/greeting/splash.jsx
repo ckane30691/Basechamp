@@ -34,7 +34,7 @@ const Splash = () => (
 				<SessionFormContainer />
 			</div>
 	</div>
-)
+);
 
 
 export default Splash;

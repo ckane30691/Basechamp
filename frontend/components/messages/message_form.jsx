@@ -10,20 +10,20 @@ class MessageForm extends React.Component {
 
 	componentWillMount() {
 		if (this.props.match.params.messageId) {
-			this.props.fetchMessage(this.props.match.params.messageId)
-			this.props.fetchProject(this.props.match.params.projectId)
+			this.props.fetchMessage(this.props.match.params.messageId);
+			this.props.fetchProject(this.props.match.params.projectId);
 		} else {
-			this.props.fetchProject(this.props.match.params.projectId)
+			this.props.fetchProject(this.props.match.params.projectId);
 		}
 	}
 
 	componentWillReceiveProps(newProps) {
-		this.setState(newProps.message)
+		this.setState(newProps.message);
 	}
 
 	componentDidMount() {
-		$("#test").focus()
-		$("#test").get(0).setSelectionRange(0,0)
+		$("#test").focus();
+		$("#test").get(0).setSelectionRange(0,0);
 	}
 
 	update(field) {
@@ -33,7 +33,7 @@ class MessageForm extends React.Component {
 	handleSubmit(e) {
 		e.preventDefault();
 		this.props.processForm(this.state)
-		.then(() => this.props.history.push(`/projects/${this.props.message.project_id}/messages`))
+		.then(() => this.props.history.push(`/projects/${this.props.message.project_id}/messages`));
 	}
 
 	render() {
@@ -68,7 +68,7 @@ class MessageForm extends React.Component {
 
 				</form>
 			</div>
-		)
+		);
 	}
 
 }

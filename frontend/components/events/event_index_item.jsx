@@ -17,7 +17,7 @@ const EventIndexItem = ({event, deleteEvent, updateEvent, currentUser}) => {
 		: "";
 
 	const deleteBtn = currentUser && currentUser.id === event.author_id ?
-		<button className="delete-event-btn" 
+		<button className="delete-event-btn"
 			onClick={() => deleteEvent(event.id)}>
 			X
 		</button>
@@ -44,7 +44,7 @@ const EventIndexItem = ({event, deleteEvent, updateEvent, currentUser}) => {
 			<h3 className="event-author">Posted by: {event.author} • {(createdDate.getMonth() + 1) + "/" + createdDate.getDate() + "/" + createdDate.getFullYear()}</h3>
 		</li>
 		</div>
-	)
-}
+	);
+};
 
 export default EventIndexItem;

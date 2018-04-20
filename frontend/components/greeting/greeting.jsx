@@ -7,14 +7,14 @@ const sessionLinks = (dummyLogin) => (
 		<Link to="/signup">Sign up!</Link>
 		<button className="demo-button" onClick={dummyLogin}>Demo</button>
 	</nav>
-)
+);
 
 const personalGreeting = (currentUser, logout) => (
 	<hgroup className="header-group">
 		<h2 className="header-name">Welcome Back,&nbsp; {currentUser.username}</h2>
 		<button className="header-button" onClick={logout}>Log Out</button>
 	</hgroup>
-)
+);
 
 const Greeting = ({ currentUser, logout, dummyLogin }) => (
   currentUser ? personalGreeting(currentUser, logout) : sessionLinks(dummyLogin)

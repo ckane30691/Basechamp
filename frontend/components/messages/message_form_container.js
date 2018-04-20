@@ -12,13 +12,13 @@ const mapStateToProps = (state, ownProps) => {
 	let message = {title: "", body: "", project_id: ownProps.match.params.projectId};
 	let project = state.entities.projects[ownProps.match.params.projectId];
 	if (ownProps.match.params.messageId) {
-		message = state.entities.messages[ownProps.match.params.messageId]
+		message = state.entities.messages[ownProps.match.params.messageId];
 	}
 	return {
 		project,
 		message
-	}
-}
+	};
+};
 
 const mapDispatchToProps = (dispatch, ownProps) => {
 	const formType = ownProps.match.path == "/projects/:projectId/messages/:messageId/edit" ?
