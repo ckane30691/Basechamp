@@ -3,8 +3,20 @@ import { Link } from 'react-router-dom';
 
 const MessageIndexItem = ({message, deleteMessage, updateMessage, project, errors, currentUser}) => {
 	const date = new Date(message.created_at);
-	const edit = currentUser && currentUser.id === message.author_id ? <Link className="message-edit-btn" to={`/projects/${message.project_id}/messages/${message.id}/edit`}>Edit</Link> : ""
-	const deleteBtn = currentUser && currentUser.id === message.author_id ? <button className="delete-project-btn" onClick={() => deleteMessage(message.id)}>X</button> : ""
+	const edit = currentUser && currentUser.id === message.author_id ?
+	<Link className="message-edit-btn"
+		to={`/projects/${message.project_id}/messages/${message.id}/edit`}>
+		Edit
+	</Link>
+	: "";
+
+	const deleteBtn = currentUser && currentUser.id === message.author_id ?
+	<button className="delete-project-btn"
+		onClick={() => deleteMessage(message.id)}>
+		X
+	</button>
+	: "";
+	
 	return (
 		<div>
 		<li>
@@ -17,7 +29,7 @@ const MessageIndexItem = ({message, deleteMessage, updateMessage, project, error
 			{deleteBtn}
 		</li>
 		</div>
-	)
-}
+	);
+};
 
 export default MessageIndexItem;

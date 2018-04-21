@@ -15,7 +15,7 @@ const mapStateToProps = (state, ownProps) => {
 		project,
 		errors: state.errors.message,
 		currentUser: state.session.currentUser
-	}
+	};
 };
 
 const mapDispatchToProps = dispatch => ({
