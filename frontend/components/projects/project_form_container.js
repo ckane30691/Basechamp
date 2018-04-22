@@ -8,7 +8,7 @@ import ProjectForm from './project_form';
 import { withRouter } from 'react-router-dom';
 
 const mapStateToProps = (state, ownProps) => {
-	let project = {title: "", description: ""}
+	let project = {title: "", description: ""};
 	let shouldRender = false;
 	if (ownProps.match.path === "/projects/new") {
 		shouldRender = true;
@@ -18,7 +18,7 @@ const mapStateToProps = (state, ownProps) => {
 				shouldRender = true;
 			}
 		}
-	return {project, shouldRender}
+	return {project, shouldRender};
 };
 
 const mapDispatchToProps = (dispatch, ownProps) => {
@@ -31,7 +31,7 @@ const mapDispatchToProps = (dispatch, ownProps) => {
 		processForm: project => dispatch(processForm(project)),
 		fetchProject: id => dispatch(fetchProject(id)),
 		formType
-	}
+	};
 };
 
 export default withRouter(connect(

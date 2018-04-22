@@ -41,7 +41,9 @@ class MessageShow extends React.Component {
 						</Link>
 						{edit}
 						<div className="message-show">
-							<h3 className="message-show-author">Posted by: {message.author} • {(date.getMonth() + 1) + "/" + date.getDate() + "/" + date.getFullYear()}</h3>
+							<h3 className="message-show-author">
+								Posted by: {message.author} • {(date.getMonth() + 1) + "/" + date.getDate() + "/" + date.getFullYear()}
+							</h3>
 							<h3>{message.title}</h3>
 							<p>{message.body}</p>
 								<br/>
@@ -55,7 +57,7 @@ class MessageShow extends React.Component {
 					</div>
 				</div>
 			</div>
-		)
+		);
 	}
 }
 

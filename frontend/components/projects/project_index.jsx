@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom';
 class ProjectIndex extends React.Component {
 
 	componentDidMount() {
-		this.props.fetchProjects()
+		this.props.fetchProjects();
 	}
 
 	render() {
@@ -31,7 +31,7 @@ class ProjectIndex extends React.Component {
 				  }
 				</ul>
 			</div>
-		)
+		);
 	}
 }
 

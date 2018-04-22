@@ -7,13 +7,13 @@ import {
 	createProject,
 	deleteProject,
 	updateProject
-} from '../../actions/project_actions'
+} from '../../actions/project_actions';
 
 const mapStateToProps = state => {
 	return {
 		projects: Object.keys(state.entities.projects)
 		.map(id => state.entities.projects[id])
-	}
+	};
 };
 
 const mapDispatchToProps = dispatch => ({

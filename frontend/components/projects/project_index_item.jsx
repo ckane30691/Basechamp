@@ -22,4 +22,4 @@ const ProjectIndexItem = ({ project, deleteProject, updateProject, history}) => 
 	);
 };
 
-export default withRouter(ProjectIndexItem)
+export default withRouter(ProjectIndexItem);
