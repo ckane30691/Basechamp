@@ -18,13 +18,13 @@ class SessionForm extends React.Component {
   }
 
   componentDidMount() {
-    this.props.receiveCurrentUser(null)
+    this.props.receiveCurrentUser(null);
   }
 
 
   componentWillReceiveProps(newProps) {
     if (newProps.formType !== this.props.formType) {
-      this.props.receiveCurrentUser(null)
+      this.props.receiveCurrentUser(null);
     }
   }
 
@@ -58,7 +58,7 @@ class SessionForm extends React.Component {
 
   render() {
     //Possibly refactor this
-    let text = this.props.formType === 'login' ? 'Log In' : 'Sign Up'
+    let text = this.props.formType === 'login' ? 'Log In' : 'Sign Up';
     let passage = this.props.formType === 'login' ?
       <p>
         Just enter your username & password
@@ -66,7 +66,8 @@ class SessionForm extends React.Component {
       </p>
       : <p>
         Fill out the fields below to sign up
-      </p>
+      </p>;
+
     return (
       <div className={`session-${this.props.formType}-container`}>
         <form onSubmit={this.handleSubmit}
