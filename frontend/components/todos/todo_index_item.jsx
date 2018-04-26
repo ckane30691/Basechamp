@@ -11,7 +11,7 @@ const TodoIndexItem = ({todo, deleteTodo, updateTodo, project}) => {
 			<button className="delete-project-btn" onClick={() => deleteTodo(todo.id)}>X</button>
 			<Link className="todo-edit-btn" to={`/projects/${todo.project_id}/todos/${todo.id}/edit`}>Edit this to-do</Link>
 		</li>
-	)
-}
+	);
+};
 
 export default TodoIndexItem;

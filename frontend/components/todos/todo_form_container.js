@@ -17,8 +17,8 @@ const mapStateToProps = (state, ownProps) => {
 	return {
 		project,
 		todo
-	}
-}
+	};
+};
 
 
 const mapDispatchToProps = (dispatch, ownProps) => {
@@ -30,8 +30,8 @@ const mapDispatchToProps = (dispatch, ownProps) => {
 		processForm: todo => dispatch(processForm(todo)),
 		fetchTodo: id => dispatch(fetchTodo(id)),
 		fetchProject: id => dispatch(fetchProject(id))
-	}
-}
+	};
+};
 
 export default withRouter(connect(
 	mapStateToProps,

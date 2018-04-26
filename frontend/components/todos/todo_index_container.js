@@ -16,7 +16,7 @@ const mapStateToProps = (state, ownProps) => {
 		todos: Object.keys(state.entities.todos)
 		.map(id => state.entities.todos[id]),
 		project
-	}
+	};
 };
 
 const mapDispatchToProps = dispatch => ({

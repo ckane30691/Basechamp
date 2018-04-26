@@ -5,8 +5,8 @@ import { Link } from 'react-router-dom';
 class TodoIndex extends React.Component {
 
 	componentDidMount() {
-		this.props.fetchProject(this.props.match.params.projectId)
-		this.props.fetchTodos(this.props.match.params.projectId)
+		this.props.fetchProject(this.props.match.params.projectId);
+		this.props.fetchTodos(this.props.match.params.projectId);
 	}
 
 	render() {

@@ -10,15 +10,15 @@ class TodoForm extends React.Component {
 
 	componentWillMount() {
 		if (this.props.match.params.todoId) {
-			this.props.fetchTodo(this.props.match.params.todoId)
-			this.props.fetchProject(this.props.match.params.projectId)
+			this.props.fetchTodo(this.props.match.params.todoId);
+			this.props.fetchProject(this.props.match.params.projectId);
 		} else {
-			this.props.fetchProject(this.props.match.params.projectId)
+			this.props.fetchProject(this.props.match.params.projectId);
 		}
 	}
 
 	componentWillReceiveProps(newProps) {
-		this.setState(newProps.todo)
+		this.setState(newProps.todo);
 	}
 
 	update(field) {
@@ -28,7 +28,7 @@ class TodoForm extends React.Component {
 	handleSubmit(e) {
 		e.preventDefault();
 		this.props.processForm(this.state)
-		.then(() => this.props.history.push(`/projects/${this.props.todo.project_id}/todos`))
+		.then(() => this.props.history.push(`/projects/${this.props.todo.project_id}/todos`));
 	}
 
 	render() {
@@ -63,7 +63,7 @@ class TodoForm extends React.Component {
 					</Link>
 				</form>
 		</div>
-		)
+	);
 	}
 }
 
