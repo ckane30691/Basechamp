@@ -39,7 +39,7 @@ class TodoShow extends React.Component {
 					</Link>
 				</div>
 			</div>
-		)
+		);
 	}
 
 }
