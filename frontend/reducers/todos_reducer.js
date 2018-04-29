@@ -13,14 +13,14 @@ const TodosReducer = (state = {}, action) => {
 		case RECEIVE_TODOS:
 			return action.todos;
 		case RECEIVE_TODO:
-			newState[action.todo.id] = action.todo
-			return newState
+			newState[action.todo.id] = action.todo;
+			return newState;
 		case REMOVE_TODO:
-			delete newState[action.todo.id]
-			return newState
+			delete newState[action.todo.id];
+			return newState;
 		default:
 				return state;
 	}
-}
+};
 
-export default TodosReducer
+export default TodosReducer;

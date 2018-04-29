@@ -21,6 +21,6 @@ const EventsReducer = (state = {}, action) => {
 		default:
 			return state;
 	}
-}
+};
 
-export default EventsReducer
+export default EventsReducer;

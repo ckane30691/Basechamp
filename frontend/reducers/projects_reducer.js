@@ -14,14 +14,14 @@ const ProjectsReducer = (state = {}, action) => {
 		case RECEIVE_PROJECTS:
 			return action.projects;
 		case RECEIVE_PROJECT:
-			newState[action.project.id] = action.project
-			return newState
+			newState[action.project.id] = action.project;
+			return newState;
 		case REMOVE_PROJECT:
-			delete newState[action.project.id]
-			return newState
+			delete newState[action.project.id];
+			return newState;
 		default:
 			return state;
 	}
-}
+};
 
 export default ProjectsReducer;
