@@ -45,7 +45,7 @@ class ProjectShow extends React.Component {
 
 				<div className="show-footer">
 					<hr/>
-					<img className="icon" src="/assets/basecamp-icon.png"/>
+					<img className="icon" src="/assets/basecamp-icon.svg"/>
 					<h4 className="footer-title">Welcome to {title}!</h4>
 					<p className="footer-desc">
 						This is the place to do everything related to this project
