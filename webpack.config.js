@@ -25,7 +25,7 @@ module.exports = {
   context: __dirname,
   entry: "./frontend/basechamp_entry.jsx",
   output: {
-    path: path.resolve(__dirname, 'app', 'assets', 'javascripts'),
+    path: path.resolve(__dirname, 'public', 'assets'),
     filename: "bundle.js"
   },
   plugins: plugins,
