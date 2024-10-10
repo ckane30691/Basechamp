@@ -1,0 +1,1439 @@
+/* line 4, /Users/corykane/Desktop/Basechamp/app/assets/stylesheets/api/comments.scss */
+.comment-form-container {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  margin-bottom: 80px;
+}
+
+/* line 11, /Users/corykane/Desktop/Basechamp/app/assets/stylesheets/api/comments.scss */
+.comment-input {
+  transition: all 0.2s ease;
+  display: block;
+  margin-bottom: 0.75em;
+  padding: 0.75em 0.6em;
+  width: 760px;
+  background-color: #fff;
+  border: 1px solid #bfbfbf;
+  font-size: 1.0rem;
+  border-radius: .2em;
+  resize: none;
+  height: 25px;
+}
+
+/* line 25, /Users/corykane/Desktop/Basechamp/app/assets/stylesheets/api/comments.scss */
+.comment-submit {
+  background-color: #3cb371;
+  color: #fff;
+  width: 150px;
+  font-size: .8em;
+  font-weight: bold;
+  padding: 0.75em 0.75em 0.75em 0.75em;
+  border-radius: 0.2em;
+  border: 1px solid #bfbfbf;
+  border-bottom-width: 2px;
+  border-color: rgba(0, 0, 0, 0.15);
+  transition: all 0.2s ease;
+  position: absolute;
+  text-align: center;
+  left: 285px;
+  bottom: -55px;
+}
+
+/* line 43, /Users/corykane/Desktop/Basechamp/app/assets/stylesheets/api/comments.scss */
+.comment-input:focus {
+  height: 150px;
+}
+
+/* line 47, /Users/corykane/Desktop/Basechamp/app/assets/stylesheets/api/comments.scss */
+.comment-index-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-left: 285px;
+  color: #283c46;
+  margin-top: -75px;
+  flex-wrap: wrap;
+}
+
+/* line 57, /Users/corykane/Desktop/Basechamp/app/assets/stylesheets/api/comments.scss */
+.comment-index-container li {
+  width: 780px;
+  padding-right: 25px;
+  padding-top: 20px;
+  padding-left: 25px;
+  padding-bottom: 0px;
+  margin-bottom: -20px;
+  border-top: 1px solid #bfbfbf;
+  border-color: rgba(0, 0, 0, 0.15);
+  position: relative;
+  box-sizing: border-box;
+}
+
+/* line 70, /Users/corykane/Desktop/Basechamp/app/assets/stylesheets/api/comments.scss */
+.comment-index-container p {
+  font-weight: bold;
+}
+/* line 5, /Users/corykane/Desktop/Basechamp/app/assets/stylesheets/api/events.scss */
+.react-calendar__navigation__label {
+  background: #283c46;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+  font-weight: bold;
+}
+
+/* line 13, /Users/corykane/Desktop/Basechamp/app/assets/stylesheets/api/events.scss */
+.react-calendar__navigation__arrow {
+  background: #283c46;
+  color: #fff;
+  padding: 10px;
+  font-size: 1.5em;
+}
+
+/* line 20, /Users/corykane/Desktop/Basechamp/app/assets/stylesheets/api/events.scss */
+.react-calendar__month-view__weekdays__weekday {
+  background: #283c46;
+  color: #fff;
+  text-align: center;
+  padding: 5px;
+}
+
+/* line 27, /Users/corykane/Desktop/Basechamp/app/assets/stylesheets/api/events.scss */
+.react-calendar__tile {
+  text-align: center;
+  word-break: break-all;
+  position: relative;
+  height: 50px;
+  border: 1px solid #f2f2f2;
+  cursor: default;
+}
+
+/* line 37, /Users/corykane/Desktop/Basechamp/app/assets/stylesheets/api/events.scss */
+.dot-link {
+  position: relative;
+  font-size: 2em;
+  color: #ff7043;
+}
+
+/* line 42, /Users/corykane/Desktop/Basechamp/app/assets/stylesheets/api/events.scss */
+.dot-link:after {
+  content: "";
+  padding: 50px;
+  position: absolute;
+  left: -50px;
+  top: -50px;
+}
+
+/* line 50, /Users/corykane/Desktop/Basechamp/app/assets/stylesheets/api/events.scss */
+.event-index-container label {
+  font-weight: bold;
+  color: #283c46;
+  margin-bottom: 15px;
+}
+
+/* line 56, /Users/corykane/Desktop/Basechamp/app/assets/stylesheets/api/events.scss */
+.event-show-container {
+  border-radius: .2em;
+  background-color: #fff;
+  width: 780px;
+  min-height: 500px;
+  position: relative;
+  text-align: left;
+  padding-top: 80px;
+  padding-left: 50px;
+  padding-right: 50px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 100px;
+  padding-bottom: 20px;
+  border: 1px solid #bfbfbf;
+  border-bottom-width: 2px;
+  border-color: rgba(0, 0, 0, 0.15);
+}
+
+/* line 77, /Users/corykane/Desktop/Basechamp/app/assets/stylesheets/api/events.scss */
+.event-index-container label input {
+  font-weight: normal;
+}
+
+/* line 81, /Users/corykane/Desktop/Basechamp/app/assets/stylesheets/api/events.scss */
+.event-title-input {
+  position: absolute;
+  font-size: 1.3em;
+  font-weight: bold;
+  border-radius: 0.4rem;
+  border: 1px solid #bfbfbf;
+  padding: .6rem;
+  background-color: #fff;
+  color: #283c46;
+  top: 130px;
+  width: 85%;
+}
+
+/* line 94, /Users/corykane/Desktop/Basechamp/app/assets/stylesheets/api/events.scss */
+.starts-input {
+  border-radius: 0.4rem;
+  border: 1px solid #bfbfbf;
+  padding: .6rem;
+  background-color: #fff;
+  width: 263px;
+  margin-left: 10px;
+  margin-bottom: 15px;
+  margin-top: 50px;
+}
+
+/* line 105, /Users/corykane/Desktop/Basechamp/app/assets/stylesheets/api/events.scss */
+.ends-input {
+  border-radius: 0.4rem;
+  border: 1px solid #bfbfbf;
+  padding: .6rem;
+  background-color: #fff;
+  width: 263px;
+  margin-left: 17px;
+  margin-bottom: 15px;
+}
+
+/* line 115, /Users/corykane/Desktop/Basechamp/app/assets/stylesheets/api/events.scss */
+.note-form {
+  position: relative;
+  height: 270px;
+}
+
+/* line 120, /Users/corykane/Desktop/Basechamp/app/assets/stylesheets/api/events.scss */
+.notes-input {
+  border-radius: 0.4rem;
+  border: 1px solid #bfbfbf;
+  padding: .6rem;
+  height: 200px;
+  background-color: #fff;
+  width: 590px;
+  position: absolute;
+  left: 70px;
+  resize: none;
+}
+
+/* line 132, /Users/corykane/Desktop/Basechamp/app/assets/stylesheets/api/events.scss */
+.event-end {
+  color: #283c46;
+  font-size: .9em;
+  position: absolute;
+  right: 10px;
+}
+
+/* line 139, /Users/corykane/Desktop/Basechamp/app/assets/stylesheets/api/events.scss */
+.event-author {
+  color: #877457;
+  font-size: .7em;
+  position: absolute;
+  bottom: 0px;
+  left: 200px;
+}
+
+/* line 147, /Users/corykane/Desktop/Basechamp/app/assets/stylesheets/api/events.scss */
+.event-show-author {
+  color: #877457;
+  font-size: .7em;
+  position: absolute;
+  left: 0px;
+  bottom: -70px;
+}
+
+/* line 155, /Users/corykane/Desktop/Basechamp/app/assets/stylesheets/api/events.scss */
+.event-list li {
+  position: relative;
+  background-color: #fff;
+  width: 685px;
+  min-height: 135px;
+  padding-right: 100px;
+  border-bottom: 1px solid #bfbfbf;
+  border-color: rgba(0, 0, 0, 0.15);
+  margin-bottom: 25px;
+  margin-top: 40px;
+}
+
+/* line 167, /Users/corykane/Desktop/Basechamp/app/assets/stylesheets/api/events.scss */
+.date-header {
+  background-color: #ff7043;
+  color: #fff;
+  text-align: center;
+  border-radius: .1em;
+  padding-bottom: 5px;
+}
+
+/* line 175, /Users/corykane/Desktop/Basechamp/app/assets/stylesheets/api/events.scss */
+.date-container {
+  border: 2px solid #ff7043;
+  text-align: center;
+  width: 100px;
+  border-radius: .2em;
+  position: absolute;
+  left: 250px;
+  top: 30px;
+}
+
+/* line 185, /Users/corykane/Desktop/Basechamp/app/assets/stylesheets/api/events.scss */
+.date-container h1 {
+  font-weight: 400;
+  font-size: 2em;
+}
+
+/* line 190, /Users/corykane/Desktop/Basechamp/app/assets/stylesheets/api/events.scss */
+.event-show {
+  color: #283c46;
+  background-color: #fff;
+  position: relative;
+  width: 600px;
+  height: 300px;
+  align-self: center;
+  margin-top: -90px;
+  text-align: center;
+}
+
+/* line 201, /Users/corykane/Desktop/Basechamp/app/assets/stylesheets/api/events.scss */
+.event-info {
+  margin-top: 160px;
+}
+
+/* line 205, /Users/corykane/Desktop/Basechamp/app/assets/stylesheets/api/events.scss */
+.event-edit-btn {
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border-radius: 0.2rem;
+  position: absolute;
+  text-decoration: none;
+  text-align: center;
+  font-weight: 500;
+  color: #283c46;
+  display: inline-block;
+  line-height: 1.5;
+  white-space: normal;
+  vertical-align: middle;
+  background-color: #fff;
+  border: 1px solid #bfbfbf;
+  border-color: rgba(0, 0, 0, 0.15);
+  border-bottom-width: 2px;
+}
+
+/* line 226, /Users/corykane/Desktop/Basechamp/app/assets/stylesheets/api/events.scss */
+.evt-show {
+  left: -75px;
+  top: -45px;
+}
+
+/* line 231, /Users/corykane/Desktop/Basechamp/app/assets/stylesheets/api/events.scss */
+.evt-idx {
+  bottom: 25px;
+  right: 10px;
+}
+
+/* line 236, /Users/corykane/Desktop/Basechamp/app/assets/stylesheets/api/events.scss */
+.event-title {
+  color: #283c46;
+  font-size: .9em;
+  font-weight: bold;
+}
+
+/* line 242, /Users/corykane/Desktop/Basechamp/app/assets/stylesheets/api/events.scss */
+.title {
+  position: absolute;
+  top: 0px;
+  left: 200px;
+}
+
+/* line 248, /Users/corykane/Desktop/Basechamp/app/assets/stylesheets/api/events.scss */
+.event-body {
+  color: #6d6d6d;
+  font-size: .85em;
+  top: 20px;
+  left: 200px;
+  font-weight: normal;
+  padding-right: 20px;
+  padding-left: 200px;
+  margin-bottom: 50px;
+}
+
+/* line 259, /Users/corykane/Desktop/Basechamp/app/assets/stylesheets/api/events.scss */
+.event-dates {
+  color: #6d6d6d;
+  font-size: .85em;
+  font-weight: normal;
+  position: absolute;
+  left: 200px;
+  top: 0px;
+}
+
+/* line 268, /Users/corykane/Desktop/Basechamp/app/assets/stylesheets/api/events.scss */
+.delete-event-btn {
+  position: absolute;
+  font-weight: bold;
+  color: red;
+  right: 12px;
+  top: 0px;
+}
+
+/* line 276, /Users/corykane/Desktop/Basechamp/app/assets/stylesheets/api/events.scss */
+::-webkit-inner-spin-button {
+  display: none;
+}
+/* line 4, /Users/corykane/Desktop/Basechamp/app/assets/stylesheets/api/messages.scss */
+.message-show {
+  position: relative;
+  width: 600px;
+  align-self: center;
+  border-radius: 1.1em;
+  padding: 10px;
+  color: #283c46;
+  margin-top: -55px;
+}
+
+/* line 15, /Users/corykane/Desktop/Basechamp/app/assets/stylesheets/api/messages.scss */
+.message-author {
+  color: #877457;
+  font-size: .8em;
+}
+
+/* line 20, /Users/corykane/Desktop/Basechamp/app/assets/stylesheets/api/messages.scss */
+.message-show-author {
+  text-align: center;
+  color: #877457;
+  font-size: .8em;
+}
+
+/* line 26, /Users/corykane/Desktop/Basechamp/app/assets/stylesheets/api/messages.scss */
+.message-submit {
+  background-color: #3cb371;
+  color: #fff;
+  width: 175px;
+  font-size: .8em;
+  font-weight: bold;
+  text-align: center;
+  padding: .9em .9em .9em .9em;
+  border-radius: 0.2em;
+  border: 1px solid #bfbfbf;
+  border-bottom-width: 2px;
+  border-color: rgba(0, 0, 0, 0.15);
+  transition: all 0.2s ease;
+  position: absolute;
+  bottom: 50px;
+  box-sizing: border-box;
+}
+
+/* line 44, /Users/corykane/Desktop/Basechamp/app/assets/stylesheets/api/messages.scss */
+.new-message-button {
+  background-color: #3cb371;
+  color: #fff;
+  width: 155px;
+  font-size: .8em;
+  font-weight: bold;
+  text-align: center;
+  /*border: 1px solid #007bb6;*/
+  padding: .7em .7em .7em .7em;
+  border-radius: 0.2em;
+  border: 1px solid #bfbfbf;
+  border-bottom-width: 2px;
+  border-color: rgba(0, 0, 0, 0.15);
+  transition: all 0.2s ease;
+  position: absolute;
+  box-sizing: border-box;
+}
+
+/* line 62, /Users/corykane/Desktop/Basechamp/app/assets/stylesheets/api/messages.scss */
+.top-corner {
+  left: 20px;
+  top: 20px;
+}
+
+/* line 67, /Users/corykane/Desktop/Basechamp/app/assets/stylesheets/api/messages.scss */
+.bottom-corner {
+  left: 20px;
+  bottom: 20px;
+}
+
+/* line 72, /Users/corykane/Desktop/Basechamp/app/assets/stylesheets/api/messages.scss */
+.message-title {
+  display: inline;
+  font-size: 1.1em;
+  font-weight: bold;
+}
+
+/* line 78, /Users/corykane/Desktop/Basechamp/app/assets/stylesheets/api/messages.scss */
+.message-edit-btn {
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  font-size: .9em;
+}
+
+/* line 85, /Users/corykane/Desktop/Basechamp/app/assets/stylesheets/api/messages.scss */
+.message-body {
+  display: inline;
+}
+
+/* line 89, /Users/corykane/Desktop/Basechamp/app/assets/stylesheets/api/messages.scss */
+.message-title-input {
+  font-size: 2em;
+  font-weight: bold;
+  margin-bottom: 20px;
+  width: 660px;
+  color: #283c46;
+}
+
+/* line 97, /Users/corykane/Desktop/Basechamp/app/assets/stylesheets/api/messages.scss */
+.message-body-input {
+  resize: none;
+  width: 660px;
+  height: 90px;
+  margin-bottom: 80px;
+  color: #283c46;
+}
+/* line 5, /Users/corykane/Desktop/Basechamp/app/assets/stylesheets/api/projects.scss */
+.entire-project-body {
+  position: relative;
+}
+
+/* line 9, /Users/corykane/Desktop/Basechamp/app/assets/stylesheets/api/projects.scss */
+.project-idx-container {
+  text-align: center;
+  padding-left: 200px;
+  padding-right: 200px;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  position: relative;
+}
+
+/* line 18, /Users/corykane/Desktop/Basechamp/app/assets/stylesheets/api/projects.scss */
+.project-idx-container:before {
+  content: '';
+  position: absolute;
+  top: 115px;
+  left: 200px;
+  right: 200px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  z-index: -1;
+}
+
+/* line 28, /Users/corykane/Desktop/Basechamp/app/assets/stylesheets/api/projects.scss */
+.project-idx-container h2 {
+  color: #877457;
+  font-size: 1.3em;
+  font-family: "helvetica";
+  background: #f5efe6;
+  display: inline-flex;
+  margin-bottom: 30px;
+}
+
+/* line 37, /Users/corykane/Desktop/Basechamp/app/assets/stylesheets/api/projects.scss */
+.project-link {
+  position: relative;
+}
+
+/* line 41, /Users/corykane/Desktop/Basechamp/app/assets/stylesheets/api/projects.scss */
+.project-link:after {
+  content: "";
+  padding: 100px;
+  padding-right: 138px;
+  position: absolute;
+  left: -20px;
+  top: -75px;
+}
+
+/* line 50, /Users/corykane/Desktop/Basechamp/app/assets/stylesheets/api/projects.scss */
+.project-list {
+  display: flex;
+  justify-content: space-around;
+  align-content: center;
+  flex-wrap: wrap;
+}
+
+/* line 57, /Users/corykane/Desktop/Basechamp/app/assets/stylesheets/api/projects.scss */
+.project-list li {
+  background-color: #fff;
+  height: 200px;
+  width: 300px;
+  font-weight: bold;
+  text-align: left;
+  border-radius: 0.2em;
+  margin-bottom: 20px;
+  padding-top: 30px;
+  padding-left: 20px;
+  padding-right: 30px;
+  box-sizing: border-box;
+  position: relative;
+  color: #283c46;
+  border: 1px solid #bfbfbf;
+  border-bottom-width: 2px;
+  border-color: rgba(0, 0, 0, 0.15);
+}
+
+/* line 76, /Users/corykane/Desktop/Basechamp/app/assets/stylesheets/api/projects.scss */
+.project-desc {
+  font-size: 0.8em;
+  margin-top: 5px;
+  font-weight: 500;
+}
+
+/* line 82, /Users/corykane/Desktop/Basechamp/app/assets/stylesheets/api/projects.scss */
+.delete-project-btn {
+  position: absolute;
+  font-weight: bold;
+  color: red;
+  right: 12px;
+  top: 10px;
+}
+
+/* line 90, /Users/corykane/Desktop/Basechamp/app/assets/stylesheets/api/projects.scss */
+.project-new-button {
+  padding-left: 7px;
+  padding-right: 10px;
+  padding-top: 2px;
+  padding-bottom: 0;
+  border-radius: 0.2em;
+  position: absolute;
+  left: 160px;
+  top: 95px;
+  text-decoration: none;
+  text-align: center;
+  font-weight: bold;
+  font-size: .8em;
+  color: #283c46;
+  display: inline-block;
+  line-height: 1.5;
+  white-space: normal;
+  vertical-align: middle;
+  background-color: #fff;
+  border: 1px solid #bfbfbf;
+  border-color: rgba(0, 0, 0, 0.15);
+  border-bottom-width: 2px;
+}
+
+/* line 114, /Users/corykane/Desktop/Basechamp/app/assets/stylesheets/api/projects.scss */
+.new-project-container {
+  background-color: #fff;
+  border-radius: 0.2em;
+  padding: 20px;
+  width: 270px;
+  height: 180px;
+  position: absolute;
+  left: 207px;
+  top: 151px;
+  border: 1px solid #bfbfbf;
+  border-color: rgba(0, 0, 0, 0.15);
+  border-bottom-width: 2px;
+}
+
+/* line 128, /Users/corykane/Desktop/Basechamp/app/assets/stylesheets/api/projects.scss */
+.edit-project-container {
+  background-color: #fff;
+  border-radius: 0.2em;
+  padding: 20px;
+  width: 270px;
+  height: 180px;
+  position: relative;
+  margin: auto;
+  margin-top: -230px;
+  border: 1px solid #bfbfbf;
+  border-color: rgba(0, 0, 0, 0.15);
+  border-bottom-width: 2px;
+  -webkit-transition: transform .5s ease-in-out;
+}
+
+/* line 143, /Users/corykane/Desktop/Basechamp/app/assets/stylesheets/api/projects.scss */
+.project-input {
+  transition: all 0.2s ease;
+  display: block;
+  width: 250px;
+  margin-bottom: 5px;
+  padding: 0.75em 0.6em;
+  background-color: #fff;
+  border: 2px solid #bfbfbf;
+  font-size: 1rem;
+  font-family: monospace;
+  position: absolute;
+  text-align: left;
+}
+
+/* line 157, /Users/corykane/Desktop/Basechamp/app/assets/stylesheets/api/projects.scss */
+.edit-project-btn {
+  padding: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 0.2rem;
+  position: absolute;
+  right: 10px;
+  bottom: 15px;
+  text-decoration: none;
+  text-align: center;
+  font-weight: 600;
+  font-size: .8em;
+  color: #283c46;
+  display: inline-block;
+  line-height: 1.5;
+  white-space: normal;
+  vertical-align: middle;
+  background-color: #fff;
+  border: 1px solid #bfbfbf;
+  border-color: rgba(0, 0, 0, 0.15);
+  border-bottom-width: 2px;
+}
+
+/* line 180, /Users/corykane/Desktop/Basechamp/app/assets/stylesheets/api/projects.scss */
+.pti {
+  left: 20px;
+  top: 40px;
+}
+
+/* line 185, /Users/corykane/Desktop/Basechamp/app/assets/stylesheets/api/projects.scss */
+.pdi {
+  left: 20px;
+  bottom: 70px;
+}
+
+/* line 190, /Users/corykane/Desktop/Basechamp/app/assets/stylesheets/api/projects.scss */
+.project-submit {
+  position: absolute;
+  bottom: 25px;
+  left: 20px;
+  background-color: #3cb371;
+  border-radius: 0.2em;
+  font-weight: bold;
+  font-size: .8em;
+  color: white;
+  padding: 8px;
+  border: 1px solid #bfbfbf;
+  border-bottom-width: 2px;
+  border-color: rgba(0, 0, 0, 0.15);
+}
+
+/* line 205, /Users/corykane/Desktop/Basechamp/app/assets/stylesheets/api/projects.scss */
+.project-show-body {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding-left: 200px;
+  padding-right: 200px;
+  padding-top: 100px;
+}
+
+/* line 214, /Users/corykane/Desktop/Basechamp/app/assets/stylesheets/api/projects.scss */
+.project-title {
+  font-size: 1.5em;
+  color: #283c46;
+  font-weight: bold;
+  flex: 0 0 100%;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+/* line 223, /Users/corykane/Desktop/Basechamp/app/assets/stylesheets/api/projects.scss */
+.generic-show-container {
+  width: 260px;
+  height: 260px;
+  text-align: center;
+  color: #283c46;
+  background-color: #fff;
+  padding: 25px;
+  box-sizing: border-box;
+  border-radius: 0.2em;
+  position: relative;
+  border: 1px solid #bfbfbf;
+  border-bottom-width: 2px;
+  border-color: rgba(0, 0, 0, 0.15);
+}
+
+/* line 238, /Users/corykane/Desktop/Basechamp/app/assets/stylesheets/api/projects.scss */
+.generic-show-title {
+  font-size: 1.17em;
+  font-weight: bold;
+}
+
+/* line 243, /Users/corykane/Desktop/Basechamp/app/assets/stylesheets/api/projects.scss */
+.generic-show-img {
+  height: 95px;
+  width: 95px;
+  position: absolute;
+  left: 85px;
+}
+
+/* line 250, /Users/corykane/Desktop/Basechamp/app/assets/stylesheets/api/projects.scss */
+.generic-show-desc {
+  font-size: .8em;
+  position: absolute;
+  bottom: 30px;
+  left: 10px;
+  padding-right: 10px;
+}
+
+/* line 258, /Users/corykane/Desktop/Basechamp/app/assets/stylesheets/api/projects.scss */
+.show-footer {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-left: 340px;
+  padding-right: 340px;
+  color: #283c46;
+  text-align: center;
+}
+
+/* line 269, /Users/corykane/Desktop/Basechamp/app/assets/stylesheets/api/projects.scss */
+.footer-desc {
+  font-size: .8em;
+}
+/* line 5, /Users/corykane/Desktop/Basechamp/app/assets/stylesheets/api/sessions.scss */
+.session-signup-container {
+  font-size: 1.0rem;
+  color: #283c46;
+  width: 500px;
+  height: 230px;
+  box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.1);
+  max-width: 40rem;
+  border-radius: 0.2em;
+  padding-top: 25px;
+  margin: 1.5em auto 1em auto;
+  background-color: #fff;
+  position: relative;
+}
+
+/* line 19, /Users/corykane/Desktop/Basechamp/app/assets/stylesheets/api/sessions.scss */
+.session-signup-input {
+  transition: all 0.2s ease;
+  display: block;
+  margin-bottom: 0.75em;
+  padding: 0.75em 0.6em;
+  width: 78%;
+  background-color: #fff;
+  border: 1px solid #bfbfbf;
+  font-size: .8em;
+  font-family: helvetica;
+  position: absolute;
+  left: 45px;
+  top: 73px;
+  font-weight: 400;
+  border-radius: .2em;
+}
+
+/* line 36, /Users/corykane/Desktop/Basechamp/app/assets/stylesheets/api/sessions.scss */
+.password-input {
+  transition: all 0.2s ease;
+  display: block;
+  margin-bottom: 0.75em;
+  padding: 0.75em 0.6em;
+  width: 78%;
+  background-color: #fff;
+  border: 1px solid #bfbfbf;
+  font-size: .8em;
+  font-family: helvetica;
+  position: absolute;
+  left: 45px;
+  bottom: 75px;
+  font-weight: 400;
+  border-radius: .2em;
+}
+
+/* line 54, /Users/corykane/Desktop/Basechamp/app/assets/stylesheets/api/sessions.scss */
+.session-login-container {
+  font-size: 1.0rem;
+  color: #283c46;
+  width: 500px;
+  height: 260px;
+  box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.1);
+  max-width: 40rem;
+  border-radius: 0.2em;
+  padding-top: 25px;
+  margin: 1.5em auto 1em auto;
+  background-color: #fff;
+  position: relative;
+}
+
+/* line 68, /Users/corykane/Desktop/Basechamp/app/assets/stylesheets/api/sessions.scss */
+.session-login-input {
+  transition: all 0.2s ease;
+  display: block;
+  border-radius: .2em;
+  margin-bottom: 0.75em;
+  padding: 0.75em 0.6em;
+  width: 78%;
+  background-color: #fff;
+  border: 1px solid #bfbfbf;
+  font-size: .8em;
+  font-family: helvetica;
+  position: absolute;
+  left: 45px;
+  top: 100px;
+  font-weight: 400;
+}
+
+/* line 86, /Users/corykane/Desktop/Basechamp/app/assets/stylesheets/api/sessions.scss */
+.session-form-box p {
+  text-align: center;
+  font-weight: bold;
+}
+/* line 4, /Users/corykane/Desktop/Basechamp/app/assets/stylesheets/api/todos.scss */
+.todo-list {
+  margin-bottom: 20px;
+}
+
+/* line 8, /Users/corykane/Desktop/Basechamp/app/assets/stylesheets/api/todos.scss */
+.todo-list li {
+  position: relative;
+  background-color: #fff;
+  width: 685px;
+  min-height: 150px;
+  padding: 25px;
+  padding-right: 100px;
+  border-radius: .2em;
+  border-bottom: 1px solid #bfbfbf;
+  border-bottom-width: 2px;
+  border-color: rgba(0, 0, 0, 0.15);
+  padding-bottom: 70px;
+  margin-bottom: 20px;
+}
+
+/* line 23, /Users/corykane/Desktop/Basechamp/app/assets/stylesheets/api/todos.scss */
+.todo-edit-btn {
+  padding: 10px;
+  border-radius: 0.2rem;
+  position: absolute;
+  left: 20px;
+  bottom: 15px;
+  text-decoration: none;
+  text-align: center;
+  font-weight: 600;
+  font-size: .8em;
+  color: #283c46;
+  display: inline-block;
+  line-height: 1.5;
+  white-space: normal;
+  vertical-align: middle;
+  background-color: #fff;
+  border: 1px solid #bfbfbf;
+  border-color: rgba(0, 0, 0, 0.15);
+  border-bottom-width: 2px;
+}
+
+/* line 44, /Users/corykane/Desktop/Basechamp/app/assets/stylesheets/api/todos.scss */
+.todo-title {
+  color: #1b6ac9;
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+/* line 50, /Users/corykane/Desktop/Basechamp/app/assets/stylesheets/api/todos.scss */
+.todo-body {
+  font-size: 0.9em;
+  margin-left: 10px;
+  margin-top: 10px;
+}
+
+/* line 56, /Users/corykane/Desktop/Basechamp/app/assets/stylesheets/api/todos.scss */
+.input-div {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: .2em;
+  font-weight: 600;
+  width: 650px;
+  height: 460px;
+  margin: auto;
+  margin-top: 0px;
+  position: relative;
+  padding: none;
+}
+
+/* line 68, /Users/corykane/Desktop/Basechamp/app/assets/stylesheets/api/todos.scss */
+.todo-title-input {
+  transition: all 0.2s ease;
+  display: block;
+  margin-bottom: 0.75em;
+  padding: 0.75em 0.9em;
+  width: 650px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  background-color: #f2f2f2;
+  font-size: 1.0rem;
+  font-family: helvetica;
+  position: absolute;
+  top: 0px;
+}
+
+/* line 82, /Users/corykane/Desktop/Basechamp/app/assets/stylesheets/api/todos.scss */
+.todo-body-input {
+  transition: all 0.2s ease;
+  display: block;
+  border-radius: .2em;
+  padding: 0.75em 0.6em;
+  width: 580px;
+  height: 305px;
+  background-color: #fff;
+  border: 1px solid #bfbfbf;
+  font-size: .8rem;
+  position: absolute;
+  font-weight: 400;
+  top: 70px;
+  left: 35px;
+  resize: none;
+}
+
+/* line 99, /Users/corykane/Desktop/Basechamp/app/assets/stylesheets/api/todos.scss */
+.todo-submit {
+  background-color: #3cb371;
+  color: #fff;
+  width: 120px;
+  font-size: .8em;
+  font-weight: bold;
+  text-align: center;
+  padding: .7em .7em .7em .7em;
+  border-radius: 0.2em;
+  border: 1px solid #bfbfbf;
+  border-bottom-width: 2px;
+  border-color: rgba(0, 0, 0, 0.15);
+  transition: all 0.2s ease;
+  position: absolute;
+  bottom: 20px;
+  left: 35px;
+  box-sizing: border-box;
+}
+
+/* line 118, /Users/corykane/Desktop/Basechamp/app/assets/stylesheets/api/todos.scss */
+.todo-show {
+  background-color: #fff;
+  position: relative;
+  width: 450px;
+  align-self: flex-start;
+  margin-top: -80px;
+  padding: 25px;
+  padding-bottom: 50px;
+}
+
+/* line 128, /Users/corykane/Desktop/Basechamp/app/assets/stylesheets/api/todos.scss */
+.todo-show p {
+  margin-left: 10px;
+  margin-top: -15px;
+}
+
+/* line 133, /Users/corykane/Desktop/Basechamp/app/assets/stylesheets/api/todos.scss */
+.new-todo-button {
+  background-color: #3cb371;
+  color: #fff;
+  width: 185px;
+  font-size: .8em;
+  font-weight: bold;
+  text-align: center;
+  /*border: 1px solid #007bb6;*/
+  padding: .9em .9em .9em .9em;
+  border-radius: 0.2em;
+  border: 1px solid #bfbfbf;
+  border-bottom-width: 2px;
+  border-color: rgba(0, 0, 0, 0.15);
+  transition: all 0.2s ease;
+  position: absolute;
+  box-sizing: border-box;
+}
+
+/* line 151, /Users/corykane/Desktop/Basechamp/app/assets/stylesheets/api/todos.scss */
+.bottom {
+  bottom: 20px;
+  left: 20px;
+}
+
+/* line 156, /Users/corykane/Desktop/Basechamp/app/assets/stylesheets/api/todos.scss */
+.top {
+  top: 130px;
+  left: 300px;
+}
+
+/* line 161, /Users/corykane/Desktop/Basechamp/app/assets/stylesheets/api/todos.scss */
+.todo-show-edit-btn {
+  padding: 8px;
+  padding-left: 15px;
+  padding-right: 15px;
+  border-radius: 0.2rem;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  text-decoration: none;
+  text-align: center;
+  font-weight: 600;
+  font-size: .8em;
+  color: #283c46;
+  display: inline-block;
+  line-height: 1.5;
+  white-space: normal;
+  vertical-align: middle;
+  background-color: #fff;
+  border: 1px solid #bfbfbf;
+  border-color: rgba(0, 0, 0, 0.15);
+  border-bottom-width: 2px;
+}
+
+/* line 184, /Users/corykane/Desktop/Basechamp/app/assets/stylesheets/api/todos.scss */
+.todo-index-body {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* line 190, /Users/corykane/Desktop/Basechamp/app/assets/stylesheets/api/todos.scss */
+.todo-show-container {
+  border-radius: .3em;
+  background-color: #fff;
+  width: 780px;
+  min-height: 300px;
+  position: relative;
+  text-align: left;
+  padding-top: 80px;
+  padding-left: 50px;
+  padding-right: 50px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 100px;
+  padding-bottom: 50px;
+  border: 1px solid #bfbfbf;
+  border-bottom-width: 2px;
+  border-color: rgba(0, 0, 0, 0.15);
+}
+/*NOTE :hover code below was taken from
+http://www.ultrawebsites.com/2013/11/just-one-css-class-for-darker-button-hover-states/*/
+/* line 9, /Users/corykane/Desktop/Basechamp/app/assets/stylesheets/api/users.scss */
+.signup-submit {
+  background-color: #3cb371;
+  color: #fff;
+  width: 77.3%;
+  text-align: center;
+  height: 25px;
+  font-size: .78em;
+  font-weight: bold;
+  padding: 0.75em 0.75em 0.75em 0.75em;
+  border-radius: 0.2em;
+  border: 1px solid #bfbfbf;
+  border-bottom-width: 2px;
+  border-color: rgba(0, 0, 0, 0.15);
+  transition: all 0.2s ease;
+  position: absolute;
+  bottom: 25px;
+  left: 45px;
+}
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+
+
+ */
+
+
+/*css reset*/
+
+ html, body, header, nav, h1, a,
+ ul, li, strong, main, button, i,
+ section, img, div, h2, p, form,
+ fieldset, label, input, textarea,
+ span, article, footer, time, small {
+   margin: 0;
+   padding: 0;
+   border: 0;
+   outline: 0;
+   font: inherit;
+   color: inherit;
+   text-align: inherit;
+   text-decoration: inherit;
+   vertical-align: inherit;
+   box-sizing: inherit;
+   background: transparent;
+ }
+
+ ul {
+   list-style: none;
+ }
+
+ img {
+   display: block;
+   width: 100%;
+   height: auto;
+ }
+
+ input[type="password"],
+ input[type="email"],
+ input[type="text"],
+ input[type="submit"],
+ textarea,
+ button {
+   /*
+   Get rid of native styling. Read more here:
+   http://css-tricks.com/almanac/properties/a/appearance/
+   */
+   -webkit-appearance: none;
+   -moz-appearance: none;
+   appearance: none;
+ }
+
+ button,
+ input[type="submit"] {
+   cursor: pointer;
+ }
+
+ /* Clearfix */
+
+ .group:after {
+   content: "";
+   display: block;
+   clear: both;
+ }
+
+ /*////*/
+
+ body {
+	 font-family: "HCo Ideal Sans SSm", "Helvetica";
+	 background-color: #f5efe6;
+ }
+
+ header {
+	 letter-spacing: -0.05rem;
+	 display: flex;
+	 justify-content: space-between;
+	 font-size: 1.25rem;
+	 font-weight: bold;
+   background-color: rgba(251,248,245,0.98);
+   border-bottom: 1px solid rgba(0,0,0,0.1);
+	 position: relative;
+	 top: 0;
+	 height: 65px;
+	 align-items: center;
+	 padding-left: 20px;
+	 padding-right: 20px;
+   margin-bottom: 20px;
+ }
+
+ .demo-button {
+  background-color: #007bb6;
+  color: #fff;
+  margin-left: 10px;
+  font-size: 0.85em;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 0.50em 0.8em 0.50em 0.8em;
+  border-radius: 3em;
+  border: 1px solid #bfbfbf;
+  border-bottom-width: 2px;
+  border-color: rgba(0,0,0,0.15);
+  transition: all 0.2s ease;
+ }
+
+ .header-group {
+   font-family: helvetica;
+   font-size: .75em;
+   color: #007bb6;
+   position: relative;
+ }
+
+ .header-name {
+   margin-right: 110px;
+   margin-bottom: 10px;
+   margin-top: 5px;
+ }
+
+.header-button {
+  background-color: #3cb371;
+  color: #fff;
+  width: 60px;
+  font-size: .7em;
+  font-weight: bold;
+  text-align: center;
+  padding: 0.50em .5em 0.50em .5em;
+  border-radius: 0.2em;
+  border: 1px solid #bfbfbf;
+  border-bottom-width: 2px;
+  border-color: rgba(0,0,0,0.15);
+  transition: all 0.2s ease;
+  position: absolute;
+  right: 20px;
+  top:0px;
+}
+
+.login-signup {
+  color: #007bb6;
+  text-decoration: underline;
+  font-size: .75em;
+}
+
+.login-signup a {
+  margin-left: 10px;
+}
+
+ .home-container {
+  display: flex;
+  align-items: center;
+ }
+
+ .icon {
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+ }
+
+ .hero-img-container {
+  max-width: 725px;
+  margin: auto;
+ }
+
+ .hero-img {
+  max-width: 100%;
+ }
+
+ .intro-container {
+	 font-family: 'Merriweather', serif;
+	 color: #283c46;
+	 text-align: center;
+ }
+
+ .intro-title {
+  font-weight: bold;
+  font-size: 3.0rem;
+  margin-bottom: 15px;
+}
+
+.intro-body {
+  font-size: 1.0rem;
+  padding-left: 70px;
+  padding-right: 70px;
+}
+
+.splash {
+  padding-left: 200px;
+  padding-right: 200px;
+}
+
+
+ span {
+   font-size: 25px;
+   margin-right: 5px;
+   color: #3cb371;
+ }
+
+.feature-header {
+  font-size: 1.3em;
+  color: #283c46;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 40px;
+  align-self: center;
+}
+
+ .splash-signup {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   padding-left: 50px;
+ }
+
+ .call-to-action {
+   color: #283c46;
+   margin-top: -30px;
+ }
+
+.call-to-action h3 {
+ font-family: 'Merriweather', serif;
+ width: 100%;
+}
+
+.call-to-action span {
+ font-size: 1.3em;
+ font-weight: bold;
+}
+
+#arrow {
+  font-size: 1.5em;
+}
+
+.call-to-action ul {
+ font-size: .8em;
+ color: #283c46;
+ font-weight: bold;
+}
+
+
+ .errors {
+   color: red;
+   text-align: center;
+ }
+
+ .errors-ul {
+   padding: 0px;
+   width: 100px;
+ }
+
+ .back-btn {
+  font-size: 2.5em;
+  position: absolute;
+  font-weight: bold;
+  color: #ec7a3c;
+  right: 12px;
+  top: 0px;
+ }
+
+ .generic-index-container {
+ 	 border-radius: .3em;
+ 	 background-color: #fff;
+ 	 width: 780px;
+ 	 position: relative;
+ 	 text-align: left;
+ 	 padding-top: 80px;
+ 	 padding-left: 50px;
+ 	 padding-right: 50px;
+ 	 box-sizing: border-box;
+ 	 display: flex;
+ 	 flex-direction: column;
+ 	 margin-bottom: 100px;
+ 	 padding-bottom: 50px;
+ 	 border: 1px solid #bfbfbf;
+ 	 border-bottom-width: 2px;
+ 	 border-color: rgba(0,0,0,0.15);
+ }
+
+ .centered {
+   align-items: center;
+ }
+
+ .flex-start {
+   align-items: flex-start;
+ }
+
+ .form-height {
+   min-height: 500px;
+ }
+
+ .index-height {
+   min-height: 450px;
+ }
+
+.event-height {
+  min-height: 630px;
+}
+
+ .generic-list {
+   /*margin-top: -50px;*/
+   margin-bottom: 20px;
+ }
+
+ .generic-list li {
+   position: relative;
+   background-color: #fff;
+   width: 685px;
+   padding-right: 100px;
+   border-top: 1px solid #bfbfbf;
+   border-color: rgba(0,0,0,0.15);
+   margin-bottom: 20px;
+   color: #283c46;
+ }
