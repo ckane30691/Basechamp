@@ -31,7 +31,7 @@ const App = () => (
   <div>
     <header>
       <div className="home-container">
-        <img className="icon" src="/assets/basecamp-icon.svg"/>
+        <img className="icon" src="/assets/basecamp-icon-3a50735ad25100f6c456731f315e4a6d6f3ca6b9896968065c8b4a7851336a91.svg"/>
         <Link to='/' className="header-link"><h1>Basechamp</h1></Link>
       </div>
       <GreetingContainer />

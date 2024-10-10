@@ -4,14 +4,7 @@ import ReactDOM from 'react-dom';
 import Root from './components/root';
 import configureStore from './store/store';
 
-document.addEventListener('DOMContentLoaded', () => {
-
-  // ping heroku dynos
-  let http = require("http");
-  setInterval(function() {
-    http.get("basechamp.herokuapp.com");
-  }, 300000); // every 5 minutes (300000)
-  
+document.addEventListener('DOMContentLoaded', () => {  
   let store;
   if (window.currentUser) {
     const preloadedState = { session: {currentUser: window.currentUser } };
