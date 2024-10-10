@@ -29,7 +29,7 @@
   "scripts": {
     "webpack": "webpack --watch",
     "test": "jest",
-    "postinstall": "webpack --mode production"
+    "postinstall": "webpack"
   },
   "keywords": [],
   "author": "",
