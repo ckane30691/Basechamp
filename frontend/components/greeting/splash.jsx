@@ -4,7 +4,7 @@ import SessionFormContainer from '../session_form/session_form_container';
 const Splash = () => (
 	<div className='splash'>
 		<div className="hero-img-container">
-			<img className="hero-img" alt="hero image" src="https://s3-us-west-1.amazonaws.com/basechamp/basecamp_hero.jpg"/>
+			<img className="hero-img" alt="hero image" src="/assets/basechamp-splash.svg"/>
 		</div>
 
 			<div className="intro-container">

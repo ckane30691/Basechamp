@@ -18,7 +18,7 @@ class ProjectShow extends React.Component {
 						<div className="generic-show-container">
 								<p className="generic-show-title">To-dos</p>
 							<hr/>
-							<img className="generic-show-img" src="https://s3-us-west-1.amazonaws.com/basechamp/checkmark.png" />
+							<img className="generic-show-img" src="/assets/checkmark-icon.png" />
 							<p className="generic-show-desc">Make lists of work that needs to get done.</p>
 						</div>
 					</Link>
@@ -27,7 +27,7 @@ class ProjectShow extends React.Component {
 						<div className="generic-show-container">
 								<p  className="generic-show-title">Message Board</p>
 							<hr />
-							<img className="generic-show-img" src="https://s3-us-west-1.amazonaws.com/basechamp/todos_icon.png" />
+							<img className="generic-show-img" src="/assets/messages-icon.png" />
 							<p className="generic-show-desc">Post announcements, pitch ideas, & keep feedback on topic</p>
 						</div>
 				 </Link>
@@ -36,7 +36,7 @@ class ProjectShow extends React.Component {
 					<div className="generic-show-container">
 						<h1 className="generic-show-title">Events</h1>
 						<hr />
-						<img className="generic-show-img" src="https://s3-us-west-1.amazonaws.com/basechamp/calendar_icon.png" />
+						<img className="generic-show-img" src="/assets/calendar-icon.png" />
 						<p className="generic-show-desc">Set important dates on a shared schedule</p>
 					</div>
 				</Link>
@@ -45,7 +45,7 @@ class ProjectShow extends React.Component {
 
 				<div className="show-footer">
 					<hr/>
-					<img className="icon" src="https://s3-us-west-1.amazonaws.com/basechamp/basecamp_icon.svg"/>
+					<img className="icon" src="/assets/basecamp-icon.png"/>
 					<h4 className="footer-title">Welcome to {title}!</h4>
 					<p className="footer-desc">
 						This is the place to do everything related to this project
