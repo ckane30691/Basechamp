@@ -80,6 +80,7 @@ test:
 #
 production:
   <<: *default
-  database: Basechamp_production
-  username: Basechamp
+  url: <%= ENV['DATABASE_URL'] %>
+  database: <%= ENV['DATABASE_NAME'] %>
+  username: <%= ENV['DATABASE_USERNAME'] %>
   password: <%= ENV['BASECHAMP_DATABASE_PASSWORD'] %>
