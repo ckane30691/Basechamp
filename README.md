@@ -1,9 +1,9 @@
 ![splash page](https://s3-us-west-1.amazonaws.com/basechamp/splash.png)
 # Basechamp
 
-Instead of having stuff scattered all over the place — strewn across separate products, lost in inboxes, or scrawled on stickies or notepads — [Basechamp](https://basechamp.herokuapp.com/#/) brings all the projects your company’s working on under one roof. Organized, centralized, and clear so everyone knows what to do, everyone knows where things stand, and everyone can get what they need without having to ask around all the time.
+Instead of having stuff scattered all over the place — strewn across separate products, lost in inboxes, or scrawled on stickies or notepads — [Basechamp](https://basechamp.onrender.com/#/) brings all the projects your company’s working on under one roof. Organized, centralized, and clear so everyone knows what to do, everyone knows where things stand, and everyone can get what they need without having to ask around all the time.
 
-[Basechamp Live Site](https://basechamp.herokuapp.com/#/)
+[Basechamp Live Site](https://basechamp.onrender.com/#/)
 
 [Basechamp Wiki](https://github.com/ckane30691/Basechamp/wiki)
 
@@ -34,7 +34,6 @@ If you find a bug, please open an issue [here](https://github.com/ckane30691/Bas
 * [Ruby on Rails](http://rubyonrails.org/) - Server-side MVC Framework
 * [PotsgreSQL](https://www.postgresql.org/) - Database management system
 * [React](https://reactjs.org/) - JS library for building user interfaces
-* [Ajax](https://developer.mozilla.org/en-US/docs/AJAX/Getting_Started) - Part of jQuery library for making async requests
 * [Redux](http://redux.js.org/) - Frontend architecture for giving apps a predictable state
 
 ## Future Directions for Basechamp
